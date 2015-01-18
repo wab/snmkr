@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>prototype</title>
+    <title>prototype snmkr</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css styles/vendor.css -->
@@ -29,7 +29,7 @@
     <![endif]-->
 
     <nav class="navbar navbar-default" role="navigation">
-      <div class="container">
+      <div class="container-fuild">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
@@ -43,21 +43,31 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navigation">
-          <ul class="nav navbar-nav navbar">
-            <li class="active"><a href="index.html">Accueil <span class="sr-only">(current)</span></a></li>
-            <li><a href="page.html">Snmkr</a></li>
-            <li><a href="page.html">Profession</a></li>
-            <li><a href="page.html">Textes</a></li>
-            <li><a href="page.html">Espace Kiné</a></li>
-            <li><a href="contact.html">Contact</a></li>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html"><span class="fa fa-home"></span> Accueil <span class="sr-only">(current)</span></a></li>
+            <li><a href="page.html"><span class="fa fa-folder-open"></span> Snmkr</a></li>
+            <li><a href="page.html"><span class="fa fa-graduation-cap"></span> Profession</a></li>
+            <li><a href="page.html"><span class="fa fa-gavel"></span> Textes</a></li>
+            <li><a href="page.html"><span class="fa fa-users"></span> Espace Kiné</a></li>
+            <li><a href="contact.html"><span class="fa fa-envelope"></span> Contact</a></li>
           </ul>
-          <form class="navbar-form navbar-right" role="search">
+
+          <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Recherche">
+              <div class="input-group">
+                <input type="search" class="form-control" placeholder="Recherche">
+                <div class="input-group-addon"><span class="fa fa-search"></span></div>
+              </div>
+              <button type="submit" class=" sr-only">Submit</button>
             </div>
-            <button type="submit" class="btn btn-default sr-only">Submit</button>
           </form>
-          
+
+          <ul class="nav navbar-nav navbar-right reseaux">
+            <li><a href="#"><span class="fa fa-twitter-square"></a></li>
+            <li><a href="#"><span class="fa fa-facebook-square"></a></a></li>
+            <li><a href="#"><span class="fa fa-linkedin-square"></a></a></li>
+          </ul>
+
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
@@ -71,20 +81,6 @@
             <h1 class="h3"><span class="text-primary">S</span>yndicat<br><span class="text-primary">N</span>ationnal des<br><span class="text-primary">M</span>asseurs <br><span class="text-primary">K</span>inésithérapeutes<br><span class="text-primary">R</span>ééducateurs</h1>           
           </div>
           <hr>
-          <p>
-            <a href="#" class="btn btn-lg btn-block btn-info"><span class="fa fa-pencil-square-o"></span> J'adhère au SNMKR</a>
-          </p>
-          <!-- <ul class="nav nav-pills nav-stacked">
-            <li class="active"><a href="#"><span class="fa fa-home"></span> Accueil</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul> -->
-        
-          <!-- <h2 class="h3">Édito du président <br><small>février 2015</small></h2>
-          <hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit architecto molestiae placeat, ullam, earum magnam possimus enim blanditiis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, deleniti impedit quidem consequuntur molestiae eum eveniet reiciendis assumenda sequi aliquid saepe voluptatem atque, voluptas aperiam. Libero sequi aliquam mollitia molestiae?</p>
-          <p><a class="btn btn-primary" href="#">Lire la suite</a></p> --> 
-
         </div>
 
 
@@ -138,14 +134,25 @@
 
 
         <div class="col-md-3">
+          <p>
+            <a href="#" class="btn btn-lg btn-block btn-info"><span class="fa fa-pencil-square-o"></span> J'adhère au SNMKR</a>
+          </p>
+          <!-- <aside>
+            <h2 class="h3">Suivre le snmkr</h2>
+            <ul class="list-unstyled list-inline reseaux">
+              <li><a href="#"><span class="fa fa-twitter-square"></a></li>
+              <li><a href="#"><span class="fa fa-facebook-square"></a></a></li>
+              <li><a href="#"><span class="fa fa-linkedin-square"></a></a></li>
+            </ul>
+          </aside> -->
           <aside class="">
-            <h2 class="h3">newsletter</h2>
+            <h2 class="h3">La newsletter</h2>
             <form class="form-inline">
             <div class="form-group">
-              <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+              <label class="sr-only" for="mail">votre email</label>
               <div class="input-group">
                 <div class="input-group-addon"><span class="fa fa-envelope"></span></div>
-                <input type="email" class="form-control" id="exampleInputAmount" placeholder="votre email">
+                <input type="email" class="form-control" id="mail" placeholder="votre email">
                 
               </div>
             </div>

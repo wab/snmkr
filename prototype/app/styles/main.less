@@ -7,6 +7,67 @@
   padding: 0.2em 0;
 }
 
+body{
+	position: relative;
+}
+
 .reseaux {
 	font-size: 1.5em;
+}
+
+.affix.navigation {
+
+  @media (min-width: @screen-lg-min) {
+    .make-md-column(2);
+	float: none;
+	position: fixed;
+	top: 20px;
+	margin-left: -15px;
+  }
+	
+}
+
+.affix {
+	@media (max-width: @screen-md-max) {
+    position: relative;
+  }
+}
+.subpage {
+	margin-bottom: 4em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #eee;
+}
+
+.submenu {
+
+	margin-left: 0.8em;
+	.list-group-item {
+		background: lighten(@list-group-bg, 4%);
+		border-color: lighten(@list-group-border, 10%);
+		padding: 4px 15px;
+	}
+
+	.active .list-group-item {
+		border-color: @brand-primary;
+	}
+}
+
+.submenu-link {
+	&:after {
+		.fa-icon();
+		content: '\00a0\f0d8';
+	}
+	&.collapsed:after {
+		content: '\00a0\f0d7';
+	}
+
+}
+
+.menu .panel {
+    margin-bottom: 4px;
+
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
 }

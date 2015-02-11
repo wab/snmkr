@@ -38,7 +38,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <!-- <a class="navbar-brand" href="#">Brand</a>  -->         
+          <a class="navbar-brand" href="index.html">snmkr.fr</a>        
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -62,12 +62,6 @@
             
           </form>
 
-          <ul class="nav navbar-nav navbar-right reseaux">
-            <li><a href="#"><span class="fa fa-twitter-square"></span></a></li>
-            <li><a href="#"><span class="fa fa-facebook-square"></span></a></li>
-            <li><a href="#"><span class="fa fa-linkedin-square"></span></a></li>
-          </ul>
-
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
@@ -75,16 +69,18 @@
     <div class="container-fluid">
       <div class="row">
 
-        <div class="col-lg-2 col-md-3">
-          <div class="header">
-            <img data-src="holder.js/100x100/#a0171e:#fff/text:logo" alt="">
-            <h1 class="h3"><span class="text-primary">S</span>yndicat<br><span class="text-primary">N</span>ationnal des<br><span class="text-primary">M</span>asseurs <br><span class="text-primary">K</span>inésithérapeutes<br><span class="text-primary">R</span>ééducateurs</h1>           
-          </div>
+        <div class="col-md-2 hidden-xs">
+          <div class="mainheader row">
+            <div class="col-md-12 col-sm-2 col-xs-4">
+              <img data-src="holder.js/120x120/#a0171e:#fff/text:logo" alt="">
+            </div>
+            <div class="col-md-12 col-sm-10 col-xs-8"><h1 class="h4"><span class="text-primary">S</span>yndicat<br><span class="text-primary">N</span>ationnal des<br><span class="text-primary">M</span>asseurs <br><span class="text-primary">K</span>inésithérapeutes<br><span class="text-primary">R</span>ééducateurs</h1> </div>          
+          </div> <!-- .header -->
           <hr>
-        </div>
+        </div> <!-- .col -->
 
-        <div class="col-lg-2 col-lg-push-5 col-md-3 col-md-push-6">
-          <div class="navigation" data-spy="affix" data-offset-top="80">
+        <div class="col-lg-2 col-lg-push-5 col-md-push-6 col-sm-4 col-sm-push-8"> <!-- navigation -->
+          <nav class="navigation" data-spy="affix" data-offset-top="80">
             <ul class="list-group nav nav-stacked menu">
               <li>
                 <a href="#" class="list-group-item">Présentation</a>
@@ -114,23 +110,15 @@
                   <li><a href="#id3" class="list-group-item">Un haut lieu d'échanges</a></li>
                 </ul>
               </li>
-              <li>
-                <a href="#" class="list-group-item">Organigramme nationnal</a>
-              </li>
-              <li>
-                <a href="#" class="list-group-item">Projet</a>
-              </li>
-              <li>
-                <a href="#" class="list-group-item">UJMK</a>
-              </li>
-              <li>
-                <a href="#" class="list-group-item">UMKO</a>
-              </li>
+              <li><a href="#" class="list-group-item">Organigramme nationnal</a></li>
+              <li><a href="#" class="list-group-item">Projet</a></li>
+              <li><a href="#" class="list-group-item">UJMK</a></li>
+              <li><a href="#" class="list-group-item">UMKO</a></li>
             </ul>
-          </div>
-        </div>
+          </nav>
+        </div> <!-- .col : navigation -->
 
-        <div class="col-lg-5 col-lg-pull-2 col-md-6 col-md-pull-3">
+        <div class="col-lg-5 col-md-6 col-lg-pull-2 col-sm-8 col-sm-pull-4" role="main">
           <header id="intro" class="page-header">
             <h1>Congrès &amp; AOG</h1>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ullam, eaque praesentium magni quidem adipisci ipsam. Enim dolore eaque molestias cupiditate odit, quasi sed error perferendis eligendi minus fugiat! Repudiandae.</p>
@@ -199,14 +187,13 @@
               </tbody>
             </table>
           </article>
-        </div><!-- .col -->
+        </div><!-- .col : main-->
 
 
 
-        <div class="col-lg-3 col-md-6">
-          <p>
-            <a href="#" class="btn btn-lg btn-block btn-info"><span class="fa fa-pencil-square-o"></span> J'adhère au SNMKR</a>
-          </p>
+        <div class="col-lg-3 col-xs-12"> <!-- sidebar -->
+
+          <p><a href="#" class="btn btn-lg btn-block btn-info"><span class="fa fa-pencil-square-o"></span> J'adhère au SNMKR</a></p>
 
           <aside class="">
             <h2 class="h3">newsletter</h2>
@@ -223,22 +210,92 @@
             </form>
           </aside>
 
+          <nav class="reseaux">
+            <h2 class="h3">Suivre le SNMKR</h2>
+            <ul class="list-inline">
+              <li><a href="#"><span class="fa fa-twitter-square"></a></li>
+              <li><a href="#"><span class="fa fa-facebook-square"></a></a></li>
+              <li><a href="#"><span class="fa fa-linkedin-square"></a></a></li>
+            </ul>
+          </nav>
+
           <aside>
             <h2 class="h3">les sections</h2>
             <img data-src="holder.js/100%x300/text:carte" alt="">
           </aside>
-        </div>
 
-      <div class="col-xs-12">
-        <footer class="footer">
-          <hr>
-          <p class="text-right">♥ from the Yeoman team</p>
-        </footer>
-      </div>
+        </div> <!-- .col : sidebar -->
 
       </div><!-- row -->
 
-    </div><!-- container -->
+    </div><!-- container-fluid -->
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2 col-md-offset-2 col-sm-6 col-xs-12">
+            <h2 class="h3"><span class="fa fa-folder-open"></span> Snmkr</h2>
+            <hr>
+            <ul class="list-unstyled">
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+            </ul>
+          </div><!-- .col -->
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <h2 class="h3"><span class="fa fa-graduation-cap"></span> Profession</h2>
+            <hr>
+            <ul class="list-unstyled">
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+            </ul>
+          </div><!-- .col -->
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <h2 class="h3"><span class="fa fa-gavel"></span> Textes</h2>
+            <hr>
+            <ul class="list-unstyled">
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+            </ul>
+          </div> <!-- .col -->
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <h2 class="h3"><span class="fa fa-users"></span> Espace Kiné</h2>
+            <hr>
+            <ul class="list-unstyled">
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+            </ul>
+          </div> <!-- .col -->
+          <div class="col-md-8 col-md-offset-2 col-sm-12">
+          <hr>
+            <p class="">Syndicat National des Masseurs Kinésiethérapeutes Rééducateurs</p>
+          </div> <!-- .col -->
+        </div> <!-- .row -->
+      </div> <!-- .container -->
+    </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

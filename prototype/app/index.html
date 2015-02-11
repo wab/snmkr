@@ -8,7 +8,6 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css styles/vendor.css -->
-    <link href='http://fonts.googleapis.com/css?family=Raleway:600,800,700,400' rel='stylesheet' type='text/css'>
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
     <!-- endbower -->
@@ -18,6 +17,8 @@
 
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway:600,800,700,400' rel='stylesheet' type='text/css'>
 
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="../bower_components/modernizr/modernizr.js"></script>
@@ -38,7 +39,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <!-- <a class="navbar-brand" href="#">Brand</a>  -->         
+          <a class="navbar-brand" href="index.html">snmkr.fr</a>          
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -62,12 +63,6 @@
             </div>
           </form>
 
-          <ul class="nav navbar-nav navbar-right reseaux">
-            <li><a href="#"><span class="fa fa-twitter-square"></a></li>
-            <li><a href="#"><span class="fa fa-facebook-square"></a></a></li>
-            <li><a href="#"><span class="fa fa-linkedin-square"></a></a></li>
-          </ul>
-
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
@@ -76,20 +71,22 @@
       <div class="row">
 
         <div class="col-md-2">
-          <div class="header">
-            <img data-src="holder.js/100x100/#a0171e:#fff/text:logo" alt="">
-            <h1 class="h3"><span class="text-primary">S</span>yndicat<br><span class="text-primary">N</span>ationnal des<br><span class="text-primary">M</span>asseurs <br><span class="text-primary">K</span>inésithérapeutes<br><span class="text-primary">R</span>ééducateurs</h1>           
-          </div>
+          <div class="mainheader row">
+            <div class="col-md-12 col-sm-2 col-xs-4">
+              <img data-src="holder.js/120x120/#a0171e:#fff/text:logo" alt="">
+            </div>
+            <div class="col-md-12 col-sm-10 col-xs-8"><h1 class="h4"><span class="text-primary">S</span>yndicat<br><span class="text-primary">N</span>ationnal des<br><span class="text-primary">M</span>asseurs <br><span class="text-primary">K</span>inésithérapeutes<br><span class="text-primary">R</span>ééducateurs</h1> </div>          
+          </div> <!-- .header -->
           <hr>
-        </div>
+        </div> <!-- .col -->
 
 
-        <div class="col-md-5">
+        <div class="col-lg-5 col-md-6">
           <div class="jumbotron">
             <h2>Édito du président <small>février 2015</small></h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit architecto molestiae placeat, ullam, earum magnam possimus enim blanditiis...</p>
             <p><a class="btn btn-primary" href="#">Lire la suite</a></p>
-          </div>
+          </div> <!-- .jumbotron -->
           
           <div class="actualites">
             <h2>Actualités</h2>
@@ -102,8 +99,8 @@
                 <h3 class="media-heading">Media heading</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ex aut porro voluptatem esse enim ea reprehenderit impedit, eligendi ipsa veritatis ut repellat aperiam similique quia dolor magni culpa provident.</p>
                 <p class="text-right"><span class="fa fa-hand-o-right"></span> <a href="#">Lire la suite</a></p>
-              </div>
-            </div>
+              </div><!-- .media-body -->
+            </div><!-- .media -->
             <div class="media">
               <a class="media-left media-top" href="#">
                 <img data-src="holder.js/150x150">
@@ -112,8 +109,8 @@
                 <h3 class="media-heading">Media heading</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ex aut porro voluptatem esse enim ea reprehenderit impedit, eligendi ipsa veritatis ut repellat aperiam similique quia dolor magni culpa provident.</p>
                 <p class="text-right"><span class="fa fa-hand-o-right"></span> <a href="#">Lire la suite</a></p>
-              </div>
-            </div>
+              </div><!-- .media-body -->
+            </div><!-- .media -->
             <div class="media">
               <a class="media-left media-top" href="#">
                 <img data-src="holder.js/150x150">
@@ -122,29 +119,17 @@
                 <h3 class="media-heading">Media heading</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ex aut porro voluptatem esse enim ea reprehenderit impedit, eligendi ipsa veritatis ut repellat aperiam similique quia dolor magni culpa provident.</p>
                 <p class="text-right"><span class="fa fa-hand-o-right"></span> <a href="#">Lire la suite</a></p>
-              </div>
-            </div>
-          </div>
+              </div> <!-- .media-body -->
+            </div> <!-- .media -->
+          </div> <!-- .actualites -->
           
-          <div class="footer">
-            <hr>
-            <p class="text-right">♥ from the Yeoman team</p>
-          </div>
         </div><!-- .col -->
 
 
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-4">
           <p>
             <a href="#" class="btn btn-lg btn-block btn-info"><span class="fa fa-pencil-square-o"></span> J'adhère au SNMKR</a>
           </p>
-          <!-- <aside>
-            <h2 class="h3">Suivre le snmkr</h2>
-            <ul class="list-unstyled list-inline reseaux">
-              <li><a href="#"><span class="fa fa-twitter-square"></a></li>
-              <li><a href="#"><span class="fa fa-facebook-square"></a></a></li>
-              <li><a href="#"><span class="fa fa-linkedin-square"></a></a></li>
-            </ul>
-          </aside> -->
           <aside class="">
             <h2 class="h3">La newsletter</h2>
             <form class="form-inline">
@@ -159,14 +144,91 @@
             <button type="submit" class="btn btn-primary"><span class="fa fa-send"></span> S'inscrire</button>
           </form>
           </aside>
+          <hr>
+          <nav class="reseaux">
+            <h2 class="h3">Suivre le SNMKR</h2>
+            <ul class="list-inline">
+              <li><a href="#"><span class="fa fa-twitter-square"></a></li>
+              <li><a href="#"><span class="fa fa-facebook-square"></a></a></li>
+              <li><a href="#"><span class="fa fa-linkedin-square"></a></a></li>
+            </ul>
+          </nav>
+          <hr>
           <aside>
-            <h2 class="h3">les sections</h2>
+            <h2 class="h3">Les sections</h2>
             <img data-src="holder.js/100%x300/text:carte" alt="">
           </aside>
-        </div>
+        </div><!-- .col -->
 
       </div><!-- row -->
     </div><!-- container -->
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2 col-md-offset-2 col-sm-6 col-xs-12">
+            <h2 class="h3"><span class="fa fa-folder-open"></span> Snmkr</h2>
+            <hr>
+            <ul class="list-unstyled">
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+            </ul>
+          </div><!-- .col -->
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <h2 class="h3"><span class="fa fa-graduation-cap"></span> Profession</h2>
+            <hr>
+            <ul class="list-unstyled">
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+            </ul>
+          </div><!-- .col -->
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <h2 class="h3"><span class="fa fa-gavel"></span> Textes</h2>
+            <hr>
+            <ul class="list-unstyled">
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+            </ul>
+          </div> <!-- .col -->
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <h2 class="h3"><span class="fa fa-users"></span> Espace Kiné</h2>
+            <hr>
+            <ul class="list-unstyled">
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+              <li><a href="#">sitemap</a></li>
+            </ul>
+          </div> <!-- .col -->
+          <div class="col-md-8 col-md-offset-2 col-sm-12">
+          <hr>
+            <p class="">Syndicat National des Masseurs Kinésiethérapeutes Rééducateurs</p>
+          </div> <!-- .col -->
+        </div> <!-- .row -->
+      </div> <!-- .container -->
+    </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

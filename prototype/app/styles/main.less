@@ -32,6 +32,23 @@ body{
     position: relative;
   }
 }
+
+
+.mainheader {
+	img {
+		.img-responsive;
+		margin-bottom: 1em;
+	}
+	h1 {
+		margin-top: 0.5em;
+	}
+} 
+
+.reseaux {
+	font-size: 2.5em;
+}
+
+
 .subpage {
 	margin-bottom: 4em;
 	padding-bottom: 1em;
@@ -70,4 +87,14 @@ body{
     border: none;
     border-radius: 0;
     box-shadow: none;
+}
+
+.footer {
+	.bg-variant(@brand-info);
+	color: #fff;
+	margin-top: @grid-gutter-width;
+	padding: (@grid-gutter-width / 2) 0;
+	a {
+		color: #fff;
+	}
 }

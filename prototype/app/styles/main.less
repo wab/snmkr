@@ -48,6 +48,10 @@ body{
 	font-size: 2.5em;
 }
 
+.main {
+	margin-bottom: @grid-gutter-width;
+}
+
 
 .subpage {
 	margin-bottom: 4em;
@@ -87,6 +91,12 @@ body{
     border: none;
     border-radius: 0;
     box-shadow: none;
+}
+
+.sidebar .follow {
+	@media (max-width: @screen-md-max) {
+		margin-top: @grid-gutter-width;
+	}
 }
 
 .footer {

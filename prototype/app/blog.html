@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>Contact - prototype snmkr</title>
+    <title>Congrès &amp; AOG - prototype snmkr</title>
     
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
@@ -28,6 +28,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- build:css styles/vendor.css -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:600,800,700,400' rel='stylesheet' type='text/css'>
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
     <!-- endbower -->
@@ -38,18 +39,16 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 
-    <link href='http://fonts.googleapis.com/css?family=Raleway:600,800,700,400' rel='stylesheet' type='text/css'>
-
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navigation" id="top" class="page">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <nav class="navbar navbar-inverse" role="navigation">
+    <nav class="navbar navbar-inverse" role="navigation" >
       <div class="container-fuild">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -59,28 +58,28 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">snmkr</a>          
+          <a class="navbar-brand" href="index.html">snmkr</a>        
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navigation">
           <ul class="nav navbar-nav">
-            <li><a href="index.html"><span class="fa fa-home"></span> Accueil <span class="sr-only">(current)</span></a></li>
+            <li><a href="index.html"><span class="fa fa-home"></span> Accueil</a></li>
             <li><a href="page.html"><span class="fa fa-folder-open"></span> Le syndicat</a></li>
             <li><a href="page.html"><span class="fa fa-graduation-cap"></span> La profession</a></li>
             <li><a href="page.html"><span class="fa fa-gavel"></span> Les textes</a></li>
             <li><a href="page.html"><span class="fa fa-users"></span> Espace Kiné</a></li>
-            <li class="active"><a href="contact.html"><span class="fa fa-envelope"></span> Contact</a></li>
+            <li><a href="contact.html"><span class="fa fa-envelope"></span> Contact</a></li>
           </ul>
-          
           <form class="navbar-form navbar-right" role="search">
             <div class="form-group">
               <div class="input-group">
                 <input type="search" class="form-control" placeholder="Recherche">
                 <div class="input-group-addon"><span class="fa fa-search"></span></div>
               </div>
-              <button type="submit" class=" sr-only">Rechercher</button>
+              <button type="submit" class=" sr-only">Submit</button>
             </div>
+            
           </form>
 
         </div><!-- /.navbar-collapse -->
@@ -98,148 +97,195 @@
               </div><!-- .col --> 
               <div class="col-md-12 col-sm-10 col-xs-8">
                 <h1 class="h4"><span class="text-primary">S</span>yndicat<br><span class="text-primary">N</span>ationnal des<br><span class="text-primary">M</span>asseurs <br><span class="text-primary">K</span>inésithérapeutes<br><span class="text-primary">R</span>ééducateurs</h1> 
-              </div><!-- .col --> 
-            </div> <!-- .row -->
+              </div><!-- .col -->   
+            </div> <!-- .row --> 
           </div><!-- .mainheader -->
           <hr>
         </div> <!-- .col -->
 
+        <div class="col-lg-3 col-lg-push-5 col-sm-4 col-md-push-6 col-sm-push-8">
+          <nav class="navigation" role="navigation">
+            <ul class="list-group nav nav-stacked menu">
+              <li>
+                <a href="#" class="list-group-item">Éditos</a>
+              </li>
+              <li class="panel">
+                <a href="#actus" class="list-group-item submenu-link active" data-parent=".menu" data-toggle="collapse">Actualités</a>
+                <ul id="actus" class="nav nav-stacked collapse in submenu">
+                  <li><a href="#" class="list-group-item scroll">Catégorie 1</a></li>
+                  <li><a href="#" class="list-group-item scroll">Catégorie 2</a></li>
+                  <li><a href="#" class="list-group-item scroll">Catégorie 3</a></li>
+                  <li><a href="#" class="list-group-item scroll">Catégorie 4</a></li>
+                  <li><a href="#" class="list-group-item scroll">Catégorie 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="list-group-item">Communiqués</a></li>
+            </ul>
+            <a href="#top" class="backtop scroll"><span class="fa fa-caret-square-o-up"></span></a>
+          </nav>
+        </div> <!-- .col -->
+              
+        <div class="col-lg-5 col-lg-pull-3 col-md-6 col-sm-8 col-sm-pull-4">
 
-        <div class="col-lg-5 col-md-6">
+          <div class="main" role="main">
 
-          <div class="main" role="main"><!-- .main -->
+            <ol class="breadcrumb">
+              <li><a href="page.html">Blog</a></li>
+              <li class="active">Actualités</li>
+            </ol>
 
-            <div class="page-header">
-              <h1>Contacter le snmkr</h1>
-            </div>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas ut itaque nemo commodi incidunt tenetur, eaque consectetur error fugit eos beatae voluptatem temporibus animi rem ad deleniti ipsa a.</p>
-            <hr>
-            <address>
-              <strong>SNMKR</strong>
-              <p>15 rue de l'Épée de Bois<br>
-              75005 PARIS</p>
-              <p>
-                <span class="fa fa-phone"></span> 01.45.35.82.45<br>
-                <span class="fa fa-fax"></span>  01.47.07.70.23 <br>
-                <span class="fa fa-envelope"></span> <a href="mailto:secretariat@snmkr.fr">secretariat@snmkr.fr</a>
-              </p>
-            </address>
-            <hr>
-            <form class="form-horizontal">
-              <div class="form-group">
-                <label for="" class="control-label col-sm-2">Nom : </label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="" class="control-label col-sm-2">Prénom : </label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="" class="control-label col-sm-2">Email : </label>
-                <div class="col-sm-10">
-                  <input type="email" class="form-control">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="" class="control-label col-sm-2">Objet : </label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="" class="control-label col-sm-2">Message : </label>
-                <div class="col-sm-10">
-                  <textarea class="form-control"></textarea>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-10 col-sm-offset-2">
-                  <button type="submit" class="btn btn-primary">Envoyer</button>
-                </div>
-              </div>
-            </form>
-
+            <div class="media">
+             <a class="media-left media-top" href="blog.html">
+               <img data-src="holder.js/150x150">
+             </a>
+             <div class="media-body">
+               <h3 class="media-heading">Media heading</h3>
+               <p><span class="fa fa-calendar"></span> <span class="text-muted">18 février 2015</span> <br>
+                <a href="#" class="label label-primary">Catégorie 1</a> </p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ex aut porro voluptatem esse enim ea reprehenderit impedit, eligendi ipsa veritatis ut repellat aperiam similique quia dolor magni culpa provident.</p>
+               <p class="text-right"><span class="fa fa-hand-o-right"></span> <a href="blog.html">Lire la suite</a></p>
+             </div><!-- .media-body -->
+           </div><!-- .media -->
+           <div class="media">
+             <a class="media-left media-top" href="blog.html">
+               <img data-src="holder.js/150x150">
+             </a>
+             <div class="media-body">
+               <h3 class="media-heading">Media heading</h3>
+               <p><span class="fa fa-calendar"></span> <span class="text-muted">18 février 2015</span> <br>
+                <a href="#" class="label label-primary">Catégorie 2</a> <a href="#" class="label label-primary">Catégorie 5</a> </p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ex aut porro voluptatem esse enim ea reprehenderit impedit, eligendi ipsa veritatis ut repellat aperiam similique quia dolor magni culpa provident.</p>
+               <p class="text-right"><span class="fa fa-hand-o-right"></span> <a href="blog.html">Lire la suite</a></p>
+             </div><!-- .media-body -->
+           </div><!-- .media -->
+           <div class="media">
+             <a class="media-left media-top" href="blog.html">
+               <img data-src="holder.js/150x150">
+             </a>
+             <div class="media-body">
+               <h3 class="media-heading">Media heading</h3>
+               <p><span class="fa fa-calendar"></span> <span class="text-muted">18 février 2015</span> <br>
+                <a href="#" class="label label-primary">Catégorie 2</a> </p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ex aut porro voluptatem esse enim ea reprehenderit impedit, eligendi ipsa veritatis ut repellat aperiam similique quia dolor magni culpa provident.</p>
+               <p class="text-right"><span class="fa fa-hand-o-right"></span> <a href="blog.html">Lire la suite</a></p>
+             </div> <!-- .media-body -->
+           </div> <!-- .media -->
+            <div class="media">
+             <a class="media-left media-top" href="blog.html">
+               <img data-src="holder.js/150x150">
+             </a>
+             <div class="media-body">
+               <h3 class="media-heading">Media heading</h3>
+               <p><span class="fa fa-calendar"></span> <span class="text-muted">18 février 2015</span> <br>
+                <a href="#" class="label label-primary">Catégorie 1</a> </p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ex aut porro voluptatem esse enim ea reprehenderit impedit, eligendi ipsa veritatis ut repellat aperiam similique quia dolor magni culpa provident.</p>
+               <p class="text-right"><span class="fa fa-hand-o-right"></span> <a href="blog.html">Lire la suite</a></p>
+             </div><!-- .media-body -->
+           </div><!-- .media -->
+           <div class="media">
+             <a class="media-left media-top" href="blog.html">
+               <img data-src="holder.js/150x150">
+             </a>
+             <div class="media-body">
+               <h3 class="media-heading">Media heading</h3>
+               <p><span class="fa fa-calendar"></span> <span class="text-muted">18 février 2015</span> <br>
+                <a href="#" class="label label-primary">Catégorie 3</a> <a href="#" class="label label-primary">Catégorie 5</a> </p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ex aut porro voluptatem esse enim ea reprehenderit impedit, eligendi ipsa veritatis ut repellat aperiam similique quia dolor magni culpa provident.</p>
+               <p class="text-right"><span class="fa fa-hand-o-right"></span> <a href="blog.html">Lire la suite</a></p>
+             </div><!-- .media-body -->
+           </div><!-- .media -->
+           <div class="media">
+             <a class="media-left media-top" href="blog.html">
+               <img data-src="holder.js/150x150">
+             </a>
+             <div class="media-body">
+               <h3 class="media-heading">Media heading</h3>
+               <p><span class="fa fa-calendar"></span> <span class="text-muted">18 février 2015</span> <br>
+                <a href="#" class="label label-primary">Catégorie 1</a> </p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ex aut porro voluptatem esse enim ea reprehenderit impedit, eligendi ipsa veritatis ut repellat aperiam similique quia dolor magni culpa provident.</p>
+               <p class="text-right"><span class="fa fa-hand-o-right"></span> <a href="blog.html">Lire la suite</a></p>
+             </div> <!-- .media-body -->
+           </div> <!-- .media -->
           
-          </div> <!-- .main -->
-          
-        </div><!-- .col -->
+          <nav>
+          <ul class="pagination">
+            <li>
+              <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+              <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-
-        <div class="col-lg-3 col-md-4">
-          <div class="sidebar" role="complementary"><!-- .sidebar -->
-            <hr class="hidden-md hidden-lg">
-            <div class="row">
-              <div class="col-md-12 col-sm-6 follow">
-                <p><a href="#" class="btn btn-lg btn-info"><span class="fa fa-pencil-square-o"></span> J'adhère au SNMKR</a></p>
-                <aside class="">
-                  <h2 class="h3">La newsletter</h2>
-                  <form>
-                  <div class="form-group">
-                    <label class="sr-only" for="mail">votre email</label>
-                    <div class="input-group">
-                      <div class="input-group-addon"><span class="fa fa-envelope"></span></div>
-                      <input type="email" class="form-control" id="mail" placeholder="votre email">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                   <button type="submit" class="btn btn-primary"><span class="fa fa-send"></span> S'inscrire</button>
-                  </div>
-                </form>
-                </aside>
-                <hr>
-                <nav class="reseaux">
-                  <h2 class="h3">Suivre le SNMKR</h2>
-                  <ul class="list-unstyled row">
-                    <li class="col-xs-2"><a href="#"><span class="fa fa-twitter-square"></a></li>
-                    <li class="col-xs-2"><a href="#"><span class="fa fa-facebook-square"></a></a></li>
-                    <li class="col-xs-2"><a href="#"><span class="fa fa-linkedin-square"></a></a></li>
-                  </ul>
-                </nav>
-                <hr>
-                <aside class="acces">
-                  <h2 class="h3">Accéder</h2>
-                  <ul class="list-unstyled row">
-                    <li class="col-xs-3"><a href="http://www.onrek.fr/"><img src="images/logo-onrek.jpg" alt="onrek"><span>onrek</span></a></li>
-                    <li class="col-xs-3"><a href="http://www.onrek.fr/"><img src="images/logo-apek.jpg" alt="apek"><span>apek</span></a></li>
-                    <li class="col-xs-3"><a href="http://www.onrek.fr/"><img src="images/logo-ujmk.jpg" alt="ujmk"><span>ujmk</span></a></li>
-                    <li class="col-xs-3"><a href="http://www.onrek.fr/"><img src="images/logo-umko.jpg" alt="umko"><span>umko</span></a></li>
-                  </ul>
-                </aside>
-                <hr>
-              </div> <!-- .col -->
-
-              <div class="col-md-12 col-sm-6">
-                <aside>
-                  <h2 class="h3">Les sections</h2>
-                   <div id="map"></div>
-                </aside>
-              </div> <!-- .col -->
-            </div> <!-- .sidebar -->
-          </div> <!-- .sidebar -->
-        </div><!-- .col -->
+          </div><!-- .main -->
+        
+        </div> <!-- .col -->
 
       </div><!-- row -->
-    </div><!-- container -->
 
-    <aside class="bannieres">
+    </div><!-- container-fluid -->
+
+    <div class="sidebar" role="complementary"><!-- .sidebar -->
+      <hr class="hidden-md hidden-lg">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-8 col-md-offset-2">
-            <ul class="row list-unstyled">
-              <li class="col-sm-4"><img alt="" data-src="holder.js/random/100%x150/text:bannière 1"></li>
-              <li class="col-sm-4"><img alt="" data-src="holder.js/random/100%x150/text:bannière 2"></li>
-              <li class="col-sm-4"><img alt="" data-src="holder.js/random/100%x150/text:bannière 3"></li>
-            </ul>
+          <div class="col-md-offset-2 col-lg-4 col-md-5 col-sm-6 follow">
+            <p><a href="#" class="btn btn-lg btn-info"><span class="fa fa-pencil-square-o"></span> J'adhère au SNMKR</a></p>
+            <aside class="newsletter">
+              <h2 class="h3">La newsletter</h2>
+              <form>
+                <div class="form-group">
+                  <label class="sr-only" for="mail">votre email</label>
+                  
+                  <div class="input-group">
+                    
+                    <div class="input-group-addon"><span class="fa fa-envelope"></span></div>
+                    <input type="email" class="form-control" id="mail" placeholder="votre email">
+                    
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary"><span class="fa fa-send"></span> S'inscrire</button>
+              </form>
+            </aside>
+            <hr>
+            <nav class="reseaux">
+              <h2 class="h3">Suivre le SNMKR</h2>
+              <ul class="list-inline">
+                <li><a href="#"><span class="fa fa-twitter-square"></a></li>
+                <li><a href="#"><span class="fa fa-facebook-square"></a></a></li>
+                <li><a href="#"><span class="fa fa-linkedin-square"></a></a></li>
+              </ul>
+            </nav>
+            <hr>
+            <aside class="acces">
+              <h2 class="h3">Accéder</h2>
+              <ul class="list-unstyled row">
+                <li class="col-xs-3"><a href="http://www.onrek.fr/"><img src="images/logo-onrek.jpg" alt="onrek"><span>onrek</span></a></li>
+                <li class="col-xs-3"><a href="http://www.onrek.fr/"><img src="images/logo-apek.jpg" alt="apek"><span>apek</span></a></li>
+                <li class="col-xs-3"><a href="http://www.onrek.fr/"><img src="images/logo-ujmk.jpg" alt="ujmk"><span>ujmk</span></a></li>
+                <li class="col-xs-3"><a href="http://www.onrek.fr/"><img src="images/logo-umko.jpg" alt="umko"><span>umko</span></a></li>
+              </ul>
+            </aside>
           </div>
-        </div>
-      </div>
-      
-    </aside>
+          <div class="col-lg-4 col-md-5 col-sm-6">
+            <aside>
+              <h2 class="h3">Les sections</h2>
+              <div id="map">&nbsp;</div>
+            </aside>
+          </div>
+        </div> <!-- .row -->
+      </div> <!-- .sidebar -->
+    </div>
 
     <div class="footer" >
       <div class="container-fluid">

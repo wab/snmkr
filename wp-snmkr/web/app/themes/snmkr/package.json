@@ -1,6 +1,6 @@
 {
   "name": "sage",
-  "version": "8.0.1",
+  "version": "8.1.0",
   "author": "Ben Word <ben@benword.com>",
   "homepage": "https://roots.io/sage/",
   "private": true,
@@ -23,7 +23,7 @@
     "jscs": "jscs gulpfile.js assets/scripts/*.js"
   },
   "engines": {
-    "node": ">= 0.10.0",
+    "node": ">= 0.12.0",
     "npm": ">=2.1.5"
   },
   "devDependencies": {
@@ -40,7 +40,7 @@
     "gulp-less": "^3.0.1",
     "gulp-load-plugins": "^0.8.0",
     "gulp-pleeease": "^1.1.0",
-    "gulp-plumber": "^0.6.3",
+    "gulp-plumber": "^1.0.0",
     "gulp-rename": "^1.2.0",
     "gulp-rev": "^3.0.0",
     "gulp-sass": "^1.2.4",

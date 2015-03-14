@@ -53,13 +53,13 @@ class JsonManifest {
 }
 
 function asset_path($filename) {
-  $dist_path = get_template_directory_uri() . '/dist/';
+  $dist_path = get_template_directory_uri() . DIST_DIR;
   $directory = dirname($filename) . '/';
   $file = basename($filename);
   static $manifest;
 
   if (empty($manifest)) {
-    $manifest_path = get_template_directory() . '/dist/assets.json';
+    $manifest_path = get_template_directory() . DIST_DIR . 'assets.json';
     $manifest = new JsonManifest($manifest_path);
   }
 
@@ -130,45 +130,14 @@ function jquery_local_fallback($src, $handle = null) {
   static $add_jquery_fallback = false;
 
   if ($add_jquery_fallback) {
-    echo '<script>window.jQuery || document.write(\'<script src="' . get_template_directory_uri() . '/dist/scripts/jquery.js"><\/script>\')</script>' . "\n";
+    echo '<script>window.jQuery || document.write(\'<script src="' . $add_jquery_fallback .'"><\/script>\')</script>' . "\n";
     $add_jquery_fallback = false;
   }
 
   if ($handle === 'jquery') {
-    $add_jquery_fallback = true;
+    $add_jquery_fallback = apply_filters('script_loader_src', asset_path('scripts/jquery.js'), 'jquery-fallback');
   }
 
   return $src;
 }
 add_action('wp_head', __NAMESPACE__ . '\\jquery_local_fallback');
-
-/**
- * Google Analytics snippet from HTML5 Boilerplate
- *
- * Cookie domain is 'auto' configured. See: http://goo.gl/VUCHKM
- */
-function google_analytics() {
-  ?>
-  <script>
-    <?php if (WP_ENV === 'production' && !current_user_can('manage_options')) : ?>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    <?php else : ?>
-      function ga() {
-        if (window.console) {
-          console.log('Google Analytics: ' + [].slice.call(arguments));
-        }
-      }
-    <?php endif; ?>
-    ga('create','<?= GOOGLE_ANALYTICS_ID; ?>','auto');ga('send','pageview');
-  </script>
-  <?php
-}
-
-if (GOOGLE_ANALYTICS_ID) {
-  add_action('wp_footer', __NAMESPACE__ . '\\google_analytics', 20);
-}
-

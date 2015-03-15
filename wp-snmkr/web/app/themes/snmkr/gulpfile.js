@@ -244,7 +244,9 @@ gulp.task('build', ['styles', 'scripts', 'fonts', 'images']);
 gulp.task('wiredep', function() {
   var wiredep = require('wiredep').stream;
   return gulp.src(project.css)
-    .pipe(wiredep())
+    .pipe(wiredep({
+      exclude: 'bower_components/bootstrap/less/bootstrap.less'
+    }))
     .pipe($.changed(path.source + 'styles', {
       hasChanged: $.changed.compareSha1Digest
     }))

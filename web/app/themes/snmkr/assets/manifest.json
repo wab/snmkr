@@ -25,6 +25,6 @@
     }
   },
   "config": {
-    "devUrl": "http://snmkr.fr"
+    "devUrl": "http://dev.snmkr.fr"
   }
 }

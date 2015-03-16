@@ -9,7 +9,8 @@
   "dependencies": {
     "modernizr": "2.8.2",
     "jquery": "1.11.2",
-    "bootstrap": "3.3.2"
+    "bootstrap": "3.3.2",
+    "font-awesome": "~4.3.0"
   },
   "overrides": {
     "modernizr": {
@@ -58,6 +59,15 @@
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
       ]
+    },
+    "font-awesome" : {
+      "main" : [
+        "./less/font-awesome.less",
+        "./fonts/*"
+        ]
     }
+  },
+  "devDependencies": {
+    
   }
 }

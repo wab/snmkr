@@ -1,23 +1,11 @@
-<?php use Roots\Sage\Nav; ?>
-
-<header class="banner navbar navbar-inverse navbar-static-top" role="banner">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only"><?= __('Toggle navigation', 'sage'); ?></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-    </div>
-
-    <nav class="collapse navbar-collapse" role="navigation">
-      <?php
-      if (has_nav_menu('primary_navigation')) :
-        wp_nav_menu(['theme_location' => 'primary_navigation', 'walker' => new Nav\SageNavWalker(), 'menu_class' => 'nav navbar-nav']);
-      endif;
-      ?>
-    </nav>
-  </div>
-</header>
+<header class="mainheader" role="banner">
+  <div class="row">
+    <div class="col-md-12 col-sm-2 col-xs-4">
+      <img src="images/logo.jpg" alt="SNMKR" width="90" class="image-responsive logo">
+    </div><!-- .col --> 
+    <div class="col-md-12 col-sm-10 col-xs-8">
+      <h1 class="h4"><span class="text-primary">S</span>yndicat<br><span class="text-primary">N</span>ationnal des<br><span class="text-primary">M</span>asseurs <br><span class="text-primary">K</span>inésithérapeutes<br><span class="text-primary">R</span>ééducateurs</h1> 
+    </div><!-- .col --> 
+  </div> <!-- .row -->
+</header><!-- .mainheader -->
+<hr>

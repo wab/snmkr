@@ -35,8 +35,3 @@ node_modules
 # Vagrant
 bin
 .vagrant
-
-# Manifest instance
-
-webb/app/themes/snmkr/assets/manifest.json
-

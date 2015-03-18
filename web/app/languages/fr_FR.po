@@ -1618,7 +1618,7 @@ msgid "Entries from any RSS or Atom feed."
 msgstr "Les entrées depuis n&rsquo;importe quel flux RSS ou Atom."
 
 #. translators: If there are characters in your language that are not supported
-#. * by Open Sans, translate this to 'off'. Do not translate into your own
+#. by Open Sans, translate this to 'off'. Do not translate into your own
 #. language.
 #: wp-includes/script-loader.php:590
 msgctxt "Open Sans font: on or off"
@@ -1626,9 +1626,8 @@ msgid "on"
 msgstr "on"
 
 #. translators: To add an additional Open Sans character subset specific to
-#. your language,
-#. * translate this to 'greek', 'cyrillic' or 'vietnamese'. Do not translate
-#. into your own language.
+#. your language, translate this to 'greek', 'cyrillic' or 'vietnamese'. Do not
+#. translate into your own language.
 #: wp-includes/script-loader.php:596
 msgctxt "Open Sans font: add new subset (greek, cyrillic, vietnamese)"
 msgid "no-subset"
@@ -1686,11 +1685,10 @@ msgid "http://codex.wordpress.org/Function_Reference/is_main_query"
 msgstr "http://codex.wordpress.org/Function_Reference/is_main_query"
 
 #. translators: This is a comma-separated list of very common words that should
-#. be excluded from a search,
-#. * like a, an, and the. These are usually called "stopwords". You should
-#. not simply translate these individual
-#. * words into your language. Instead, look for and provide commonly
-#. accepted stopwords in your language.
+#. be excluded from a search, like a, an, and the. These are usually called
+#. "stopwords". You should not simply translate these individual words into
+#. your language. Instead, look for and provide commonly accepted stopwords in
+#. your language.
 #: wp-includes/query.php:2147
 msgctxt "Comma-separated list of search stopwords in your language"
 msgid "about,an,are,as,at,be,by,com,for,from,how,in,is,it,of,on,or,that,the,this,to,was,what,when,where,who,will,with,www"
@@ -1939,10 +1937,9 @@ msgid "Random Order"
 msgstr "Ordre aléatoire"
 
 #. translators: This is a would-be plural string used in the media manager.
-#. If there is not a word you can use in your language to avoid issues
-#. with the
-#. lack of plural support here, turn it into "selected: %d" then translate
-#. it.
+#. If there is not a word you can use in your language to avoid issues with
+#. the 		   lack of plural support here, turn it into "selected: %d" then
+#. translate it.
 #: wp-includes/media.php:2920
 msgid "%d selected"
 msgstr "%d sélection(s)"
@@ -2726,13 +2723,11 @@ msgid "Refresh"
 msgstr "Rafraîchir"
 
 #. translators: If your word count is based on single characters (East Asian
-#. characters),
-#. enter 'characters'. Otherwise, enter 'words'. Do not translate into your
-#. own language.
+#. characters), 	   enter 'characters'. Otherwise, enter 'words'. Do not
+#. translate into your own language.
 #. translators: If your word count is based on single characters (East Asian
-#. characters),
-#. enter 'characters'. Otherwise, enter 'words'. Do not translate into
-#. your own language.
+#. characters), 		   enter 'characters'. Otherwise, enter 'words'. Do not
+#. translate into your own language.
 #: wp-includes/formatting.php:2603 wp-includes/script-loader.php:374
 msgctxt "word count: words or characters?"
 msgid "words"

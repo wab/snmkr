@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-12-28 22:43:13+0000\n"
+"PO-Revision-Date: 2015-03-12 17:29:55+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1375,7 +1375,7 @@ msgstr "Par défaut, WordPress utilise des adresses web (<abbr title=\"Universal
 
 #: wp-admin/theme-editor.php:33
 msgid "Upgrading to a newer version of the same theme will override changes made here. To avoid this, consider creating a <a href=\"%s\" target=\"_blank\">child theme</a> instead."
-msgstr "La mise à jour vers une nouvelle version du thème supprimera les modifications que vous aurez faites. Pour éviter cela, nous vous conseillons de passer plutôt par un <a href=\"http://codex.wordpress.org/fr:Thèmes_Enfant\" target=\"_blank\">Thème-Enfant (en)</a>."
+msgstr "La mise à jour vers une nouvelle version du thème supprimera les modifications que vous aurez faites. Pour éviter cela, nous vous conseillons de passer plutôt par un <a href=\"http://codex.wordpress.org/fr:Thèmes_Enfant\" target=\"_blank\">Thème-Enfant</a>."
 
 #: wp-admin/includes/class-wp-filesystem-base.php:298
 msgid "Looking for %1$s in %2$s"
@@ -2980,10 +2980,9 @@ msgid "%1$s (%2$s)"
 msgstr "%1$s (%2$s)"
 
 #. translators: default GMT offset or timezone string. Must be either a valid
-#. offset (-12 to 14)
-#. or a valid timezone string (America/New_York). See
-#. http:us3.php.net/manual/en/timezones.php
-#. for all timezone strings supported by PHP.
+#. offset (-12 to 14) 	   or a valid timezone string (America/New_York). See
+#. http:us3.php.net/manual/en/timezones.php 	   for all timezone strings
+#. supported by PHP.
 #: wp-admin/includes/schema.php:361
 msgctxt "default GMT offset or timezone string"
 msgid "0"
@@ -5040,7 +5039,7 @@ msgstr "%1$s &#8212; WordPress"
 
 #: wp-admin/user-edit.php:276
 msgid "<a href=\"http://codex.wordpress.org/Keyboard_Shortcuts\" target=\"_blank\">More information</a>"
-msgstr "<a href=\"http://codex.wordpress.org/Keyboard_Shortcuts\" target=\"_blank\">Plus d&rsquo;informations (en)</a>"
+msgstr "<a href=\"http://codex.wordpress.org/fr:Raccourcis_Clavier\" target=\"_blank\">Plus d&rsquo;informations</a>"
 
 #: wp-admin/includes/class-wp-comments-list-table.php:310
 msgctxt "column name"
@@ -5058,7 +5057,7 @@ msgstr "<a href=\"http://codex.wordpress.org/fr:Commentaire_Ind%C3%A9sirable\" t
 
 #: wp-admin/edit-comments.php:135
 msgid "<a href=\"http://codex.wordpress.org/Keyboard_Shortcuts\" target=\"_blank\">Documentation on Keyboard Shortcuts</a>"
-msgstr "<a href=\"http://codex.wordpress.org/Keyboard_Shortcuts\" target=\"_blank\">Documentation sur les raccourcis clavier (en)</a>"
+msgstr "<a href=\"http://codex.wordpress.org/fr:Raccourcis_Clavier\" target=\"_blank\">Documentation sur les raccourcis clavier</a>"
 
 #: wp-admin/media.php:75
 msgid "This screen allows you to edit five fields for metadata in a file within the media library."
@@ -5134,7 +5133,7 @@ msgstr "Votre compte utilise toujours le mot de passe généré automatiquement.
 
 #: wp-admin/options-general.php:315
 msgid "<a href=\"http://codex.wordpress.org/Formatting_Date_and_Time\">Documentation on date and time formatting</a>."
-msgstr "<a href=\"http://codex.wordpress.org/fr:Modifier_Date_et_Heure\">Documentation sur le format des dates (en)</a>."
+msgstr "<a href=\"http://codex.wordpress.org/fr:Modifier_Date_et_Heure\">Documentation sur le format des dates</a>."
 
 #: wp-admin/theme-install.php:143
 msgid "Apply Filters"
@@ -10367,7 +10366,7 @@ msgstr "Retournement horizontal"
 
 #: wp-admin/includes/meta-boxes.php:526
 msgid "Excerpts are optional hand-crafted summaries of your content that can be used in your theme. <a href=\"http://codex.wordpress.org/Excerpt\" target=\"_blank\">Learn more about manual excerpts.</a>"
-msgstr "Les extraits sont des résumés facultatifs de vos articles, écrits à la main. Il se peut que votre thème s&rsquo;en serve. <a href=\"http://codex.wordpress.org/fr:Extrait\" target=\"_blank\">En savoir plus (en)</a>."
+msgstr "Les extraits sont des résumés facultatifs de vos articles, écrits à la main. Il se peut que votre thème s&rsquo;en serve. <a href=\"http://codex.wordpress.org/fr:Extrait\" target=\"_blank\">En savoir plus</a>."
 
 #: wp-admin/includes/media.php:2369 wp-admin/includes/nav-menu.php:656
 #: wp-admin/includes/nav-menu.php:896

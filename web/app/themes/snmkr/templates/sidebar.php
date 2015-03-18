@@ -1,6 +1,6 @@
-<hr class="hidden-md hidden-lg">
 <div class="row">
-	<div class="col-md-12 col-sm-6 follow">
+	
+	<div class="sidebar-zone">
 	  <p><a href="#" class="btn btn-lg btn-info"><span class="fa fa-pencil-square-o"></span> J'adhère au SNMKR</a></p>
 	  <aside class="">
 	    <h2 class="h3">La newsletter</h2>
@@ -36,14 +36,19 @@
 	      <li class="col-xs-3"><a href="http://www.onrek.fr/"><img src="images/logo-umko.jpg" alt="umko"><span>umko</span></a></li>
 	    </ul>
 	  </aside>
-	  <hr>
-	  <?php dynamic_sidebar('sidebar-primary'); ?>
-	</div> <!-- .col -->
+	  <hr>  
+	</div> <!-- .follow -->
 
-	<div class="col-md-12 col-sm-6">
+	<div class="sidebar-zone">
 	  <aside>
 	    <h2 class="h3">Les sections</h2>
 	     <div id="map"></div>
 	  </aside>
-	</div> <!-- .col -->
+	</div> <!-- .map -->
+	
+	<div class="sidebar-zone widgets">
+		<?php dynamic_sidebar('sidebar-primary'); ?>
+	</div>
+		
+
 </div> <!-- .row-->

@@ -16,39 +16,30 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/navbar');
     ?>
-    <div class="container-fluid">
-      <div class="row">
-        
-        <div class="col-md-2 hidden-xs">
-          <?php get_template_part('templates/header'); ?>
-        </div> <!-- .col-md-2 -->
+    <div class="wrap" role="document">
+      <div class="container-fluid">
+        <div class="row">
+          
+          <div class="col-md-2 hidden-xs">
+            <?php get_template_part('templates/header'); ?>
+          </div> <!-- .col-md-2 -->
 
-        <div class="col-md-10 col-lg-8">
-
-          <div class="wrap" role="document">
-            
-            <div class="content row">
+            <main class="main" role="main">
               
-              <main class="main" role="main">
+              <?php include Wrapper\template_path(); ?>
+            
+            </main><!-- /.main -->
+
+            <div class="sidebar" role="complementary">
+
+              <?php include Wrapper\sidebar_path(); ?>
+              
+            </div><!-- /.sidebar -->
                 
-                <?php include Wrapper\template_path(); ?>
-              
-              </main><!-- /.main -->
-              
-              <?php if (Config\display_sidebar()) : ?>
-                <div class="sidebar" role="complementary">
-                  <?php include Wrapper\sidebar_path(); ?>
-                </div><!-- /.sidebar -->
-              <?php endif; ?>
-            
-            </div><!-- /.content -->
-          
-          </div><!-- /.wrap -->
-          
-        </div><!-- / .col-md-10 -->
+        </div><!--  /.row -->
 
-      </div><!--  /.row -->
-    </div><!-- .container-fluid -->
+      </div><!-- .container-fluid -->
+    </div><!-- /.wrap -->
 
     <?php
       if (is_home()) {

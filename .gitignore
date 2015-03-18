@@ -9,6 +9,8 @@ web/app/uploads/*
 !web/app/mu-plugins/disallow-indexing.php
 !web/app/mu-plugins/register-theme-directory.php
 !web/app/mu-plugins/bedrock-autoloader.php
+web/app/languages/*
+!web/app/languages/.gitkeep
 
 # WordPress
 web/wp
@@ -33,3 +35,8 @@ node_modules
 # Vagrant
 bin
 .vagrant
+
+# Manifest instance
+
+webb/app/themes/snmkr/assets/manifest.json
+

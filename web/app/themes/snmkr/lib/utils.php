@@ -46,3 +46,15 @@ function is_element_empty($element) {
   $element = trim($element);
   return !empty($element);
 }
+
+function get_top_parent_id(){
+  global $post;
+  if ($post->post_parent)   {
+    $ancestors=get_post_ancestors($post->ID);
+    $root=count($ancestors)-1;
+    $parent = $ancestors[$root];
+  } else {
+    $parent = $post->ID;
+  }
+  return $parent;
+}

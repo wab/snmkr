@@ -1,16 +1,15 @@
 // Grid system
 .main {
   .make-sm-column(@main-sm-columns);
-  
   .make-md-column(@main-md-columns);
+  .make-lg-column(@main-lg-columns);
+  
   .sidebar-primary & {
     .make-md-column(@main-md-columns - @sidebar-md-columns);
-  }
-  .make-lg-column(@main-lg-columns);
-  .sidebar-primary & {
     .make-lg-column(@main-lg-columns - @sidebar-lg-columns);
   }
 }
+
 .sidebar {
   .make-sm-column(@sidebar-sm-columns);
   .make-md-column(@grid-columns - @header-md-columns);
@@ -19,10 +18,10 @@
 
   .sidebar-zone {
   	.make-sm-column(6);
-	.make-md-column(4);
-	&.widgets {
-		.make-sm-column(12);
-	}
+  	.make-md-column(4);
+  	&.widgets {
+  		.make-sm-column(12);
+  	}
   }
   
   .sidebar-primary & {

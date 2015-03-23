@@ -1,0 +1,11 @@
+.contenu {
+	.make-sm-column(@grid-columns);
+
+	.withmenu & {
+		.make-sm-column(@grid-columns - @menu-sm-columns);
+	}
+}
+
+.menu {
+	.make-sm-column(@menu-sm-columns);
+}

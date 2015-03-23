@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "48dc580c89dceb8fdec702635b3272d4",
+    "hash": "bbc7946b7836c31d04f143a01f2122e2",
     "packages": [
         {
             "name": "composer/installers",
@@ -174,10 +174,10 @@
         },
         {
             "name": "koodimonni-language/fi",
-            "version": "4.1",
+            "version": "4.1.1",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/4.1/fi.zip",
+                "url": "https://downloads.wordpress.org/translation/core/4.1.1/fi.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -277,10 +277,10 @@
         },
         {
             "name": "koodimonni-plugin-language/woocommerce-fi",
-            "version": "v2.3.6",
+            "version": "v2.3.7",
             "dist": {
                 "type": "zip",
-                "url": "https://raw.githubusercontent.com/woothemes/woocommerce-language-packs/91f03473d1cbc932837fd4a43c07d4cc7cb49415/packages/fi.zip",
+                "url": "https://raw.githubusercontent.com/woothemes/woocommerce-language-packs/638eff6883a3f2333ecb1aa60acfcc4f4695b9f3/packages/fi.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -298,10 +298,10 @@
         },
         {
             "name": "koodimonni-plugin-language/woocommerce-fr_fr",
-            "version": "v2.3.6",
+            "version": "v2.3.7",
             "dist": {
                 "type": "zip",
-                "url": "https://raw.githubusercontent.com/woothemes/woocommerce-language-packs/91f03473d1cbc932837fd4a43c07d4cc7cb49415/packages/fr_FR.zip",
+                "url": "https://raw.githubusercontent.com/woothemes/woocommerce-language-packs/638eff6883a3f2333ecb1aa60acfcc4f4695b9f3/packages/fr_FR.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -724,7 +724,7 @@
         },
         {
             "name": "wpackagist-plugin/advanced-custom-fields",
-            "version": "4.4.0",
+            "version": "4.4.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
@@ -732,7 +732,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/advanced-custom-fields.zip",
+                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -741,6 +741,86 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
+        },
+        {
+            "name": "wpackagist-plugin/advanced-page-manager",
+            "version": "1.4",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/advanced-page-manager/",
+                "reference": "tags/1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/advanced-page-manager.1.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/advanced-page-manager/"
+        },
+        {
+            "name": "wpackagist-plugin/cms-page-order",
+            "version": "0.3.3",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/cms-page-order/",
+                "reference": "tags/0.3.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/cms-page-order.0.3.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/cms-page-order/"
+        },
+        {
+            "name": "wpackagist-plugin/cms-tree-page-view",
+            "version": "1.2.31",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/cms-tree-page-view/",
+                "reference": "tags/1.2.31"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/cms-tree-page-view.1.2.31.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/cms-tree-page-view/"
+        },
+        {
+            "name": "wpackagist-plugin/simple-page-ordering",
+            "version": "2.2.4",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/simple-page-ordering/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/simple-page-ordering.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/simple-page-ordering/"
         },
         {
             "name": "wpackagist-plugin/types",

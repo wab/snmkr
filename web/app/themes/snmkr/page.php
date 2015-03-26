@@ -26,7 +26,7 @@
 	'show_date'    => '',
 	'sort_column'  => 'menu_order, post_title',
         'sort_order'   => '',
-	'title_li'     => 'menu', 
+	'title_li'     => '', 
 	'walker'       => ''
 );
 

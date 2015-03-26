@@ -30,10 +30,10 @@
 	  <aside class="acces">
 	    <h2 class="h3">Accéder</h2>
 	    <ul class="list-unstyled row">
-	      <li class="col-xs-3"><a href="http://www.onrek.fr/"><img src="images/logo-onrek.jpg" alt="onrek"><span>onrek</span></a></li>
-	      <li class="col-xs-3"><a href="http://www.onrek.fr/"><img src="images/logo-apek.jpg" alt="apek"><span>apek</span></a></li>
-	      <li class="col-xs-3"><a href="http://www.onrek.fr/"><img src="images/logo-ujmk.jpg" alt="ujmk"><span>ujmk</span></a></li>
-	      <li class="col-xs-3"><a href="http://www.onrek.fr/"><img src="images/logo-umko.jpg" alt="umko"><span>umko</span></a></li>
+	      <li class="col-xs-3"><a href="http://www.onrek.fr/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-onrek.jpg" alt="onrek"><span>onrek</span></a></li>
+	      <li class="col-xs-3"><a href="http://www.onrek.fr/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-apek.jpg" alt="apek"><span>apek</span></a></li>
+	      <li class="col-xs-3"><a href="http://www.onrek.fr/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-ujmk.jpg" alt="ujmk"><span>ujmk</span></a></li>
+	      <li class="col-xs-3"><a href="http://www.onrek.fr/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-umko.jpg" alt="umko"><span>umko</span></a></li>
 	    </ul>
 	  </aside>
 	  <hr>  

@@ -1,4 +1,6 @@
 <?php
+	use Roots\Sage\Nav;
+
 	global $post;
 	$menuclass = 'nomenu';
 
@@ -27,7 +29,7 @@
 	'sort_column'  => 'menu_order, post_title',
         'sort_order'   => '',
 	'title_li'     => '', 
-	'walker'       => ''
+	'walker'       => new Nav\Custom_Walker_Page()
 );
 
 ?>
@@ -37,7 +39,11 @@
 		
 		<?php if ($post->post_parent)   { ?>
 			<div class="menu">
-				<?php wp_list_pages($args_menu); ?>
+				<nav class="navigation" role="navigation">
+            		<ul class="list-group nav nav-stacked ">
+						<?php wp_list_pages($args_menu); ?>
+					</ul>
+				</nav>
 	  		</div>
 	  	<?php } ?>
 

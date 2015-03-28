@@ -10,7 +10,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php get_site_url(); ?>">snmkr</a>          
+      <a class="navbar-brand" href="<?php echo get_home_url(); ?>">snmkr</a>          
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

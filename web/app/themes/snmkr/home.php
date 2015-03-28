@@ -1,9 +1,51 @@
+<?php
+	$sticky = get_option( 'sticky_posts' );
+
+	$sticky_args = array(
+		'post__in' => $sticky,
+		'posts_per_page' => '2',
+	);
+
+	$mainquery = array(
+		'posts_per_page' => '4',
+		'post__not_in' => $sticky
+	);
+
+	// the queries
+	$sticky_query = new WP_Query( $sticky_args );
+	
+?>
 
 <div class="jumbotron">
-	<h2>Édito du président <small>février 2015</small></h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit architecto molestiae placeat, ullam, earum magnam possimus enim blanditiis...</p>
-	<p><a class="btn btn-primary" href="#">Lire la suite</a></p>
+	<?php if ( $sticky_query->have_posts() ) : ?>
+	
+	<!-- pagination here -->
+	
+
+		<div class="owl-carousel">
+	
+		<!-- the loop -->
+		<?php while ( $sticky_query->have_posts() ) : $sticky_query->the_post(); ?>
+			<div>
+			<?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
+			</div>
+		<?php endwhile; ?>
+		<!-- end of the loop -->
+
+		</div>
+
+	<!-- pagination here -->
+	
+
+<?php else : ?>
+	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+<?php endif; ?>
+
 </div> <!-- .jumbotron -->
+
+<?php wp_reset_query(); ?>
+
+<?php query_posts($mainquery); ?>
 
 <div class="actualites">
 	<h2>Actualités &amp; communiqués</h2>
@@ -22,3 +64,8 @@
 
 <hr>
 <p class="text-right"><span class="fa fa-plus"></span>   <a href="#">toutes les actualités</a></p>
+
+<?php
+// Reset Query
+wp_reset_query();
+?>

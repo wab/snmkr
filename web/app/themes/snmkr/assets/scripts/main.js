@@ -60,6 +60,10 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
+         $('.owl-carousel').owlCarousel({
+            items:1,
+            autoHeight:true
+        });
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

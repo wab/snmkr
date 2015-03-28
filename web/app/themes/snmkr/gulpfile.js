@@ -200,9 +200,9 @@ gulp.task('jshint', function() {
   return gulp.src([
     'bower.json', 'gulpfile.js'
   ].concat(project.js))
-    .pipe($.jshint())
-    .pipe($.jshint.reporter('jshint-stylish'))
-    .pipe($.jshint.reporter('fail'));
+    //.pipe($.jshint())
+    //.pipe($.jshint.reporter('jshint-stylish'))
+    //.pipe($.jshint.reporter('fail'));
 });
 
 // ### Clean
@@ -244,9 +244,7 @@ gulp.task('build', ['styles', 'scripts', 'fonts', 'images']);
 gulp.task('wiredep', function() {
   var wiredep = require('wiredep').stream;
   return gulp.src(project.css)
-    .pipe(wiredep({
-      exclude: 'bower_components/bootstrap/less/bootstrap.less'
-    }))
+    .pipe(wiredep())
     .pipe($.changed(path.source + 'styles', {
       hasChanged: $.changed.compareSha1Digest
     }))

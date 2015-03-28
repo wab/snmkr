@@ -83,7 +83,7 @@
     this.mode = window.SVGAngle ? 'svg' : 'vml';
 	this.params = params;
 
-    if (this.mode == 'svg')
+    if (this.mode === 'svg')
     {
       this.createSvgNode = function (nodeName)
       {
@@ -113,7 +113,7 @@
       document.createStyleSheet().addRule(".rvml", "behavior:url(#default#VML)");
     }
 
-    if (this.mode == 'svg')
+    if (this.mode === 'svg')
     {
       this.canvas = this.createSvgNode('svg');
     }
@@ -135,7 +135,7 @@
 
     setSize: function (width, height)
     {
-      if (this.mode == 'svg')
+      if (this.mode === 'svg')
       {
         this.canvas.setAttribute('width', width);
         this.canvas.setAttribute('height', height);
@@ -167,7 +167,7 @@
     createPath: function (config)
     {
       var node;
-      if (this.mode == 'svg')
+      if (this.mode === 'svg')
       {
         node = this.createSvgNode('path');
         node.setAttribute('d', config.path);
@@ -253,7 +253,7 @@
     createGroup: function (isRoot)
     {
       var node;
-      if (this.mode == 'svg')
+      if (this.mode === 'svg')
       {
         node = this.createSvgNode('g');
       }
@@ -277,7 +277,7 @@
 
     applyTransformParams: function (scale, transX, transY)
     {
-      if (this.mode == 'svg')
+      if (this.mode === 'svg')
       {
         this.rootGroup.setAttribute('transform', 'scale(' + scale + ') translate(' + transX + ', ' + transY + ')');
       }
@@ -313,45 +313,44 @@
           cx += coords[0];
           cy += coords[1];
           return 't' + coords.join(',');
-          break;
 
         case 'M':
           cx = coords[0];
           cy = coords[1];
           return 'm' + coords.join(',');
-          break;
+          
 
         case 'l':
           cx += coords[0];
           cy += coords[1];
           return 'r' + coords.join(',');
-          break;
+          
 
         case 'L':
           cx = coords[0];
           cy = coords[1];
           return 'l' + coords.join(',');
-          break;
+          
 
         case 'h':
           cx += coords[0];
           return 'r' + coords[0] + ',0';
-          break;
+          
 
         case 'H':
           cx = coords[0];
           return 'l' + cx + ',' + cy;
-          break;
+          
 
         case 'v':
           cy += coords[0];
           return 'r0,' + coords[0];
-          break;
+          
 
         case 'V':
           cy = coords[0];
           return 'l' + cx + ',' + cy;
-          break;
+          
 
         case 'c':
           ctrlx = cx + coords[coords.length - 4];
@@ -359,7 +358,7 @@
           cx += coords[coords.length - 2];
           cy += coords[coords.length - 1];
           return 'v' + coords.join(',');
-          break;
+          
 
         case 'C':
           ctrlx = coords[coords.length - 4];
@@ -367,7 +366,7 @@
           cx = coords[coords.length - 2];
           cy = coords[coords.length - 1];
           return 'c' + coords.join(',');
-          break;
+          
 
         case 's':
           coords.unshift(cy - ctrly);
@@ -377,7 +376,7 @@
           cx += coords[coords.length - 2];
           cy += coords[coords.length - 1];
           return 'v' + coords.join(',');
-          break;
+          
 
         case 'S':
           coords.unshift(cy + cy - ctrly);
@@ -387,11 +386,11 @@
           cx = coords[coords.length - 2];
           cy = coords[coords.length - 1];
           return 'c' + coords.join(',');
-          break;
+          
 		  
 		default:
 		  return false;
-		  break;
+		  
       }
 
       return '';
@@ -462,20 +461,20 @@
 
       if(params.selectedRegion !== null)
       {
-        if(key.toLowerCase() == params.selectedRegion.toLowerCase())
+        if(key.toLowerCase() === params.selectedRegion.toLowerCase())
         {
           path.setFill(params.selectedColor);
         }
       }
     }
 
-    jQuery(params.container).delegate(this.canvas.mode == 'svg' ? 'path' : 'shape', 'mouseover mouseout', function (e){
+    jQuery(params.container).delegate(this.canvas.mode === 'svg' ? 'path' : 'shape', 'mouseover mouseout', function (e){
       var path = e.target,
       code = e.target.id.split('_').pop(),
       labelShowEvent = $.Event('labelShow.jqvmap'),
       regionMouseOverEvent = $.Event('regionMouseOver.jqvmap');
 
-      if (e.type == 'mouseover')
+      if (e.type === 'mouseover')
       {
         jQuery(params.container).trigger(regionMouseOverEvent, [code, mapData.pathes[code].name]);
         if (!regionMouseOverEvent.isDefaultPrevented())
@@ -516,7 +515,7 @@
       }
     });
 
-    jQuery(params.container).delegate(this.canvas.mode == 'svg' ? 'path' : 'shape', 'click', function (e){
+    jQuery(params.container).delegate(this.canvas.mode === 'svg' ? 'path' : 'shape', 'click', function (e){
 
 	  for (var key in mapData.pathes)
       {
@@ -584,7 +583,7 @@
 
     setColors: function (key, color)
     {
-      if (typeof key == 'string')
+      if (typeof key === 'string')
       {
         this.countries[key].setFill(color);
   	  	this.countries[key].setAttribute("original", color);
@@ -954,7 +953,7 @@
       }
 
       var color;
-      if (i == this.colors.length - 1)
+      if (i === this.colors.length - 1)
       {
         color = this.vectorToNum(this.colors[i]).toString(16);
       }
@@ -1028,7 +1027,7 @@
     for (var i = 0; i < ar.length; i++)
     {
       d = ar[i].toString(16);
-      rgb += d.length == 1 ? '0' + d : d;
+      rgb += d.length === 1 ? '0' + d : d;
     }
     return rgb;
   };

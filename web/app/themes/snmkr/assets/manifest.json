@@ -2,7 +2,9 @@
   "dependencies": {
     "main.js": {
       "files": [
-        "scripts/**/*",
+        "scripts/map/jquery.vmap.js",
+        "scripts/map/jquery.vmap.france.js",
+        "scripts/plugins/*",
         "scripts/main.js"
       ],
       "main": true

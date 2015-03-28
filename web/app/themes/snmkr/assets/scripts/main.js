@@ -32,6 +32,11 @@
           return false;
         });
 
+        
+      },
+      finalize: function() {
+        // JavaScript to be fired on all pages, after page specific JS is fired
+
         //svg map
         $('#map').vectorMap({
             map: 'france_fr',
@@ -45,20 +50,10 @@
             showTooltip: true,
             onRegionClick: function(element, code, region)
             {
-           //      var message = 'Région : "'
-           //          + region 
-           //          + '" || Id : "'
-           //          + code
-              // + '"';
-               
-           //      alert(message);
-            location.href= 'section.html#' + region;
+              location.href= 'section.html#' + region;
             }
         });
-        
-      },
-      finalize: function() {
-        // JavaScript to be fired on all pages, after page specific JS is fired
+
       }
     },
     // Home page

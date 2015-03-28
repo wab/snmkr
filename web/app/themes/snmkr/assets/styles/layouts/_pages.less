@@ -3,9 +3,11 @@
 
 	.withmenu & {
 		.make-sm-column(@grid-columns - @menu-sm-columns);
+		.make-sm-column-pull(@menu-sm-columns);
 	}
 }
 
-.menu {
+.menu-col {
 	.make-sm-column(@menu-sm-columns);
+	.make-sm-column-push(@grid-columns - @menu-sm-columns);
 }

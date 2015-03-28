@@ -38,9 +38,9 @@
 	<div class="row <?php echo $menuclass; ?>">
 		
 		<?php if ($post->post_parent)   { ?>
-			<div class="menu">
+			<div class="menu-col">
 				<nav class="navigation" role="navigation">
-            		<ul class="list-group nav nav-stacked ">
+            		<ul class="list-group nav nav-stacked menu">
 						<?php wp_list_pages($args_menu); ?>
 					</ul>
 				</nav>

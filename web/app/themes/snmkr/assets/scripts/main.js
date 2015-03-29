@@ -37,6 +37,8 @@
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
 
+        var url = 'http://' + $(location).attr('host');
+
         //svg map
         $('#map').vectorMap({
             map: 'france_fr',
@@ -48,9 +50,8 @@
             borderColor: "#fff",
             enableZoom: false,
             showTooltip: true,
-            onRegionClick: function(element, code, region)
-            {
-              location.href= 'section.html#' + region;
+            onRegionClick: function(element, code, region) {
+              location.href= url + '/regions/' + region + '/';
             }
         });
 

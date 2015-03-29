@@ -27,14 +27,15 @@
     );
 ?>
 
-<?php if(is_archive() || is_single() ) : ?>
+<?php if((is_archive() || is_single()) && !is_post_type_archive() && !is_singular( 'regions' ) ) : ?>
 	<ul class="list-unstyled list-categories">
 		<?php wp_list_categories($categories); ?>
 	</ul>
 	<hr>
 <?php endif; ?>
 <div class="row">
-	
+	<?php if( !is_post_type_archive('regions') && !is_singular( 'regions' ) ) : ?>
+
 	<div class="sidebar-zone">
 	  <p><a href="#" class="btn btn-lg btn-info"><span class="fa fa-pencil-square-o"></span> J'adhère au SNMKR</a></p>
 	  <aside class="">
@@ -72,7 +73,9 @@
 	    </ul>
 	  </aside>
 	  <hr>  
-	</div> <!-- .follow -->
+	</div> <!-- .sidebar-zone -->
+
+	<?php endif; ?>
 
 	<div class="sidebar-zone">
 	  <aside>

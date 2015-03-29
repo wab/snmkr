@@ -3,12 +3,20 @@
 
 	$sticky_args = array(
 		'post__in' => $sticky,
-		'posts_per_page' => '2',
+		'posts_per_page' => '3',
 	);
 
 	$mainquery = array(
 		'posts_per_page' => '4',
-		'post__not_in' => $sticky
+		'post__not_in' => $sticky,
+		'tax_query' => array(
+	        array(
+			    'taxonomy' => 'post_format',
+			    'field' => 'slug',
+			    'terms' => array('post-format-quote'),
+			    'operator' => 'NOT IN'
+			)
+    	)	
 	);
 
 	// the queries

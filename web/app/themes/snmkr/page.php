@@ -1,5 +1,6 @@
 <?php
 	use Roots\Sage\Nav;
+	use Roots\Sage\Utils;
 
 	global $post;
 	$menuclass = 'nomenu';
@@ -31,7 +32,7 @@
 		'title_li'     => '', 
 		'walker'       => new Nav\Custom_Walker_Page()
 	);
-
+		
 ?>
 
 <?php while (have_posts()) : the_post(); ?>
@@ -50,6 +51,17 @@
 		<div class="contenu">
 			<?php get_template_part('templates/page', 'header'); ?>
 			<?php get_template_part('templates/content', 'page'); ?>
+			<?php
+			if (Utils\has_subpages()) {
+				$mypages = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'post_date', 'sort_order' => 'desc', 'parent' => $post->ID ) );
+
+				foreach( $mypages as $page ) {		
+				?>
+					<h2 class="h3"><a href="<?php echo get_page_link( $page->ID ); ?>"><?php echo $page->post_title; ?></a></h2>
+				<?php
+				}
+			}	
+			?>
 		</div>
 
 	</div>

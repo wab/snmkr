@@ -58,3 +58,34 @@ function get_top_parent_id(){
   }
   return $parent;
 }
+
+// has subpages
+function has_subpages() {
+    global $post;
+
+    $parent = false;
+    $args_subpage = array(
+      'child_of' => $post->ID,
+      'post_type' => array( 'page', 'regions' )
+    );
+
+    $children = get_pages($args_subpage);
+    if( count( $children ) > 0 ) {
+        $parent = true;
+    }
+
+    return $parent;
+}
+
+// first subpage
+function first_subpage($postId) {
+
+    $args_subpage = array(
+      'child_of' => $postId,
+      'post_type' => array( 'page', 'regions' )
+    );
+
+    $children = get_pages($args_subpage);
+
+    return  $children[0]->post_title;
+}

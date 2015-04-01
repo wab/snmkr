@@ -41,7 +41,7 @@
 		<?php if ($post->post_parent)   { ?>
 			<div class="menu-col">
 				<nav class="navigation" role="navigation">
-            		<ul class="list-group nav nav-stacked menu">
+            		<ul class="list-group list-unstyled menu">
 						<?php wp_list_pages($args_menu); ?>
 					</ul>
 				</nav>

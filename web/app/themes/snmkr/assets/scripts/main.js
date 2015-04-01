@@ -32,7 +32,10 @@
           return false;
         });
 
-        
+        $( '.submenu-link.active' ).removeClass( 'collapsed');
+        $( '.submenu .active' ).parent().parent().addClass( 'in');
+
+      
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

@@ -133,7 +133,7 @@ class Custom_Walker_Page extends \Walker_Page {
         $menuid = "menu-" . self::$menu_lvl;
         $indent = str_repeat("\t", $depth);
         $output .= $indent . sprintf(
-            '<ul class="nav nav-stacked submenu collapse" id="%s">',
+            '<ul class="list-group list-unstyled submenu collapse" id="%s">',
             $menuid
         );
     }
@@ -168,12 +168,12 @@ class Custom_Walker_Page extends \Walker_Page {
                 $active_class[] = 'active';
             }
             if ( $page->ID == $current_page ) {
-                $a_class[] = 'current_page_ancestor';
+                $a_class[] = 'active';
             } elseif ( $_current_page && $page->ID == $_current_page->post_parent ) {
-                $a_class[] = 'current_page_parent';
+                $a_class[] = 'active';
             }
         } elseif ( $page->ID == get_option('page_for_posts') ) {
-            $a_class[] = 'current_page_parent';
+            $a_class[] = 'active';
         }
  
         /**

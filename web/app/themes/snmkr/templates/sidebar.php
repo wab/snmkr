@@ -37,21 +37,9 @@
 	<?php if( !is_post_type_archive('regions') && !is_singular( 'regions' ) ) : ?>
 
 	<div class="sidebar-zone">
-	  <p><a href="#" class="btn btn-lg btn-info"><span class="fa fa-pencil-square-o"></span> J'adhère au SNMKR</a></p>
+	  <p><a href="<?php bloginfo( 'url' ); ?>/adherer-au-snmkr" class="btn btn-lg btn-info"><span class="fa fa-pencil-square-o"></span> J'adhère au SNMKR</a></p>
 	  <aside class="">
-	    <h2 class="h3">La newsletter</h2>
-	    <form>
-	    <div class="form-group">
-	      <label class="sr-only" for="mail">votre email</label>
-	      <div class="input-group">
-	        <div class="input-group-addon"><span class="fa fa-envelope"></span></div>
-	        <input type="email" class="form-control" id="mail" placeholder="votre email">
-	      </div>
-	    </div>
-	    <div class="form-group">
-	     <button type="submit" class="btn btn-primary"><span class="fa fa-send"></span> S'inscrire</button>
-	    </div>
-	  </form>
+	  	<?php get_template_part('templates/newsletter'); ?>
 	  </aside>
 	  <hr>
 	  <nav class="reseaux">

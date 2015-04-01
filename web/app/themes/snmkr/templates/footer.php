@@ -1,9 +1,4 @@
-<footer class="content-info" role="contentinfo">
-  <div class="container">
-    <?php dynamic_sidebar('sidebar-footer'); ?>
-  </div>
-</footer>
-
+<a href="#top" class="backtop scroll"><span class="fa fa-caret-up"></span></a>
 <div class="footer" >
       <div class="container-fluid">
         <div class="row">

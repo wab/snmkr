@@ -25,10 +25,9 @@
         // JavaScript to be fired on all pages
 
         //smoothscrol
-        $('.scroll').click( function() { // Au clic sur un élément
-          var page = $(this).attr('href'); // Page cible
-          var speed = 450; // Durée de l'animation (en ms)
-          $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+        $("a[href='#top']").click(function() {
+          var speed = 750;
+          $("html, body").animate({ scrollTop: 0 }, speed);
           return false;
         });
 

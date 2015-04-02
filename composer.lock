@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bbc7946b7836c31d04f143a01f2122e2",
+    "hash": "78f8a0ed9d3618f02aa3025b0b601de3",
     "packages": [
         {
             "name": "composer/installers",
@@ -823,16 +823,36 @@
             "homepage": "https://wordpress.org/plugins/simple-page-ordering/"
         },
         {
-            "name": "wpackagist-plugin/types",
-            "version": "1.6.5.1",
+            "name": "wpackagist-plugin/tablepress",
+            "version": "1.5.1",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/types/",
-                "reference": "tags/1.6.5.1"
+                "url": "http://plugins.svn.wordpress.org/tablepress/",
+                "reference": "tags/1.5.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/types.1.6.5.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/tablepress.1.5.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/tablepress/"
+        },
+        {
+            "name": "wpackagist-plugin/types",
+            "version": "1.6.6",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/types/",
+                "reference": "tags/1.6.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/types.1.6.6.zip",
                 "reference": null,
                 "shasum": null
             },

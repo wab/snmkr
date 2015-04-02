@@ -31,7 +31,7 @@ function setup() {
   add_theme_support('post-thumbnails');
   set_post_thumbnail_size(800, 450, true );
   add_image_size('media', 150, 150, true ); // Media Post Thumbnail dimensions (cropped)
-
+  add_image_size('banniere', 640, 360, true );
   // Add post formats
   // http://codex.wordpress.org/Post_Formats
   add_theme_support('post-formats', ['aside', 'gallery', 'link', 'image', 'quote']);

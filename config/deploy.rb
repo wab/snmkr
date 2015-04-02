@@ -1,5 +1,6 @@
-set :application, 'my_app_name'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :application, 'snmkr'
+set :repo_url, 'git@github.com:wab/snmkr.git'
+#set :deploy_via, :copy #Comment déployer les fichiers.
 
 # Branch options
 # Prompts for the branch name (defaults to current branch)
@@ -12,7 +13,7 @@ set :branch, :master
 set :deploy_to, -> { "/srv/www/#{fetch(:application)}" }
 
 # Use :debug for more verbose output when troubleshooting
-set :log_level, :info
+set :log_level, :debug
 
 # Apache users with .htaccess files:
 # it needs to be added to linked_files so it persists across deploys:
@@ -54,8 +55,3 @@ namespace :deploy do
     end
   end
 end
-
-# The above update_option_paths task is not run by default
-# Note that you need to have WP-CLI installed on your server
-# Uncomment the following line to run it on deploys if needed
-# after 'deploy:publishing', 'deploy:update_option_paths'

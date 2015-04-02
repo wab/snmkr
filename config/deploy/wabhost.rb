@@ -15,11 +15,12 @@ set :branch, "master"
 # set this path to be correct on server
 set :deploy_to, "/srv/d_wab2/www/#{fetch(:application)}.wabdesign.fr/htdocs"
 #set :use_sudo, false
-set :keep_releases, 2
+set :keep_releases, 5
 set :git_shallow_clone, 1
 
+set :wpcli_remote_url, "http://snmkr.wabdesign.fr"
+set :wpcli_local_url, "http://dev.snmkr.fr"
 
-
-fetch(:default_env).merge!(wp_env: :wab)
+fetch(:default_env).merge!(wp_env: :wabhost)
 
 

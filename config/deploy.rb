@@ -55,3 +55,43 @@ namespace :deploy do
     end
   end
 end
+
+# The Sage theme by default does not check production assets into Git, so
+# they are not deployed by Capistrano when using the Bedrock stack. The
+# following will compile and deploy those assets. Copy this to the bottom of
+# your config/deploy.rb file.
+ 
+# Based on information from this thread:
+# http://discourse.roots.io/t/capistrano-run-grunt-locally-and-upload-files/2062/7
+# and specifically this gist from christhesoul:
+# https://gist.github.com/christhesoul/3c38053971a7b786eff2
+ 
+# First we need to set some variables so we know where things are. You should
+# only have to modify :theme_path here, :local_app_path and :local_theme_path
+# are set from that.
+
+# copy local dist folder on remote
+set :theme_path, Pathname.new("web/app/themes/#{fetch(:application)}")
+set :local_app_path, Pathname.new(File.dirname(__FILE__)).join('../')
+set :local_theme_path, fetch(:local_app_path).join(fetch(:theme_path))
+ 
+namespace :deploy do
+  task :compile_assets do
+    run_locally do
+      within fetch(:local_theme_path) do
+        execute :gulp, :build
+      end
+    end
+  end
+ 
+  task :copy_assets do
+    invoke 'deploy:compile_assets'
+ 
+    on roles(:web) do
+      upload! fetch(:local_theme_path).join('dist').to_s, release_path.join(fetch(:theme_path)), recursive: true
+
+    end
+  end
+end
+ 
+before "deploy:updated", "deploy:copy_assets"

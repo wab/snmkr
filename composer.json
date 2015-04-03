@@ -58,9 +58,9 @@
   "require-dev": {
       "wpackagist-plugin/advanced-page-manager": "~1.4",
       "wpackagist-plugin/simple-page-ordering": "~2.2",
-    "wpackagist-plugin/cms-page-order": "0.3.*",
-    "wpackagist-plugin/cms-tree-page-view": "~1.2",
-    "wpackagist-plugin/tablepress": "~1.5"
+      "wpackagist-plugin/cms-page-order": "0.3.*",
+      "wpackagist-plugin/cms-tree-page-view": "~1.2",
+      "wpackagist-plugin/tablepress": "~1.5"
   },
   "extra": {
     "installer-paths": {

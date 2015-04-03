@@ -75,7 +75,7 @@
             
             <footer class="ours" role="contentinfo">
                 <hr>
-                <p class="text-right"><span class="fa fa-copyright"></span> Syndicat National des Masseurs Kinésithérapeutes Rééducateurs / <a href="#">Mentions légales</a></p>
+                <p class="text-right"><span class="fa fa-copyright"></span> Syndicat National des Masseurs Kinésithérapeutes Rééducateurs / <a href="#">Mentions légales</a> / <span class="fa fa-sign-in"></span> <a href="<?php echo wp_login_url(); ?>" title="Login">connexion</a></p>
             </footer>
             
           </div>

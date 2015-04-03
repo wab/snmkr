@@ -17,9 +17,14 @@ set :log_level, :debug
 
 # Apache users with .htaccess files:
 # it needs to be added to linked_files so it persists across deploys:
-# set :linked_files, fetch(:linked_files, []).push('.env', 'web/.htaccess')
-set :linked_files, fetch(:linked_files, []).push('.env')
-set :linked_dirs, fetch(:linked_dirs, []).push('web/app/uploads')
+set :linked_files, fetch(:linked_files, []).push('.env', 'web/.htaccess')
+set :linked_dirs, fetch(:linked_dirs, []).push(
+  'web/app/uploads', 
+  'web/app/plugins/gravityforms',
+  'web/app/plugins/gravityformspaypal',
+  'web/app/plugins/gravityformsstripe',
+  'web/app/plugins/gravityformssignature',
+  )
 
 namespace :deploy do
   desc 'Restart application'
@@ -70,10 +75,12 @@ end
 # only have to modify :theme_path here, :local_app_path and :local_theme_path
 # are set from that.
 
-# copy local dist folder on remote
+# copy local dist & somes plugins folder on remote
 set :theme_path, Pathname.new("web/app/themes/#{fetch(:application)}")
+set :shareplugins_path, Pathname.new("web/app/share-plugins")
 set :local_app_path, Pathname.new(File.dirname(__FILE__)).join('../')
 set :local_theme_path, fetch(:local_app_path).join(fetch(:theme_path))
+set :local_shareplugins_path, fetch(:local_app_path).join(fetch(:shareplugins_path))
  
 namespace :deploy do
   task :compile_assets do
@@ -89,9 +96,23 @@ namespace :deploy do
  
     on roles(:web) do
       upload! fetch(:local_theme_path).join('dist').to_s, release_path.join(fetch(:theme_path)), recursive: true
-
     end
+
   end
 end
  
 before "deploy:updated", "deploy:copy_assets"
+
+# namespace :deploy do
+
+#   task :copy_share_plugins do
+ 
+#     on roles(:web) do
+#       upload! fetch(:local_shareplugins_path).to_s, release_path.join(fetch(:release_path)).join('app/plugins'), recursive: true
+#     end
+
+#   end
+# end
+
+# before "deploy:copy_assets", "deploy:copy_share_plugins"
+

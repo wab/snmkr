@@ -7,7 +7,7 @@
 			<div class="mc-field-group form-group">
 				<label for="mce-EMAIL" class="sr-only">Votre e-mail  <span class="asterisk">*</span></label>
 				<div class="input-group">
-	                <div class="input-group-addon"><span class="fa fa-envelope"></span></div>
+	                <div class="input-group-addon"><span class="fa fa-paper-plane"></span></div>
 					<input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL">
 				</div>
 			</div>

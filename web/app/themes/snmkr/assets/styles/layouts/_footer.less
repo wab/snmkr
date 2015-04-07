@@ -10,3 +10,31 @@
 		.rotate(360deg);
 	}
 }
+
+.bannieres {
+	background: #eee url('../images/halftone.png');	
+	padding: @grid-gutter-width 0;
+	border-top: solid 1px rgba(0,0,0,0.1);
+	ul {
+		margin-bottom: 0;
+		li {
+			margin-bottom: 1em;
+		}
+	}
+	img {
+		.img-responsive();
+	}
+}
+
+.footer {
+	.bg-variant(@brand-info);
+ 	background-image: url(../images/bg-footer.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: top right;
+	color: #fff;
+	padding: (@grid-gutter-width / 2) 0;
+	a {
+		color: #fff;
+	}
+}

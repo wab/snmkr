@@ -11,25 +11,38 @@
 }
 
 .sidebar {
-  .make-sm-column(@sidebar-sm-columns);
-  .make-md-column(@grid-columns - @header-md-columns);
-  .make-lg-column(@grid-columns - (2 * @header-md-columns));
-  .make-lg-column-offset(@header-md-columns);
+  .make-sm-column(@grid-columns);
+  .sidebar-wrapper {
 
-  .sidebar-zone {
-  	.make-sm-column(6);
-  	.make-md-column(4);
-  	&.widgets {
-  		.make-sm-column(12);
-  	}
+    .make-sm-column(@sidebar-sm-columns);
+    .make-md-column(@grid-columns - @header-md-columns);
+    .make-lg-column(@grid-columns - (2 * @header-md-columns));
+    .make-lg-column-offset(@header-md-columns);
+
+    .sidebar-zone {
+    	.make-sm-column(6);
+    	.make-md-column(4);
+    	&.widgets {
+    		.make-sm-column(@grid-columns);
+    	}
+    }
+
+    
+
   }
-  
+
   .sidebar-primary & {
     .make-md-column(@sidebar-md-columns);
     .make-lg-column(@sidebar-lg-columns);
     .make-lg-column-offset(0);
+    .sidebar-wrapper {
+      .make-sm-column(@grid-columns);
+      .make-lg-column-offset(0);
+    }
     .sidebar-zone {
-		.make-md-column(@grid-columns);
-  	}
+      .make-md-column(@grid-columns);
+
+    }
   }
+  
 }

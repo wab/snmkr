@@ -10,7 +10,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo get_home_url(); ?>">snmkr</a>          
+      <a class="navbar-brand" href="<?php echo get_home_url(); ?>">snmkr.fr</a>          
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -21,15 +21,7 @@
       endif;
       ?>
       
-      <form class="navbar-form navbar-right" role="search">
-        <div class="form-group">
-          <div class="input-group">
-            <input type="search" class="form-control" placeholder="Recherche">
-            <div class="input-group-addon"><span class="fa fa-search"></span></div>
-          </div>
-          <button type="submit" class=" sr-only">Rechercher</button>
-        </div>
-      </form>
+      <?php get_search_form(); ?>
 
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

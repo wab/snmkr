@@ -26,55 +26,59 @@
 		'walker'             => null
     );
 ?>
-
-<?php if((is_archive() || is_single()) && !is_post_type_archive() && !is_singular( 'regions' ) ) : ?>
-	<ul class="list-unstyled list-categories">
-		<?php wp_list_categories($categories); ?>
-	</ul>
-	<hr>
-<?php endif; ?>
-<div class="row">
-	<?php if( !is_post_type_archive('regions') && !is_singular( 'regions' ) ) : ?>
-
-	<div class="sidebar-zone">
-	  <p><a href="<?php bloginfo( 'url' ); ?>/adherer-au-snmkr" class="btn btn-lg btn-info"><span class="fa fa-pencil-square-o"></span> J'adhère au SNMKR</a></p>
-	  <aside class="">
-	  	<?php get_template_part('templates/newsletter'); ?>
-	  </aside>
-	  <hr>
-	  <nav class="reseaux">
-	    <h2 class="h3">Suivre le SNMKR</h2>
-	    <ul class="list-unstyled row">
-	      <li class="col-xs-2"><a href="#"><span class="fa fa-twitter-square"></a></li>
-	      <li class="col-xs-2"><a href="#"><span class="fa fa-facebook-square"></a></a></li>
-	      <li class="col-xs-2"><a href="#"><span class="fa fa-linkedin-square"></a></a></li>
-	    </ul>
-	  </nav>
-	  <hr>
-	  <aside class="acces">
-	    <h2 class="h3">Accéder</h2>
-	    <ul class="list-unstyled row">
-	      <li class="col-xs-3"><a href="http://www.onrek.fr/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-onrek.jpg" alt="onrek"><span>onrek</span></a></li>
-	      <li class="col-xs-3"><a href="http://www.onrek.fr/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-apek.jpg" alt="apek"><span>apek</span></a></li>
-	      <li class="col-xs-3"><a href="http://www.onrek.fr/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-ujmk.jpg" alt="ujmk"><span>ujmk</span></a></li>
-	      <li class="col-xs-3"><a href="http://www.onrek.fr/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-umko.jpg" alt="umko"><span>umko</span></a></li>
-	    </ul>
-	  </aside>
-	  <hr>  
-	</div> <!-- .sidebar-zone -->
-
-	<?php endif; ?>
-
-	<div class="sidebar-zone">
-	  <aside>
-	    <h2 class="h3">Les sections</h2>
-	     <div id="map"></div>
-	  </aside>
-	</div> <!-- .map -->
+<div class="sidebar-wrapper">
 	
-	<div class="sidebar-zone widgets">
-		<?php dynamic_sidebar('sidebar-primary'); ?>
-	</div>
-		
 
-</div> <!-- .row-->
+	<?php if((is_archive() || is_single()) && !is_post_type_archive() && !is_singular( 'regions' ) ) : ?>
+		<ul class="list-unstyled list-categories">
+			<?php wp_list_categories($categories); ?>
+		</ul>
+		<hr>
+	<?php endif; ?>
+	<div class="row">
+		<?php if( !is_post_type_archive('regions') && !is_singular( 'regions' ) ) : ?>
+
+		<div class="sidebar-zone">
+		  <p><a href="<?php bloginfo( 'url' ); ?>/adherer-au-snmkr" class="btn btn-lg btn-info"><span class="fa fa-pencil-square-o"></span> J'adhère au SNMKR</a></p>
+		  <aside class="">
+		  	<?php get_template_part('templates/newsletter'); ?>
+		  </aside>
+		  <hr>
+		  <nav class="reseaux">
+		    <h2 class="h3">Suivre le SNMKR</h2>
+		    <ul class="list-unstyled row">
+		      <li class="col-xs-2"><a href="#"><span class="fa fa-twitter-square"></a></li>
+		      <li class="col-xs-2"><a href="#"><span class="fa fa-facebook-square"></a></a></li>
+		      <li class="col-xs-2"><a href="#"><span class="fa fa-linkedin-square"></a></a></li>
+		    </ul>
+		  </nav>
+		  <hr>
+		  <aside class="acces">
+		    <h2 class="h3">Accéder</h2>
+		    <ul class="list-unstyled row">
+		      <li class="col-xs-3"><a href="http://www.onrek.fr/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-onrek.jpg" alt="onrek"><span>onrek</span></a></li>
+		      <li class="col-xs-3"><a href="http://www.kinepointpresse.fr/index.php"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-apek.jpg" alt="apek"><span>apek</span></a></li>
+		      <li class="col-xs-3"><a href="<?php echo get_permalink(32); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-ujmk.jpg" alt="ujmk"><span>ujmk</span></a></li>
+		      <li class="col-xs-3"><a href="<?php echo get_permalink(833); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-umko.jpg" alt="umko"><span>umko</span></a></li>
+		    </ul>
+		  </aside>
+		  <hr>  
+		</div> <!-- .sidebar-zone -->
+
+		<?php endif; ?>
+
+		<div class="sidebar-zone">
+		  <aside>
+		    <h2 class="h3">Les sections</h2>
+		     <div id="map"></div>
+		  </aside>
+		</div> <!-- .map -->
+		
+		<div class="sidebar-zone widgets">
+			<?php dynamic_sidebar('sidebar-primary'); ?>
+		</div>
+			
+
+	</div> <!-- .row-->
+
+</div>

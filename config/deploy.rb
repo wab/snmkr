@@ -24,6 +24,7 @@ set :linked_dirs, fetch(:linked_dirs, []).push(
   'web/app/plugins/gravityformspaypal',
   'web/app/plugins/gravityformsstripe',
   'web/app/plugins/gravityformssignature',
+  'web/app/plugins/post-type-switcher'
   )
 
 namespace :deploy do

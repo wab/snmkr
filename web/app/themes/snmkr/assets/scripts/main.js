@@ -31,8 +31,8 @@
           return false;
         });
 
-        $( '.submenu-link.active' ).removeClass( 'collapsed');
-        $( '.submenu .active' ).parent().parent().addClass( 'in');
+        $( '.submenu .active' ).parents('.panel').find('.submenu-link').removeClass( 'collapsed');
+        $( '.submenu .active' ).parents('.submenu').addClass( 'in');
 
       
       },

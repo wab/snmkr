@@ -54,6 +54,7 @@
     "wpackagist-plugin/types": "*",
     "wpackagist-plugin/advanced-custom-fields": "*",
     "wpackagist-plugin/wordpress-seo": "*",
+    "wpackagist-plugin/post-type-switcher": "~1.5",
     "wpackagist-plugin/cms-tree-page-view": "~1.2"
   },
   "require-dev": {

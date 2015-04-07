@@ -71,7 +71,7 @@
 </div><!-- /.actualites -->
 
 <hr>
-<p class="text-right"><span class="fa fa-plus"></span>   <a href="#">toutes les actualités</a></p>
+<p class="text-right"><span class="fa fa-plus"></span>   <a href="<?php echo get_post_type_archive_link('post'); ?>">toutes les actualités</a></p>
 
 <?php
 // Reset Query

@@ -33,6 +33,8 @@ if (!defined('DIST_DIR')) {
   define('DIST_DIR', '/dist/');
 }
 
+
+
 /**
  * Define which pages shouldn't have the sidebar
  */
@@ -41,6 +43,8 @@ function display_sidebar() {
 
   if (!isset($display)) {
     $conditionalCheck = new Sage\ConditionalTagCheck(
+
+
       /**
        * Any of these conditional tags that return true won't show the sidebar.
        * You can also specify your own custom function as long as it returns a boolean.

@@ -40,7 +40,7 @@ $query_bannieres = new WP_Query( 'post_type=bannieres&posts_per_page=3'); ?>
 
               
 
-              <a href="<?php echo $url; ?>" title="<?php echo $title; ?>">
+              <a href="http://<?php echo $url; ?>" title="<?php echo $title; ?>">
 
                 <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" class="img-responsive img-thumbnail" />
 

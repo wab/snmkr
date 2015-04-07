@@ -11,3 +11,38 @@
 	.make-sm-column(@menu-sm-columns);
 	.make-sm-column-push(@grid-columns - @menu-sm-columns);
 }
+
+.subpage {
+	margin-bottom: 4em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #eee;
+}
+
+.submenu {
+	margin: 3px 0 0 1em;
+	
+	.list-group-item {
+		border-color: lighten(@list-group-border, 20%);
+		padding: 4px 15px;
+	}
+}
+
+.submenu-link {
+	&:after {
+		.fa-icon();
+		content: '\00a0\f0d8';
+	}
+	&.collapsed:after {
+		content: '\00a0\f0d7';
+		
+	}
+
+}
+
+.menu .panel {
+    margin-bottom: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}

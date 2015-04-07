@@ -53,7 +53,8 @@
     "roots/soil": "~3.0",
     "wpackagist-plugin/types": "*",
     "wpackagist-plugin/advanced-custom-fields": "*",
-    "wpackagist-plugin/wordpress-seo": "*"
+    "wpackagist-plugin/wordpress-seo": "*",
+    "wpackagist-plugin/post-type-switcher": "1.5"
   },
   "require-dev": {
       "wpackagist-plugin/advanced-page-manager": "~1.4",

@@ -1,4 +1,9 @@
-<?php get_template_part('templates/page', 'header'); ?>
+<?php 
+	use Roots\Sage\Utils;
+	Utils\breadcrumb(); 
+?>
+
+<?php //get_template_part('templates/page', 'header'); ?>
 
 <?php if (!have_posts()) : ?>
   <div class="alert alert-warning">

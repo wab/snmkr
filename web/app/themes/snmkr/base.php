@@ -35,6 +35,11 @@ use Roots\Sage\Wrapper;
               <?php include Wrapper\sidebar_path(); ?>
               
             </div><!-- /.sidebar -->
+            
+            <div class="col-lg-2 visible-lg">
+              <?php dynamic_sidebar('sidebar-secondary'); ?>
+            </div>
+            
                 
         </div><!--  /.row -->
 

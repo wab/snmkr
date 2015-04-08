@@ -100,7 +100,7 @@ function first_subpage($postId) {
 function breadcrumb(){
   /* === OPTIONS === */
   $text['home']     = 'accueil'; // text for the 'Home' link
-  $text['category'] = 'Actualités "%s"'; // text for a category page
+  $text['category'] = 'Actualités : "%s"'; // text for a category page
   $text['tax']    = '"%s"'; // text for a taxonomy page
   $text['search']   = 'Résultats pour "%s"'; // text for a search results page
   $text['tag']      = 'Posts Tagged "%s"'; // text for a tag page

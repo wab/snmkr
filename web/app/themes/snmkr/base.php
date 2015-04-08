@@ -36,9 +36,11 @@ use Roots\Sage\Wrapper;
               
             </div><!-- /.sidebar -->
             
+          <?php if (is_front_page()) : ?>
             <div class="col-lg-2 visible-lg">
               <?php dynamic_sidebar('sidebar-secondary'); ?>
             </div>
+          <?php endif; ?>
             
                 
         </div><!--  /.row -->

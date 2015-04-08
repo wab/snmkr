@@ -27,33 +27,30 @@
 <div class="jumbotron">
 	<?php if ( $sticky_query->have_posts() ) : ?>
 	
-	<!-- pagination here -->
+		<!-- pagination here -->
 	
 
 		<div class="owl-carousel">
-	
-		<!-- the loop -->
-		<?php while ( $sticky_query->have_posts() ) : $sticky_query->the_post(); ?>
-			<div>
-				<?php if (get_post_format() == 'quote') { ?>
-				
-				<img src="http://localhost:3000/app/uploads/2011/10/organigramme_michel_stephane.jpg" class="pull-right img-thumbnail" />
+		
+			<!-- the loop -->
+			<?php while ( $sticky_query->have_posts() ) : $sticky_query->the_post(); ?>
+				<div>
+					<?php if (get_post_format() == 'quote') : ?>
+					
+						<img src="http://localhost:3000/app/uploads/2011/10/organigramme_michel_stephane.jpg" class="pull-right img-thumbnail" />
 
-				<?} ?>
-				
-				<?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
-			</div>
-		<?php endwhile; ?>
-		<!-- end of the loop -->
+					<?php endif; ?>
+					
+					<?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
+				</div>
+			<?php endwhile; ?>
+			<!-- end of the loop -->
 
 		</div>
 
-	<!-- pagination here -->
+		<!-- pagination here -->
 	
-
-<?php else : ?>
-	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-<?php endif; ?>
+	<?php endif; ?>
 
 </div> <!-- .jumbotron -->
 
@@ -78,8 +75,3 @@
 
 <hr>
 <p class="text-right"><span class="fa fa-plus"></span>   <a href="<?php echo get_post_type_archive_link('post'); ?>">toutes les actualités</a></p>
-
-<?php
-// Reset Query
-wp_reset_query();
-?>

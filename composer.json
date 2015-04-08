@@ -55,7 +55,8 @@
     "wpackagist-plugin/advanced-custom-fields": "*",
     "wpackagist-plugin/wordpress-seo": "*",
     "wpackagist-plugin/post-type-switcher": "~1.5",
-    "wpackagist-plugin/cms-tree-page-view": "~1.2"
+    "wpackagist-plugin/cms-tree-page-view": "~1.2",
+    "wpackagist-plugin/super-rss-reader": "2.5"
   },
   "require-dev": {
       "wpackagist-plugin/advanced-page-manager": "~1.4",

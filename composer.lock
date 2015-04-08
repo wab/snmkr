@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0b0ba20881aebd644fa4fb5daa30f165",
+    "hash": "4601dcce5ea51e70a1de720cfe9ba3c2",
     "packages": [
         {
             "name": "composer/installers",
@@ -781,6 +781,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/post-type-switcher/"
+        },
+        {
+            "name": "wpackagist-plugin/super-rss-reader",
+            "version": "2.5",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/super-rss-reader/",
+                "reference": "tags/2.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/super-rss-reader.2.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/super-rss-reader/"
         },
         {
             "name": "wpackagist-plugin/types",

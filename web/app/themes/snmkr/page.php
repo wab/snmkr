@@ -50,8 +50,12 @@
 
 		<div class="contenu">
 			<?php get_template_part('templates/page', 'header'); ?>
-			<?php if ( is_page_template( 'page-chapo.php' ) ) {
+			<?php 
+
+			if ( is_page_template( 'page-chapo.php' ) ) {
 				get_template_part('templates/content', 'page-chapo');
+			} elseif (is_page_template( 'page-sommaire.php' )) {
+				get_template_part('templates/content', 'page-sommaire');
 			} else {
 				get_template_part('templates/content', 'page');
 			}

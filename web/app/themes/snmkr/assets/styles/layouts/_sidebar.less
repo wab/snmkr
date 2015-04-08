@@ -8,3 +8,39 @@
 		border-top: none;
 	}
 }
+
+.acces {
+
+	ul {
+		margin-bottom: 0;
+	}
+	
+	a {
+		display: block;
+		text-align: center;
+		color: @gray-dark;
+		text-align: center;
+		img {
+			.img-responsive();
+			.border-top-radius(@border-radius-base);
+			.border-bottom-radius(@border-radius-base); 
+			.box-shadow(1px 1px 2px #999);
+		}
+		
+		span {
+		display: inline-block;
+		font-family: @headings-font-family;
+		}
+
+		&:hover, &:focus {
+			text-decoration: none;
+			color: @brand-primary;
+			img {
+				.box-shadow(none);
+			}
+		}
+
+	}
+
+
+}

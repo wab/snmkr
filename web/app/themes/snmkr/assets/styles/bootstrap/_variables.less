@@ -1,8 +1,4 @@
 
-@font-family-sans-serif:  "Raleway", Helvetica, Arial, sans-serif;
-@headings-font-weight:    800;
-
-
 //
 // Variables
 // --------------------------------------------------
@@ -14,12 +10,12 @@
 
 @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
-@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray-dark:              lighten(@gray-base, 25%);   // #333
 @gray:                   lighten(@gray-base, 33.5%); // #555
 @gray-light:             lighten(@gray-base, 75%); // #777
-@gray-lighter:           #f0f0f0;
+@gray-lighter:           #f4f4f4;
 
-@brand-primary : 		#a0171e;
+@brand-primary: 		#a0171e;
 @brand-success:         #5cb85c;
 @brand-info:            #736f80;
 @brand-warning:         #f0ad4e;
@@ -47,13 +43,13 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "Raleway", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          14px;
+@font-size-base:          15px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
@@ -71,7 +67,7 @@
 
 //** By default, this inherits from the `<body>`.
 @headings-font-family:    "sf", @font-family-sans-serif;
-@headings-font-weight:    500;
+@headings-font-weight:    700;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
 
@@ -150,7 +146,7 @@
 @btn-font-weight:                normal;
 
 @btn-default-color:              #333;
-@btn-default-bg:                 #fff;
+@btn-default-bg:                 @gray-lighter;
 @btn-default-border:             #ccc;
 
 @btn-primary-color:              #fff;
@@ -352,7 +348,7 @@
 //##
 
 // Basics of a navbar
-@navbar-height:                    60px;
+@navbar-height:                    70px;
 @navbar-margin-bottom:             @line-height-computed;
 @navbar-border-radius:             0;
 @navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
@@ -481,7 +477,7 @@
 
 @jumbotron-padding:              15px;
 @jumbotron-color:                inherit;
-@jumbotron-bg:                   @body-bg;
+@jumbotron-bg:                   @gray-lighter;
 @jumbotron-heading-color:        inherit;
 @jumbotron-font-size:            ceil((@font-size-base * 1.5));
 

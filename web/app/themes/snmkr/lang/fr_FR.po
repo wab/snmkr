@@ -32,7 +32,7 @@ msgstr "Il n'y pas de résultats pour cette recherche"
 
 #: lib/extras.php:31
 msgid "Continued"
-msgstr ""
+msgstr "Lire la suite"
 
 #: lib/init.php:22
 msgid "Primary Navigation"
@@ -56,7 +56,7 @@ msgstr "Résultats de recherche pour %s"
 
 #: lib/titles.php:20
 msgid "Not Found"
-msgstr "Pas de résulats"
+msgstr "Pas de résultats"
 
 #: templates/comments.php:9
 msgctxt "comments title"
@@ -87,7 +87,7 @@ msgstr "par"
 
 #: templates/searchform.php:2
 msgid "Search for:"
-msgstr "Recherche pour"
+msgstr "Recherche pour :"
 
 #: templates/searchform.php:4 templates/searchform.php:6
 msgid "Search"

@@ -35,7 +35,13 @@
 		<!-- the loop -->
 		<?php while ( $sticky_query->have_posts() ) : $sticky_query->the_post(); ?>
 			<div>
-			<?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
+				<?php if (get_post_format() == 'quote') { ?>
+				
+				<img src="http://localhost:3000/app/uploads/2011/10/organigramme_michel_stephane.jpg" class="pull-right img-thumbnail" />
+
+				<?} ?>
+				
+				<?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
 			</div>
 		<?php endwhile; ?>
 		<!-- end of the loop -->

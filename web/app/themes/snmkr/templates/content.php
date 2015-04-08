@@ -17,7 +17,7 @@
 		<?php endif; ?>
 
 		<div class="media-body">
-			<h3 class="media-heading"><?php the_title(); ?></h3>
+			<h3 class="media-heading h4"><?php the_title(); ?></h3>
 			<?php get_template_part('templates/entry-meta'); ?>
 			<?php the_excerpt(); ?>
 			<p class="text-right"><a href="<?php the_permalink(); ?>" class="<?php echo $btn_class; ?>"><span class="fa fa-hand-o-right"></span> Lire la suite</a></p>

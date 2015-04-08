@@ -6,7 +6,7 @@
             <div class="row">
               <div class="col-md-3 col-sm-6">
                 <div role="navigation">
-                  <h2 class="h3"><span class="fa fa-folder-open"></span> Le syndicat</h2>
+                  <h2 class="h3"><span class="fa fa-folder-open"></span> syndicat</h2>
                   <hr>
                   <ul class="list-unstyled">
                     <?php wp_list_pages( 'child_of=808&depth=1&title_li='); ?> 
@@ -15,7 +15,7 @@
               </div><!-- .col -->
               <div class="col-md-3 col-sm-6">
                 <div role="navigation">
-                  <h2 class="h3"><span class="fa fa-graduation-cap"></span> La profession</h2>
+                  <h2 class="h3"><span class="fa fa-graduation-cap"></span> profession</h2>
                   <hr>
                   <ul class="list-unstyled">
                     <?php wp_list_pages( 'child_of=810&depth=1&title_li='); ?>
@@ -24,7 +24,7 @@
               </div><!-- .col -->
               <div class="col-md-3 col-sm-6">
                 <div role="navigation">
-                  <h2 class="h3"><span class="fa fa-gavel"></span> Les textes</h2>
+                  <h2 class="h3"><span class="fa fa-gavel"></span> textes</h2>
                   <hr>
                   <ul class="list-unstyled">
                     <?php wp_list_pages( 'child_of=812&depth=1&title_li='); ?>

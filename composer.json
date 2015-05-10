@@ -47,7 +47,7 @@
     "php": ">=5.4",
     "composer/installers": "v1.0.12",
     "vlucas/phpdotenv": "1.0.9",
-    "johnpbloch/wordpress": "4.1.1",
+    "johnpbloch/wordpress": "~4.2",
     "koodimonni-language/fi": "*",
     "koodimonni-language/fr_fr": "*",
     "roots/soil": "~3.0",
@@ -56,7 +56,9 @@
     "wpackagist-plugin/wordpress-seo": "*",
     "wpackagist-plugin/post-type-switcher": "~1.5",
     "wpackagist-plugin/cms-tree-page-view": "~1.2",
-    "wpackagist-plugin/super-rss-reader": "2.5"
+    "wpackagist-plugin/super-rss-reader": "2.5",
+    "wpackagist-plugin/woocommerce": "2.3.8",
+    "wpackagist-plugin/groups": "1.5.2"
   },
   "require-dev": {
       "wpackagist-plugin/advanced-page-manager": "~1.4",

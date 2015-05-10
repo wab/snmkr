@@ -21,9 +21,9 @@ set :linked_files, fetch(:linked_files, []).push('.env', 'web/.htaccess')
 set :linked_dirs, fetch(:linked_dirs, []).push(
   'web/app/uploads', 
   'web/app/plugins/gravityforms',
-  'web/app/plugins/gravityformspaypal',
-  'web/app/plugins/gravityformsstripe',
-  'web/app/plugins/gravityformssignature',
+  'web/app/plugins/groups-woocommerce',
+  'web/app/plugins/woocommerce-gravityforms-product-addons',
+  'web/app/plugins/woocommerce-gateway-cmcic'
   )
 
 namespace :deploy do

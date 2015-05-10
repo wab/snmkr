@@ -1,4 +1,9 @@
 <?php
+
+	/**
+ 	* Template Name: Accueil
+ 	*/
+
 	$sticky = get_option( 'sticky_posts' );
 
 	$sticky_args = array(
@@ -36,9 +41,15 @@
 			<?php while ( $sticky_query->have_posts() ) : $sticky_query->the_post(); ?>
 				<div>
 					<?php if (get_post_format() == 'quote') : ?>
-					
-						<img src="http://localhost:3000/app/uploads/2011/10/organigramme_michel_stephane.jpg" class="pull-right img-thumbnail" />
 
+						<?php 
+						$attachment_id = 392; // attachment ID
+						$image_attributes = wp_get_attachment_image_src( $attachment_id ); // returns an array
+						if( $image_attributes ) {
+						?> 
+							<img src="<?php echo $image_attributes[0]; ?>" width="<?php echo $image_attributes[1]; ?>" height="<?php echo $image_attributes[2]; ?>" class="pull-right img-thumbnail">
+						<?php } ?>
+					
 					<?php endif; ?>
 					
 					<?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
@@ -59,8 +70,7 @@
 <?php query_posts($mainquery); ?>
 
 <div class="actualites">
-	<h2>Actualités &amp; communiqués</h2>
-    <hr>
+	<h2>Communiqués</h2>
 	<?php if (!have_posts()) : ?>
 	  <div class="alert alert-warning">
 	    <?php _e('Sorry, no results were found.', 'sage'); ?>
@@ -72,6 +82,4 @@
 	  <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
 	<?php endwhile; ?>
 </div><!-- /.actualites -->
-
-<hr>
-<p class="text-right"><span class="fa fa-plus"></span>   <a href="<?php echo get_post_type_archive_link('post'); ?>">toutes les actualités</a></p>
+<p class="text-right"><span class="fa fa-plus"></span>   <a href="<?php echo get_permalink( 1044 ); ?>">toutes les actualités</a></p>

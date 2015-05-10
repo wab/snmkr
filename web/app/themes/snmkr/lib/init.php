@@ -42,6 +42,9 @@ function setup() {
 
   // Tell the TinyMCE editor to use a custom stylesheet
   add_editor_style(Assets\asset_path('styles/editor-style.css'));
+
+  //woocommerce
+   add_theme_support( 'woocommerce' );
 }
 add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
 
@@ -50,30 +53,30 @@ add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
  */
 function widgets_init() {
   register_sidebar([
-    'name'          => 'sidebar primaire',
-    'id'            => 'sidebar-primary',
-    'before_widget' => '<section class="widget %1$s %2$s">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
+    'name'          => 'zone 1',
+    'id'            => 'zone-1',
+    'before_widget' => '<aside class="widget %1$s %2$s">',
+    'after_widget'  => '</aside>',
+    'before_title'  => '<h1 class="h3">',
+    'after_title'   => '</h1>'
   ]);
 
   register_sidebar([
-    'name'          => 'sidebar secondaire',
-    'id'            => 'sidebar-secondary',
-    'before_widget' => '<section class="widget %1$s %2$s">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
+    'name'          => 'zone 2',
+    'id'            => 'zone-2',
+    'before_widget' => '<aside class="widget %1$s %2$s">',
+    'after_widget'  => '</aside>',
+    'before_title'  => '<h1 class="h3">',
+    'after_title'   => '</h1>'
   ]);
 
   register_sidebar([
-    'name'          => __('Footer', 'sage'),
-    'id'            => 'sidebar-footer',
-    'before_widget' => '<section class="widget %1$s %2$s">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
+    'name'          => 'zone 3',
+    'id'            => 'zone-3',
+    'before_widget' => '<aside class="widget %1$s %2$s">',
+    'after_widget'  => '</aside>',
+    'before_title'  => '<h1 class="h3">',
+    'after_title'   => '</h1>'
   ]);
 }
 add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');

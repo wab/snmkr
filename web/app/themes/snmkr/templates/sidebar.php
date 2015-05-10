@@ -34,11 +34,32 @@
 	        'sort_order'   => '',
 		'title_li'     => '', 
     );
+
+    function archive_nav_display() {
+
+		if ( is_front_page() && is_home() ) {
+		  // Default homepage
+			return false;
+		} elseif ( is_front_page() ) {
+		  // static homepage
+			return false;
+		} elseif ( is_home() ) {
+		  // blog page
+			return false;
+		} elseif ( is_search() || is_archive() ) {
+			return true;
+		} elseif ( is_single() && !is_woocommerce() && !is_post_type_archive() && !is_singular( 'regions' )) {
+			return true;
+		} else {
+		  //everything else
+			return false;
+		}
+	  
+	}
 ?>
 <div class="sidebar-wrapper">
-	
 
-	<?php if((is_search() || is_archive() || is_single()) && !is_post_type_archive() && !is_singular( 'regions' ) ) : ?>
+	<?php if( archive_nav_display() ) : ?>
 		<nav class="well">
 			<ul class="list-unstyled list-categories">
 				<?php wp_list_categories($categories); ?>
@@ -57,29 +78,35 @@
 
 		<div class="sidebar-zone">
 		  
-		  <p><a href="<?php bloginfo( 'url' ); ?>/adherer-au-snmkr" class="btn btn-lg btn-info"><span class="fa fa-pencil-square-o"></span> J'adhère au SNMKR</a></p>
+		  <p><a href="<?php bloginfo( 'url' ); ?>/boutique/adhesion" class="btn btn-lg btn-info"><span class="fa fa-pencil-square-o"></span> J'adhère au SNMKR</a></p>
 
 		  <hr>
 		  
 		  <?php get_template_part('templates/newsletter'); ?>
 
 		  <hr>
-		  
-		  <nav class="reseaux">
-		  	<h2 class="h4">Suivre le snmkr</h2>
-		    <ul class="list-unstyled row">
-		      <li class="col-xs-2"><a href="http://www.twitter.com/snmkr1"><span class="fa fa-twitter-square"></a></li>
-		      <li class="col-xs-2"><a href="#"><span class="fa fa-facebook-square"></a></a></li>
-		      <li class="col-xs-2"><a href="#"><span class="fa fa-linkedin-square"></a></a></li>
-		    </ul>
-		  </nav>
-		  
+
+	      <?php get_template_part('templates/acces'); ?>
+
 		</div> <!-- .sidebar-zone -->
 		
-		<div class="sidebar-zone">
-			<?php dynamic_sidebar('sidebar-primary'); ?>
-		</div>
-			
+	    <div class="sidebar-zone">
+	      	<aside class="hidden-sm">
+				<h2 class="h4">Les sections</h2>
+	 			<div id="map"></div>
+			</aside>
+	 		<p><small><span class="fa fa-plus"></span> <a href="<?php bloginfo('url') ?>/regions">voir toutes les sections</a></small></p>
+
+	    </div><!-- .col -->
+
+
+	    <div class="sidebar-zone">
+	    	
+	 		<?php get_template_part('templates/bannieres'); ?>
+
+	    </div>
+		
+		
 
 	</div> <!-- .row-->
 

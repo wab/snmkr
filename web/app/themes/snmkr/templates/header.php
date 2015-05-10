@@ -6,16 +6,14 @@
     <div class="col-md-12 col-sm-4">
         <h1 class="h4"><span class="text-primary">S</span>yndicat<br><span class="text-primary">N</span>ational des<br><span class="text-primary">M</span>asseurs <br><span class="text-primary">K</span>inésithérapeutes<br><span class="text-primary">R</span>ééducateurs</h1>
       <hr>
+      <nav class="reseaux">
+        <ul class="list-inline">
+          <li><a href="http://www.twitter.com/snmkr1"><span class="fa fa-twitter-square"></span></a></li>
+          <li><a href="#"><span class="fa fa-facebook-square"></span></a></li>
+          <li><a href="#"><span class="fa fa-linkedin-square"></span></a></li>
+        </ul>
+      </nav>
      </div>
-    <div class="col-md-12 col-sm-6">
-      	<?php get_template_part('templates/acces'); ?>
-      	<hr>
-      	<aside class="hidden-sm">
-			<h2 class="h4">Les sections</h2>
- 			<div id="map"></div>
-		</aside>
- 		<p><small><span class="fa fa-plus"></span> <a href="<?php bloginfo('url') ?>/regions">voir toutes les sections</a></small></p>
-    </div><!-- .col -->
   </div> <!-- .row -->
 </header><!-- .mainheader -->
 

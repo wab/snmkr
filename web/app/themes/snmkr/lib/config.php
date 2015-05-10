@@ -63,15 +63,17 @@ function display_sidebar() {
        */
       [
         'is_page',
-        ['is_page_template', 'template-custom.php']
+        'is_woocommerce',
       ]
     );
 
     $display = apply_filters('sage/display_sidebar', $conditionalCheck->result);
+
   }
 
   return $display;
 }
+
 
 /**
  * $content_width is a global variable used by WordPress for max image upload sizes

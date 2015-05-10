@@ -1,16 +1,12 @@
 <?php 
 // the query
-$query_bannieres = new WP_Query( 'post_type=bannieres&posts_per_page=3'); ?>
+$query_bannieres = new WP_Query( 'post_type=bannieres'); ?>
 
 <?php if ( $query_bannieres->have_posts() ) : ?>
 
 
 <aside class="bannieres">
-  
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-8 col-md-offset-2">
-        <ul class="row list-unstyled">
+  <ul class="list-unstyled">
 
           <!-- pagination here -->
 
@@ -18,7 +14,7 @@ $query_bannieres = new WP_Query( 'post_type=bannieres&posts_per_page=3'); ?>
           <?php while ( $query_bannieres->have_posts() ) : $query_bannieres->the_post(); ?>
           
 
-          <li class="col-sm-4">
+          <li>
 
             <?php 
 
@@ -57,9 +53,6 @@ $query_bannieres = new WP_Query( 'post_type=bannieres&posts_per_page=3'); ?>
 
           <!-- pagination here -->
         </ul>
-      </div>
-    </div>
-  </div>
   
 </aside>
 

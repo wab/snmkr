@@ -36,11 +36,6 @@ use Roots\Sage\Wrapper;
               
             </div><!-- /.sidebar -->
             
-          <?php if (is_front_page()) : ?>
-            <div class="col-lg-2 visible-lg">
-              <?php dynamic_sidebar('sidebar-secondary'); ?>
-            </div>
-          <?php endif; ?>
             
                 
         </div><!--  /.row -->
@@ -50,7 +45,7 @@ use Roots\Sage\Wrapper;
 
     <?php
       if (is_home()) {
-        get_template_part('templates/bannieres');
+        get_template_part('templates/widgets');
       }
       get_template_part('templates/footer');
       wp_footer();

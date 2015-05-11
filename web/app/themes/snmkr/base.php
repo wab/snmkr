@@ -14,7 +14,7 @@ use Roots\Sage\Wrapper;
     <![endif]-->
     <?php
       do_action('get_header');
-      get_template_part('templates/navbar');
+      //get_template_part('templates/navbar');
     ?>
     <div class="wrap" role="document">
       <div class="container-fluid">

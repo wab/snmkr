@@ -78,7 +78,7 @@
 
 		<div class="sidebar-zone">
 		  
-		  <p><a href="<?php bloginfo( 'url' ); ?>/boutique/adhesion" class="btn btn-lg btn-info"><span class="fa fa-pencil-square-o"></span> J'adhère au SNMKR</a></p>
+		  <p><a href="<?php bloginfo( 'url' ); ?>/boutique/adhesion" class="btn btn-lg btn-primary"><span class="fa fa-pencil-square-o"></span> J'adhère au SNMKR</a></p>
 
 		  <hr>
 		  

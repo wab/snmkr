@@ -8,8 +8,10 @@
 				<div class="mc-field-group form-group">
 					<label for="mce-EMAIL" class="sr-only">Votre e-mail  <span class="asterisk">*</span></label>
 					<div class="input-group">
-		                <div class="input-group-addon"><span class="fa fa-paper-plane"></span></div>
 						<input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="votre email">
+						<span class="input-group-btn">
+							<input type="submit" value="S'inscrire" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
+						</span>
 					</div>
 				</div>
 				<div id="mce-responses" class="clear">
@@ -17,10 +19,8 @@
 					<div class="response" id="mce-success-response" style="display:none"></div>
 				</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 			    <div style="position: absolute; left: -5000px;"><input type="text" name="b_60e3bcf6ece9f5e69609672ab_e8140042c5" tabindex="-1" value=""></div>
-			    <div class="clear form-group"><input type="submit" value="S'inscrire" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-primary"></div>
 		    </div>
 		</form>
 	</div>
-
 	<!--End mc_embed_signup-->
 </aside>

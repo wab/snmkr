@@ -1,0 +1,124 @@
+@anilation-menu: background 0.3s, color 0s, box-shadow 0.3s;;
+
+.navigation-principale {
+	li {
+		a {
+			display: block;
+			color: @brand-info;
+			padding: 4px 0;
+			.intitule {
+				display: inline-block;
+				height: 30px;
+				line-height: 30px;
+				margin: 0 auto;
+			}
+			.fa-icon {
+				display: inline-block;
+				margin-right: 6px;
+				line-height: 30px;
+				width: 30px;
+				height: 30px;
+				.border-top-radius(50%);
+				.border-bottom-radius(50%);
+				text-align: center;
+				z-index: 1;
+				box-shadow: 0 0 0 1px @brand-info;
+				.transition(@anilation-menu);
+
+				&:before {
+					font-family: 'FontAwesome';
+					speak: none;
+					line-height: 30px;
+					font-size: @font-size-base;
+					font-style: normal;
+					font-weight: normal;
+					font-variant: normal;
+					text-transform: none;
+					display: block;
+					text-align: center;
+					-webkit-font-smoothing: antialiased;
+				}
+			}
+
+			
+			&:hover, &:focus {
+				text-decoration: none;
+				.fa-icon {
+					background: @brand-info;
+					color: #fff;
+					box-shadow: 0 0 0 2px rgba(255,255,255,0.3);
+
+					&:before {
+						-webkit-animation: toRightFromLeft 0.3s forwards;
+						-moz-animation: toRightFromLeft 0.3s forwards;
+						animation: toRightFromLeft 0.3s forwards;
+					}
+				}
+				.intitule {
+					display: inline-block;
+					height: 30px;
+					line-height: 30px;
+					margin: 0 auto;
+					color: @text-color;
+				}
+			}
+
+		}
+	}
+		
+	.accueil .fa-icon:before {
+		content: "\f015";
+	}
+	.snmkr .fa-icon:before {
+		content: "\f07c";
+	}
+	.profession .fa-icon:before {
+		content: "\f19d";
+	}
+	.textes .fa-icon:before {
+		content: "\f0e3";
+	}
+	.espace-kine .fa-icon:before {
+		content: "\f0c0";
+	}
+	.contact .fa-icon:before {
+		content: "\f0e0";
+	}
+}
+
+@-webkit-keyframes toRightFromLeft {
+	49% {
+		-webkit-transform: translate(100%);
+	}
+	50% {
+		opacity: 0;
+		-webkit-transform: translate(-100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+@-moz-keyframes toRightFromLeft {
+	49% {
+		-moz-transform: translate(100%);
+	}
+	50% {
+		opacity: 0;
+		-moz-transform: translate(-100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+@keyframes toRightFromLeft {
+	49% {
+		transform: translate(100%);
+	}
+	50% {
+		opacity: 0;
+		transform: translate(-100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}

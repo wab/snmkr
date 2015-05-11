@@ -14,7 +14,7 @@ web/app/languages/*
 
 # WordPress
 web/wp
-#web/.htaccess
+web/.htaccess
 
 # WP-CLI
 db-sync

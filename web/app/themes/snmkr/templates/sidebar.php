@@ -88,6 +88,8 @@
 
 	      <?php get_template_part('templates/acces'); ?>
 
+	      <hr>
+
 		</div> <!-- .sidebar-zone -->
 		
 	    <div class="sidebar-zone">

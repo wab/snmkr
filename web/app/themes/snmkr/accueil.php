@@ -70,7 +70,7 @@
 <?php query_posts($mainquery); ?>
 
 <div class="actualites">
-	<h2>Communiqués</h2>
+	<h2>Actualités</h2>
 	<?php if (!have_posts()) : ?>
 	  <div class="alert alert-warning">
 	    <?php _e('Sorry, no results were found.', 'sage'); ?>

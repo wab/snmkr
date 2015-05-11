@@ -20,8 +20,9 @@ use Roots\Sage\Wrapper;
       <div class="container-fluid">
         <div class="row">
           
-          <div class="col-md-2 hidden-xs">
+          <div class="col-md-2">
             <?php get_template_part('templates/header'); ?>
+            <?php get_template_part('templates/navigation'); ?>
           </div> <!-- .col-md-2 -->
 
             <main class="main" role="main">

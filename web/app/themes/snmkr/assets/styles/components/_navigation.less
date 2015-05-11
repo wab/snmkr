@@ -1,6 +1,7 @@
-@anilation-menu: background 0.3s, color 0s, box-shadow 0.3s;;
+@animation-menu: background 0.3s, color 0s, box-shadow 0.3s;;
 
 .navigation-principale {
+	font-family: @headings-font-family;
 	li {
 		a {
 			display: block;
@@ -18,12 +19,13 @@
 				line-height: 30px;
 				width: 30px;
 				height: 30px;
+				background: #fff;
 				.border-top-radius(50%);
 				.border-bottom-radius(50%);
 				text-align: center;
 				z-index: 1;
 				box-shadow: 0 0 0 1px @brand-info;
-				.transition(@anilation-menu);
+				.transition(@animation-menu);
 
 				&:before {
 					font-family: 'FontAwesome';
@@ -64,7 +66,20 @@
 			}
 
 		}
+
 	}
+
+	.active a {
+		.fa-icon {
+			background: @brand-primary;
+			color: #fff;
+			box-shadow: 0 0 0 1px @brand-primary;
+		}
+		.intitule {
+			color: @brand-primary;
+		}
+	}
+
 		
 	.accueil .fa-icon:before {
 		content: "\f015";

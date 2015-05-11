@@ -21,5 +21,5 @@
 			<span class="fa fa-hand-o-right"></span> <a href="<?php the_permalink(); ?>">Lire la suite</a>
 		</div><!-- .media-body -->
 	</article><!-- .media -->
+	<hr>
 <?php endif; ?>
-<hr>

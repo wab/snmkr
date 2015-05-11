@@ -27,7 +27,7 @@
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               #fff;
+@body-bg:               @gray-lighter;
 //** Global text color on `<body>`.
 @text-color:            @gray-dark;
 
@@ -67,7 +67,7 @@
 
 //** By default, this inherits from the `<body>`.
 @headings-font-family:    "sf", @font-family-sans-serif;
-@headings-font-weight:    700;
+@headings-font-weight:    500;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
 
@@ -318,7 +318,7 @@
 @grid-gutter-width:         30px;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
-@grid-float-breakpoint:     @screen-md-min;
+@grid-float-breakpoint:     @screen-sm-min;
 //** Point at which the navbar begins collapsing.
 @grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
 
@@ -375,7 +375,7 @@
 
 // Navbar toggle
 @navbar-default-toggle-hover-bg:           #ddd;
-@navbar-default-toggle-icon-bar-bg:        #888;
+@navbar-default-toggle-icon-bar-bg:        @brand-primary;
 @navbar-default-toggle-border-color:       #ddd;
 
 
@@ -475,11 +475,11 @@
 //
 //##
 
-@jumbotron-padding:              15px;
+@jumbotron-padding:              10px;
 @jumbotron-color:                inherit;
-@jumbotron-bg:                   @gray-lighter;
+@jumbotron-bg:                   #fff;
 @jumbotron-heading-color:        inherit;
-@jumbotron-font-size:            ceil((@font-size-base * 1.5));
+@jumbotron-font-size:            ceil((@font-size-base * 1.3));
 
 
 //== Form states and alerts
@@ -659,23 +659,23 @@
 //##
 
 //** Background color on `.list-group-item`
-@list-group-bg:                 rgba(0,0,0,0.1);
+@list-group-bg:                 rgba(115,111,128,0.2);
 //** `.list-group-item` border color
 @list-group-border:             @brand-info;
 //** List group border radius
 @list-group-border-radius:      3px;
 
 //** Background color of single list items on hover
-@list-group-hover-bg:           @gray-lighter;
-@list-group-hover-border: @brand-primary;
+@list-group-hover-bg:           @brand-info;
+@list-group-hover-border: @brand-info;
 //** Text color of active list items
-@list-group-active-color:       @component-active-color;
+@list-group-active-color:       @brand-primary;
 //** Background color of active list items
-@list-group-active-bg:          @brand-info;
+@list-group-active-bg:          #fff;
 //** Border color of active list elements
-@list-group-active-border:      @list-group-border;
+@list-group-active-border:      @brand-primary;
 //** Text color for content within active list items
-@list-group-active-text-color:  lighten(@list-group-active-bg, 40%);
+@list-group-active-text-color:  @brand-primary;
 
 //** Text color of disabled list items
 @list-group-disabled-color:      @gray-light;
@@ -685,7 +685,7 @@
 @list-group-disabled-text-color: @list-group-disabled-color;
 
 @list-group-link-color:         @text-color;
-@list-group-link-hover-color:   @brand-primary;
+@list-group-link-hover-color:   #fff;
 @list-group-link-heading-color: #333;
 
 
@@ -778,10 +778,10 @@
 //
 //##
 
-@breadcrumb-padding-vertical:   2px;
-@breadcrumb-padding-horizontal: 0;
+@breadcrumb-padding-vertical:   6px;
+@breadcrumb-padding-horizontal: 8px;
 //** Breadcrumb background color
-@breadcrumb-bg:                 transparent;
+@breadcrumb-bg:                 #fff;
 //** Breadcrumb text color
 @breadcrumb-color:              #ccc;
 //** Text color of current page in the breadcrumb
@@ -855,4 +855,4 @@
 //** Width of horizontal description list titles
 @dl-horizontal-offset:        @component-offset-horizontal;
 //** Horizontal line color.
-@hr-border:                   @gray-lighter;
+@hr-border:                   lighten(@brand-info, 45%);

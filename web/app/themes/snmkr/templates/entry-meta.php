@@ -1,1 +1,1 @@
-<span class="text-muted"><span class="fa fa-calendar"></span> <time class="updated" datetime="<?= get_the_time('c'); ?>"><?= get_the_date(); ?></time></span>
+<p><span class="fa fa-calendar"></span> <time class="updated" datetime="<?= get_the_time('c'); ?>"><?= get_the_date(); ?></time> | <span class="fa fa-folder-o"></span> <?php the_category('&bull;'); ?></p>

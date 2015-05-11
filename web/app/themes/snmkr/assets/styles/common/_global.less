@@ -1,13 +1,9 @@
 body {
 	position: relative;
-	background-image: url(../images/bg.jpg);
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
 }
 
 .wrap {
-	padding-top: @grid-gutter-width;
+	padding-top: @grid-gutter-width / 2;
 	
 }
 
@@ -19,24 +15,14 @@ hr {
 	margin: (@grid-gutter-width / 2) 0;
 }
 
-.navbar {
-	border: none;
-	border-bottom: solid 1px rgba(0,0,0,0.1);
-	.navbar-brand {
-		font-family: @headings-font-family;
-	}
-
-}
-
 .jumbotron, .well {
-	border: solid 1px rgba(115, 111, 128, 0.3);
+	border: solid 1px #e4e4e4;
 	padding: 1em;
-
+	background: #ffF;
 	img {
 		max-width: 100px;
 	}
 }
-
 
 .reseaux {
 	font-size: 2em;
@@ -44,4 +30,8 @@ hr {
 
 .main {
 	margin-bottom: @grid-gutter-width;
+}
+
+.jumbotron h2 {
+	margin-top: 0;
 }

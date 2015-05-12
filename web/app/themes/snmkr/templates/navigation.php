@@ -1,9 +1,9 @@
 <?php use Roots\Sage\Nav; ?>
 
-<nav class="navigation-principale" role="navigation">
+<nav class="" role="navigation">
     <?php
       if (has_nav_menu('primary_navigation')) :
-        wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'list-unstyled', 'link_before' => '<span class="fa-icon"></span><span class="intitule">', 'link_after' => '</span>', 'walker' => new Nav\SageNavWalker()] );
+        wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'navigation-principale list-unstyled', 'link_before' => '<span class="fa-icon"></span><span class="intitule">', 'link_after' => '</span>', 'walker' => new Nav\SageNavWalker()] );
       endif;
       ?>
       <hr>

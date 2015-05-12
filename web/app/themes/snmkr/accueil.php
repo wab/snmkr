@@ -11,7 +11,7 @@
 		'posts_per_page' => '3',
 	);
 
-	$mainquery = array(
+	$actus_args = array(
 		'posts_per_page' => '4',
 		'post__not_in' => $sticky,
 		'tax_query' => array(
@@ -29,11 +29,13 @@
 	
 ?>
 
-<div class="jumbotron">
-	<?php if ( $sticky_query->have_posts() ) : ?>
-	
-		<!-- pagination here -->
-	
+
+<?php if ( $sticky_query->have_posts() ) : ?>
+
+	<div class="jumbotron">
+
+	<!-- pagination here -->
+
 
 		<div class="owl-carousel">
 		
@@ -57,29 +59,27 @@
 			<?php endwhile; ?>
 			<!-- end of the loop -->
 
-		</div>
+		</div> <!-- /owl-carousel -->
 
-		<!-- pagination here -->
-	
-	<?php endif; ?>
+	<!-- pagination here -->
 
-</div> <!-- .jumbotron -->
+	</div> <!-- .jumbotron -->
+<?php endif; ?>
 
 <?php wp_reset_query(); ?>
 
-<?php query_posts($mainquery); ?>
+<?php 
+	$actualites = new WP_Query( $actus_args );
+	if ( $actualites->have_posts() ) : ?>
 
-<div class="actualites">
-	<h2>Actualités</h2>
-	<?php if (!have_posts()) : ?>
-	  <div class="alert alert-warning">
-	    <?php _e('Sorry, no results were found.', 'sage'); ?>
-	  </div>
-	  <?php get_search_form(); ?>
-	<?php endif; ?>
+	<div class="actualites">
+		<h2>Actualités</h2>
+		
+		<?php while ( $actualites->have_posts() ) : $actualites->the_post(); ?>
+		  <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
+		<?php endwhile; ?>
+	</div><!-- /.actualites -->
+	<p class="text-right"><span class="fa fa-plus"></span>   <a href="<?php echo get_permalink( 1044 ); ?>">toutes les actualités</a></p>
 
-	<?php while (have_posts()) : the_post(); ?>
-	  <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
-	<?php endwhile; ?>
-</div><!-- /.actualites -->
-<p class="text-right"><span class="fa fa-plus"></span>   <a href="<?php echo get_permalink( 1044 ); ?>">toutes les actualités</a></p>
+<?php endif; ?>
+<?php wp_reset_query(); ?>

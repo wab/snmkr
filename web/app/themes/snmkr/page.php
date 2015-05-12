@@ -3,15 +3,17 @@
 	use Roots\Sage\Utils;
 
 	global $post;
+	$children = get_pages( array( 'child_of' => $post->ID ) );
 	$menuclass = 'nomenu';
+	$parent = $post->ID;
 
 	if ($post->post_parent)   {
 		$ancestors=get_post_ancestors($post->ID);
 		$root=count($ancestors)-1;
 		$parent = $ancestors[$root];
 		$menuclass = 'withmenu';
-	} else {
-		$parent = $post->ID;
+	} elseif (count( $children ) > 0) {
+		$menuclass = 'withmenu';
 	}
 
 	$args_menu = array(
@@ -38,7 +40,7 @@
 <?php while (have_posts()) : the_post(); ?>
 	<div class="row <?php echo $menuclass; ?>">
 		
-		<?php if ($post->post_parent)   { ?>
+		<?php if ($post->post_parent || count( $children ) > 0 )   { ?>
 			<div class="menu-col">
 				<nav class="navigation" role="navigation">
             		<ul class="list-group list-unstyled menu">

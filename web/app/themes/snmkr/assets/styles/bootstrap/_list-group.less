@@ -23,9 +23,10 @@
   display: block;
   padding: 6px 8px;
   // Place the border on the list items and negative margin up for better styling
-  margin-bottom: 3px;
+  margin-bottom: 5px;
   background-color: @list-group-bg;
   border-left: 4px solid @list-group-border;
+  .box-shadow(1px 1px 0px #ccc);
   .border-top-radius(@list-group-border-radius);
   .border-bottom-radius(@list-group-border-radius);
 
@@ -58,6 +59,7 @@ a.list-group-item {
     color: @list-group-link-hover-color;
     background-color: @list-group-hover-bg;
     border-color: @list-group-hover-border;
+    border-width: 6px;
   }
 }
 
@@ -87,6 +89,8 @@ a.list-group-item {
     color: @list-group-active-color;
     background-color: @list-group-active-bg;
     border-color: @list-group-active-border;
+    border-width: 6px;
+    font-weight: 600;
 
     // Force color to inherit for custom content
     .list-group-item-heading,

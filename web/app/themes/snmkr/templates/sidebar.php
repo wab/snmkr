@@ -37,16 +37,11 @@
 
     function archive_nav_display() {
 
-		if ( is_front_page() && is_home() ) {
-		  // Default homepage
-			return false;
-		} elseif ( is_front_page() ) {
-		  // static homepage
-			return false;
-		} elseif ( is_home() ) {
+		if ( is_home() ) {
 		  // blog page
-			return false;
-		} elseif ( is_search() || is_archive() ) {
+			return true;
+		}
+		elseif ( is_search() || is_archive() ) {
 			return true;
 		} elseif ( is_single() && !is_woocommerce() && !is_post_type_archive() && !is_singular( 'regions' )) {
 			return true;

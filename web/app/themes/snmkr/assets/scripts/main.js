@@ -24,6 +24,23 @@
       init: function() {
         // JavaScript to be fired on all pages
 
+        //  add & remove class on click
+        $('.menu-icon').click(function(e) {
+          
+          e.preventDefault();
+
+          $this = $(this);
+
+          if ($this.hasClass('is-opened')) {
+            $this.addClass('is-closed').removeClass('is-opened');
+          } else {
+            $this.addClass('is-opened').removeClass('is-closed');
+          };
+
+
+          
+        });
+
         //smoothscrol
         $("a[href='#top']").click(function() {
           var speed = 750;

@@ -1,4 +1,132 @@
-@animation-menu: background 0.3s, color 0s, box-shadow 0.3s;;
+@duration: 0.3s;
+@animation-menu: background @duration, color 0s, box-shadow @duration;
+
+// Nav toggle
+//
+// Custom button for toggling the `.nav-collapse`, powered by the collapse
+// JavaScript plugin.
+
+.menu-icon {
+  position: absolute;
+  top:0;
+  right:@navbar-padding-horizontal;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+
+  background: transparent;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: none;
+
+  transition: transform @duration;
+
+  &:hover {
+        cursor: pointer;
+    }
+
+    span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%); 
+
+        display: block;
+        width: 16px;
+        height: 2px;
+
+        background-color: @brand-info;
+
+        transition: background @duration;
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateY(-5px);
+
+            display: block;
+            width: 16px;
+            height: 2px;
+
+            background-color:  @brand-info;
+
+            transition: transform @duration;
+        }
+
+        &::after {
+            transform: translateY(5px); 
+        }
+    }
+
+    svg {
+        fill: #fff;
+        stroke-width: 2px;
+        stroke: @brand-primary;
+        stroke-dashoffset: 170;
+        stroke-dasharray: 170;
+        transition: stroke-dashoffset @duration, fill @duration;
+    }
+
+    &.is-opened {
+        
+        span { 
+            background: transparent;
+            
+            &::before { 
+                transform: translateY(0) rotate(45deg);
+            }
+            
+            &::after { 
+                transform: translateY(0) rotate(-45deg); 
+            }
+
+        }
+
+        svg {
+            stroke-dashoffset: 0;
+        }
+    }
+
+  @media (min-width: @grid-float-breakpoint) {
+    display: none;
+  }
+}
+
+.nav-collapse {
+  	overflow-x: visible;
+  	border-top: 1px solid transparent;
+  	box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    padding: @navbar-padding-horizontal;
+	background: #fff;
+	margin-bottom: @navbar-padding-horizontal;
+	&:extend(.clearfix all);
+	-webkit-overflow-scrolling: touch;
+
+	&.in {
+	overflow-y: auto;
+	}
+
+	@media (min-width: @grid-float-breakpoint) {
+		width: auto;
+		padding: 0;
+		background: transparent;
+		border-top: 0;
+		box-shadow: none;
+
+		&.collapse {
+		  display: block !important;
+		  visibility: visible !important;
+		  height: auto !important;
+		  padding-bottom: 0; // Override default setting
+		  overflow: visible !important;
+		}
+
+		&.in {
+		  overflow-y: visible;
+		}
+	}
+}
 
 .navigation-principale {
 	font-family: @headings-font-family;

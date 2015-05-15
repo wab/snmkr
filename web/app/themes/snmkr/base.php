@@ -45,7 +45,7 @@ use Roots\Sage\Wrapper;
     </div><!-- /.wrap -->
 
     <?php
-      if (is_home()) {
+      if (is_front_page()) {
         get_template_part('templates/widgets');
       }
       get_template_part('templates/footer');

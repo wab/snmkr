@@ -32,8 +32,7 @@
 		'show_date'    => '',
 		'sort_column'  => 'menu_order, post_title',
 	        'sort_order'   => '',
-		'title_li'     => '',
-		'depth'              => 1,
+		'title_li'     => '', 
     );
 
     function archive_nav_display() {
@@ -42,7 +41,7 @@
 		  // blog page
 			return true;
 		}
-		elseif ( is_search() || is_archive() && !is_post_type_archive('regions') ) {
+		elseif ( is_search() || is_archive() ) {
 			return true;
 		} elseif ( is_single() && !is_woocommerce() && !is_post_type_archive() && !is_singular( 'regions' )) {
 			return true;

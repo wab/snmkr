@@ -824,15 +824,15 @@
         },
         {
             "name": "wpackagist-plugin/types",
-            "version": "1.6.6.3",
+            "version": "1.6.6.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/types/",
-                "reference": "tags/1.6.6.3"
+                "reference": "tags/1.6.6.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/types.1.6.6.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/types.1.6.6.4.zip",
                 "reference": null,
                 "shasum": null
             },

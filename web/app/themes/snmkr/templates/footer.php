@@ -18,7 +18,7 @@
                   <h2 class="h3"><span class="fa fa-graduation-cap"></span> profession</h2>
                   <hr>
                   <ul class="list-unstyled">
-                    <?php wp_list_pages( 'child_of=810&depth=1&title_li='); ?>
+                    <?php wp_list_pages( 'child_of=54&depth=1&title_li='); ?>
                   </ul>
                 </div>
               </div><!-- .col -->

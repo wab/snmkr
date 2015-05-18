@@ -15,7 +15,7 @@
 		<?php endif; ?>
 
 		<div class="media-body">
-			<?php get_template_part('templates/entry-meta'); ?>
+			<?php if (!is_post_type_archive('regions')) {get_template_part('templates/entry-meta');}  ?>
 			<h3 class="media-heading h4"><?php the_title(); ?></h3>
 			<?php the_excerpt(); ?>
 			<span class="fa fa-hand-o-right"></span> <a href="<?php the_permalink(); ?>">Lire la suite</a>

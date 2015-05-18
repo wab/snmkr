@@ -27,8 +27,9 @@ while (have_posts()) : the_post(); ?>
 
         <!-- the loop -->
         <?php while ( $query_subpages->have_posts() ) : $query_subpages->the_post(); ?>
-          <h2 class="h3"><?php the_title(); ?></h2>
+          <h2 class=""><?php the_title(); ?></h2>
           <?php the_content(); ?>
+          <hr>
         <?php endwhile; ?>
         <!-- end of the loop -->
 

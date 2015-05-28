@@ -59,7 +59,7 @@
 				$image_attributes = wp_get_attachment_image_src( $attachment_id ); // returns an array
 				if( $image_attributes ) {
 				?> 
-					<img src="<?php echo $image_attributes[0]; ?>" width="<?php echo $image_attributes[1]; ?>" height="<?php echo $image_attributes[2]; ?>" class="pull-right img-thumbnail">
+					<!-- <img src="<?php echo $image_attributes[0]; ?>" width="<?php echo $image_attributes[1]; ?>" height="<?php echo $image_attributes[2]; ?>" class="pull-right img-thumbnail"> -->
 				<?php } ?>
 			
 			<?php endif; ?>
@@ -75,10 +75,8 @@
 <?php 
 	$actualites = new WP_Query( $actus_args );
 	if ( $actualites->have_posts() ) : ?>
-
+	<hr>
 	<div class="actualites">
-		<h2>Actualités</h2>
-		
 		<?php while ( $actualites->have_posts() ) : $actualites->the_post(); ?>
 		  <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
 		<?php endwhile; ?>

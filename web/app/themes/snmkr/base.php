@@ -28,6 +28,13 @@ use Roots\Sage\Wrapper;
             <main class="main" role="main">
               
               <?php include Wrapper\template_path(); ?>
+
+
+              <?php
+                if (is_front_page()) {
+                  get_template_part('templates/widgets');
+                }
+              ?>
             
             </main><!-- /.main -->
 
@@ -45,9 +52,6 @@ use Roots\Sage\Wrapper;
     </div><!-- /.wrap -->
 
     <?php
-      if (is_front_page()) {
-        get_template_part('templates/widgets');
-      }
       get_template_part('templates/footer');
       wp_footer();
     ?>

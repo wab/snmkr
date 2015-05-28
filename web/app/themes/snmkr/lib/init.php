@@ -30,7 +30,7 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
   set_post_thumbnail_size(800, 450, true );
-  add_image_size('media', 150, 150, true ); // Media Post Thumbnail dimensions (cropped)
+  add_image_size('media', 100, 100, true ); // Media Post Thumbnail dimensions (cropped)
   add_image_size('banniere', 640, 360, true );
   // Add post formats
   // http://codex.wordpress.org/Post_Formats
@@ -53,11 +53,11 @@ add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
  */
 function widgets_init() {
   register_sidebar([
-    'name'          => 'zone 1',
+    'name'          => 'Accueil',
     'id'            => 'zone-1',
     'before_widget' => '<aside class="widget %1$s %2$s">',
     'after_widget'  => '</aside>',
-    'before_title'  => '<h1 class="h3">',
+    'before_title'  => '<h1 class="h2">',
     'after_title'   => '</h1>'
   ]);
 

@@ -526,7 +526,7 @@
       var path = e.target;
       var code = e.target.id.split('_').pop();
 
-      jQuery(params.container).trigger('regionClick.jqvmap', [code, mapData.pathes[code].name]);
+      jQuery(params.container).trigger('regionClick.jqvmap', [code, mapData.pathes[code].url]);
 
 	  path.currentFillColor = params.selectedColor;
       path.setFill(params.selectedColor);

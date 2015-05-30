@@ -82,7 +82,11 @@
         // JavaScript to be fired on the home page
          $('.owl-carousel').owlCarousel({
             items:1,
-            autoHeight:true
+            autoHeight:true,
+            dots:false,
+            autoplay:true,
+            loop:true
+            
         });
       },
       finalize: function() {

@@ -32,20 +32,30 @@
 
 
 
-	<div class="jumbotron">
-
-	<!-- pagination here -->
-
+		<h2 class="sr-only">Proposer, informer, défendre</h2>
 
 		<div class="owl-carousel">
 		
-			
+			<div class="slide">
+				
+				<img src="<?php bloginfo('template_directory'); ?>/dist/images/slider-1.jpg" alt="" class="img-responsive">
+
+			</div>
+			<div class="slide">
+				
+				<img src="<?php bloginfo('template_directory'); ?>/dist/images/slider-2.jpg" alt="" class="img-responsive">
+
+			</div>
+			<div class="slide">
+				
+				<img src="<?php bloginfo('template_directory'); ?>/dist/images/slider-3.jpg" alt="" class="img-responsive">
+
+			</div>
 
 		</div> <!-- /owl-carousel -->
 
-	<!-- pagination here -->
 
-	</div> <!-- .jumbotron -->
+	<!-- pagination here -->
 
 
 <?php if ( $sticky_query->have_posts() ) : ?>

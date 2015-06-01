@@ -34,16 +34,27 @@ hr {
 	margin-top: 0;
 }
 
-.owl-carousel {
+.banner {
 	border: solid 1px #e4e4e4;
-	background: #fff;
+	background: @brand-primary;
+	color: #fff;
 	.border-top-radius(@border-radius-base);
 	.border-bottom-radius(@border-radius-base); 
 }
 
+.owl-carousel {
+	
+
+}
+
+.baseline {	
+	padding: 4px;
+	margin: 0;
+}
+
 .widget {
-	background: #ccc;
-	padding: 1em;
+	background: rgba(185,183,190, 0.6);
+	padding: @grid-gutter-width;
 	margin-bottom: 1em;
 	.border-top-radius(@border-radius-base);
 	.border-bottom-radius(@border-radius-base);

@@ -31,8 +31,7 @@
 
 
 
-
-		<h2 class="sr-only">Proposer, informer, défendre</h2>
+	<div class="banner" role="banner">
 
 		<div class="owl-carousel">
 		
@@ -53,6 +52,10 @@
 			</div>
 
 		</div> <!-- /owl-carousel -->
+
+		<h2 class="baseline h4 text-center">Proposer, informer, défendre</h2>
+	</div>
+
 
 
 	<!-- pagination here -->

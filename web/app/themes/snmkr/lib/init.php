@@ -57,7 +57,7 @@ function widgets_init() {
     'id'            => 'zone-1',
     'before_widget' => '<aside class="widget %1$s %2$s">',
     'after_widget'  => '</aside>',
-    'before_title'  => '<h1 class="h2">',
+    'before_title'  => '<h1 class="h3">',
     'after_title'   => '</h1>'
   ]);
 

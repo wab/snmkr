@@ -1,6 +1,7 @@
 body {
 	position: relative;
 	background-image: url('../images/bg.png');
+	border-top: solid 8px @brand-primary;
 }
 
 .wrap {
@@ -38,4 +39,12 @@ hr {
 	background: #fff;
 	.border-top-radius(@border-radius-base);
 	.border-bottom-radius(@border-radius-base); 
+}
+
+.widget {
+	background: #ccc;
+	padding: 1em;
+	margin-bottom: 1em;
+	.border-top-radius(@border-radius-base);
+	.border-bottom-radius(@border-radius-base);
 }

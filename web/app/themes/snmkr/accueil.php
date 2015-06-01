@@ -12,7 +12,7 @@
 	);
 
 	$actus_args = array(
-		'posts_per_page' => '1',
+		'posts_per_page' => '2',
 		'post__not_in' => $sticky,
 		'tax_query' => array(
 	        array(
@@ -61,7 +61,7 @@
 <?php if ( $sticky_query->have_posts() ) : ?>
 <!-- the loop -->
 	<?php while ( $sticky_query->have_posts() ) : $sticky_query->the_post(); ?>
-		<div>
+		<div class="editos">
 			<?php if (get_post_format() == 'quote') : ?>
 
 				<?php 
@@ -87,6 +87,7 @@
 	if ( $actualites->have_posts() ) : ?>
 	<hr>
 	<div class="actualites">
+		<h2><span class="fa fa-coffee"></span> Actualités</h2>
 		<?php while ( $actualites->have_posts() ) : $actualites->the_post(); ?>
 		  <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
 		<?php endwhile; ?>

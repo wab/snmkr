@@ -656,9 +656,9 @@
 //##
 
 //** Background color on `.list-group-item`
-@list-group-bg:                 #fff;
+@list-group-bg:                 #fbfbfb;
 //** `.list-group-item` border color
-@list-group-border:             @brand-info;
+@list-group-border:             darken(@list-group-bg, 10%);
 //** List group border radius
 @list-group-border-radius:      2px;
 
@@ -668,7 +668,7 @@
 //** Text color of active list items
 @list-group-active-color:       @brand-primary;
 //** Background color of active list items
-@list-group-active-bg:          #fff;
+@list-group-active-bg:          @list-group-bg;
 //** Border color of active list elements
 @list-group-active-border:      @brand-primary;
 //** Text color for content within active list items

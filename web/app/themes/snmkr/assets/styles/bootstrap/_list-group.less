@@ -25,8 +25,9 @@
   // Place the border on the list items and negative margin up for better styling
   margin-bottom: 5px;
   background-color: @list-group-bg;
-  border-left: 4px solid @list-group-border;
-  .box-shadow(1px 1px 0px #ccc);
+  border: 1px solid @list-group-border;
+  border-left-width: 4px;
+  //.box-shadow(1px 1px 0px #ccc);
   .border-top-radius(@list-group-border-radius);
   .border-bottom-radius(@list-group-border-radius);
 
@@ -58,8 +59,7 @@ a.list-group-item {
     text-decoration: none;
     color: @list-group-link-hover-color;
     background-color: @list-group-hover-bg;
-    border-color: @list-group-hover-border;
-    border-width: 6px;
+    border-left-color: @list-group-hover-border;
   }
 }
 
@@ -88,8 +88,7 @@ a.list-group-item {
     z-index: 2; // Place active items above their siblings for proper border styling
     color: @list-group-active-color;
     background-color: @list-group-active-bg;
-    border-color: @list-group-active-border;
-    border-width: 6px;
+    border-left-color: @list-group-active-border;
     font-weight: 600;
 
     // Force color to inherit for custom content

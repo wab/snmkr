@@ -19,6 +19,10 @@ function body_class($classes) {
   if (Config\display_sidebar()) {
     $classes[] = 'sidebar-primary';
   }
+  else {
+    $classes[] = 'nosidebar';
+  }
+
 
   return $classes;
 }

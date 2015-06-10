@@ -1,12 +1,20 @@
 body {
 	position: relative;
-	background-image: url('../images/bg.png');
+	
+	background: url('../images/background.jpg');
+	background-size: cover;
+	background-attachment: fixed;
 	border-top: solid 8px @brand-primary;
 }
 
 .wrap {
 	padding-top: @grid-gutter-width / 2;
+	background-image: url('../images/bg.png');
 	
+}
+
+.section {
+	padding :@grid-gutter-width 0;
 }
 
 hr {
@@ -55,9 +63,5 @@ hr {
 }
 
 .widget {
-	background: rgba(185,183,190, 0.6);
-	padding: @grid-gutter-width;
 	margin-bottom: 1em;
-	.border-top-radius(@border-radius-base);
-	.border-bottom-radius(@border-radius-base);
 }

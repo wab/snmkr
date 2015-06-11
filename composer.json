@@ -54,17 +54,17 @@
     "wpackagist-plugin/types": "*",
     "wpackagist-plugin/advanced-custom-fields": "*",
     "wpackagist-plugin/wordpress-seo": "*",
-    "wpackagist-plugin/post-type-switcher": "~1.5",
-    "wpackagist-plugin/cms-tree-page-view": "~1.2",
-    "wpackagist-plugin/super-rss-reader": "2.5",
-    "wpackagist-plugin/woocommerce": "2.3.8",
-    "wpackagist-plugin/groups": "1.5.2"
+    "wpackagist-plugin/post-type-switcher": "*",
+    "wpackagist-plugin/cms-tree-page-view": "*",
+    "wpackagist-plugin/super-rss-reader": "*",
+    "wpackagist-plugin/woocommerce": "~2.3",
+    "wpackagist-plugin/groups": "~1.5",
+    "wpackagist-plugin/relevanssi": "~3.4"
   },
   "require-dev": {
       "wpackagist-plugin/advanced-page-manager": "~1.4",
       "wpackagist-plugin/simple-page-ordering": "~2.2",
-      "wpackagist-plugin/cms-page-order": "0.3.*",
-      "wpackagist-plugin/tablepress": "~1.5"
+      "wpackagist-plugin/cms-page-order": "0.3.*"
   },
   "extra": {
     "installer-paths": {

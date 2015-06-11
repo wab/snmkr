@@ -35,7 +35,7 @@ use Roots\Sage\Nav;
                 <h2 class="h3">Proposer, informer, défendre &hellip;</h2>
               </div>
               <div class="col-md-6 col-md-offset-1">
-                <?php get_template_part('templates/searchform'); ?>
+                <?php get_template_part('templates/searchform-accueil'); ?>
               </div>
             </div>
 

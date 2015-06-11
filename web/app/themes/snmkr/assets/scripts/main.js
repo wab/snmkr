@@ -79,14 +79,26 @@
     // Home page
     'home': {
       init: function() {
-        // JavaScript to be fired on the home page
-         $('.owl-carousel').owlCarousel({
-            items:1,
-            autoHeight:true,
-            dots:false,
-            autoplay:true,
-            loop:true
-            
+        //  Searchform
+        //  Au focus
+        $('.field-control').focus(function(){
+          $(this).parent().addClass('is-focused has-label');
+        });
+
+        // à la perte du focus
+        $('.field-control').blur(function(){
+          $parent = $(this).parent();
+          if($(this).val() == ''){
+            $parent.removeClass('has-label');
+          }
+          $parent.removeClass('is-focused');
+        });
+
+        // si un champs est rempli on rajoute directement la class has-label
+        $('.field-control').each(function(){
+          if($(this).val() != ''){
+            $(this).parent().addClass('has-label');
+          }
         });
       },
       finalize: function() {

@@ -87,7 +87,7 @@ msgstr "par"
 
 #: templates/searchform.php:2
 msgid "Search for:"
-msgstr "Recherche pour :"
+msgstr "Rechercher sur le site :"
 
 #: templates/searchform.php:4 templates/searchform.php:6
 msgid "Search"

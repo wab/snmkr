@@ -48,13 +48,12 @@
 		background: #fff url('../images/bg.png');
 	}
 
-	.section-map {
-		background: #f4f4f4;
-	}
-
-	.section-widgets {
+	.widgets {
 		background: rgba(185,183,190, 0.9);
-		padding: @grid-gutter-width;
+		border-top: 1px solid rgba(0,0,0,0.1);
+		.widget {
+			.make-md-column(3);
+		}
 	}
 
 
@@ -82,6 +81,8 @@
 
 	.callactions {
 		background: #fff;
+		// border-top: 1px solid rgba(0,0,0,0.1);
+		border-bottom: 1px solid rgba(0,0,0,0.1);
 	}
 
 

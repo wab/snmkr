@@ -26,13 +26,7 @@ use Roots\Sage\Nav;
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-2 text-center">
-                
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-snmkr.png" alt="SNMKR" class="logo">
-                <hr>
-                <h1 class="sr-only">
-                  <span class="text-primary">S</span>yndicat <br class="hidden-sm hidden-xs"><span class="text-primary">N</span>ational des<br><span class="text-primary">M</span>asseurs <br class="hidden-sm hidden-xs"><span class="text-primary">K</span>inésithérapeutes <br class="hidden-sm hidden-xs"><span class="text-primary">R</span>ééducateurs
-                </h1>
-                <h2 class="h3">Proposer, informer, défendre &hellip;</h2>
+                <?php get_template_part('templates/header'); ?>
               </div>
               <div class="col-md-6 col-md-offset-1">
                 <?php get_template_part('templates/searchform-accueil'); ?>
@@ -65,8 +59,19 @@ use Roots\Sage\Nav;
 
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6 col-md-offset-3">
-            <div class="text-center"><a href="#" class="btn btn-lg btn-info"><span class="fa fa-paper-plane"></span> s'inscrire à la newsletter</a> <a href="#" class="btn btn-lg btn-primary"><span class="fa fa-pencil-square-o "></span> adhérer au SNMKR</a></div>
+          <div class="col-md-3 col-md-offset-3">
+            <div class="text-center">
+             <p>
+               <a href="#" class="btn btn-lg btn-primary disabled"><span class="fa fa-pencil-square-o "></span> adhérer au SNMKR</a>
+             </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="text-center">
+              <p>
+                <a href="#" class="btn btn-lg btn-info"><span class="fa fa-paper-plane"></span> s'inscrire à la newsletter</a>
+              </p>
+           </div>
           </div>
         </div>
       </div>
@@ -87,22 +92,12 @@ use Roots\Sage\Nav;
             
       </div><!-- .container-fluid -->
     </section><!-- /.wrap -->
+    
+    <?php get_template_part('templates/bannieres'); ?>
 
-    <section class="section-map section">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-              <h1 class="text-center"><span class="fa fa-flag"></span> Les sections</h1>
-              <div id="map"></div>
-                    <p><span class="fa fa-plus"></span> <a href="<?php bloginfo('url') ?>/regions">voir toutes les sections</a></p>
-            </div>
-          </div>
-        </div>
-    </section>
+    <?php get_template_part('templates/aside'); ?>
 
-    <div class="section-widgets section">
-      <?php get_template_part('templates/widgets'); ?>
-    </div>
+    <?php get_template_part('templates/widgets'); ?>
 
     <?php
       get_template_part('templates/footer');

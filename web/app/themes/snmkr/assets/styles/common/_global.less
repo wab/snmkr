@@ -1,10 +1,9 @@
 body {
 	position: relative;
-	
 	background: url('../images/background.jpg');
 	background-size: cover;
 	background-attachment: fixed;
-	border-top: solid 8px @brand-primary;
+	border-top: solid 5px @brand-primary;
 }
 
 .wrap {
@@ -14,47 +13,28 @@ body {
 }
 
 .section {
-	padding :@grid-gutter-width 0;
+	padding : @grid-gutter-width 0;
 }
 
 hr {
 	margin: (@grid-gutter-width / 2) 0;
 }
 
-.jumbotron, .well {
-	border: solid 1px #e4e4e4;
-	padding: 1em;
-	background: #fff;
-	img {
-		max-width: 100px;
-	}
-}
-
 .reseaux {
-	font-size: 1.5em;
+	font-size: 1.8em;
 }
 
 .main {
 	margin-bottom: @grid-gutter-width;
-	border-radius: @border-radius-base;
-}
-
-.main {
-	padding: @grid-gutter-width;
 	background: #fff;
- 	border: 1px solid #e4e4e4;
+	border: 1px solid #e4e4e4;
+	border-radius: @border-radius-base;
+	padding: @grid-gutter-width / 2;
 }
 
-.jumbotron h2 {
-	margin-top: 0;
-}
+.well {
+	background: rgba(255,255,255,0.8);
 
-.banner {
-	border: solid 1px #e4e4e4;
-	background: @brand-primary;
-	color: #fff;
-	.border-top-radius(@border-radius-base);
-	.border-bottom-radius(@border-radius-base); 
 }
 
 .baseline {	
@@ -62,6 +42,14 @@ hr {
 	margin: 0;
 }
 
-.widget {
-	margin-bottom: 1em;
+.secondary {
+	background: lighten(@brand-info, 40%);
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.bannieres {
+	background: #fff;
+	ul {
+		margin-bottom: 0;
+	}
 }

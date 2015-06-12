@@ -28,28 +28,27 @@ use Roots\Sage\Wrapper;
             <main class="main" role="main">
               
               <?php include Wrapper\template_path(); ?>
-
-
-              <?php
-                if (is_front_page()) {
-                  get_template_part('templates/widgets');
-                }
-              ?>
             
             </main><!-- /.main -->
-
-            <div class="sidebar" role="complementary">
-
-              <?php include Wrapper\sidebar_path(); ?>
+            
+            <?php if (Config\display_sidebar()) : ?>
               
-            </div><!-- /.sidebar -->
+              <div class="sidebar" role="complementary">
+
+                <?php include Wrapper\sidebar_path(); ?>
+                
+              </div><!-- /.sidebar -->
             
-            
+            <?php endif; ?>
                 
         </div><!--  /.row -->
 
       </div><!-- .container-fluid -->
     </div><!-- /.wrap -->
+
+    <?php get_template_part('templates/bannieres'); ?>
+
+    <?php get_template_part('templates/aside'); ?>
 
     <?php
       get_template_part('templates/footer');

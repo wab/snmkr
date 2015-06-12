@@ -5,7 +5,7 @@ $query_bannieres = new WP_Query( 'post_type=bannieres'); ?>
 <?php if ( $query_bannieres->have_posts() ) : ?>
 
 
-<aside class="bannieres">
+<aside class="bannieres section">
   <ul class="list-unstyled">
 
           <!-- pagination here -->

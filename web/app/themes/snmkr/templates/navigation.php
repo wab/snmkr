@@ -16,10 +16,4 @@
     ?>
   <hr>
   <?php get_search_form(); ?>
-  <hr>
-  <ul class="reseaux list-inline">
-    <li><a href="http://www.twitter.com/snmkr1"><span class="fa fa-twitter-square"></span></a></li>
-    <li><a href="#"><span class="fa fa-facebook-square"></span></a></li>
-    <li><a href="#"><span class="fa fa-linkedin-square"></span></a></li>
-  </ul>
 </nav>

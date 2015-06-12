@@ -70,42 +70,5 @@
 			</ul>
 		</nav>
 	<?php endif; ?>
-	<div class="row">
-
-		<div class="sidebar-zone">
-		  
-		  <p><a href="<?php bloginfo( 'url' ); ?>/boutique/adhesion" class="btn btn-lg btn-primary"><span class="fa fa-pencil-square-o"></span> J'adhère au SNMKR</a></p>
-
-		  <hr>
-		  
-		  <?php get_template_part('templates/newsletter'); ?>
-
-		  <hr>
-
-	      <?php get_template_part('templates/acces'); ?>
-
-	      <hr>
-
-		</div> <!-- .sidebar-zone -->
-		
-	    <div class="sidebar-zone">
-	      	<aside class="hidden-sm">
-				<h2 class="h4">Les sections</h2>
-	 			<div id="map"></div>
-			</aside>
-	 		<p><small><span class="fa fa-plus"></span> <a href="<?php bloginfo('url') ?>/regions">voir toutes les sections</a></small></p>
-
-	    </div><!-- .col -->
-
-
-	    <div class="sidebar-zone">
-	    	
-	 		<?php get_template_part('templates/bannieres'); ?>
-
-	    </div>
-		
-		
-
-	</div> <!-- .row-->
 
 </div>

@@ -36,6 +36,15 @@
                   <h2 class="h3"><span class="fa fa-users"></span> Espace Kiné</h2>
                   <hr>
                   <?php wp_list_pages( 'child_of=814&depth=1&title_li='); ?>
+                  <hr>
+                  <ul class="list-unstyled">
+                    <li>
+                      <span class="fa fa-pencil-square-o "></span> <a href="#">adhérer au SNMKR</a>
+                    </li>
+                    <li>
+                      <span class="fa fa-paper-plane"></span> <a href="#">s'inscrire à la newsletter</a>
+                    </li>
+                  </ul>
                 </div>
               </div> <!-- .col -->
               

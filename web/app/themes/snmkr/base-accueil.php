@@ -62,7 +62,7 @@ use Roots\Sage\Nav;
           <div class="col-md-3 col-md-offset-3">
             <div class="text-center">
              <p>
-               <a href="#" class="btn btn-lg btn-primary disabled"><span class="fa fa-pencil-square-o "></span> adhérer au SNMKR</a>
+               <a href="#" class="btn btn-lg btn-primary"><span class="fa fa-pencil-square-o "></span> adhérer au SNMKR</a>
              </p>
             </div>
           </div>

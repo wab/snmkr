@@ -1,20 +1,19 @@
 <?php
 
-	$sticky = get_option( 'sticky_posts' );
 
-	$sticky_args = array(
-		'post__in' => $sticky,
+	$edito_args = array(
+		'cat' => 3,
 		'posts_per_page' => '1',
 	);
 
 	// the queries
-	$sticky_query = new WP_Query( $sticky_args );
+	$edito_query = new WP_Query( $edito_args );
 	
 ?>
 
-<?php if ( $sticky_query->have_posts() ) : ?>
+<?php if ( $edito_query->have_posts() ) : ?>
 <!-- the loop -->
-	<?php while ( $sticky_query->have_posts() ) : $sticky_query->the_post(); ?>
+	<?php while ( $edito_query->have_posts() ) : $edito_query->the_post(); ?>
 		<article class="edito text-left">			
 			<div>
 				<h2>Édito du président <small><?php the_date('F Y');?></small></h2>

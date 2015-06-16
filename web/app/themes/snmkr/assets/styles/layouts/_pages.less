@@ -18,9 +18,9 @@
 }
 
 .subpage {
-	margin-bottom: 4em;
+	margin-bottom: 1em;
 	padding-bottom: 1em;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid @gray-lighter;
 }
 
 .submenu {
@@ -57,4 +57,17 @@
 	padding-bottom: @grid-gutter-width;
 	margin-bottom: @grid-gutter-width;
 	border-bottom: 1px solid @gray-lighter;
+}
+
+.sommaire li a {
+	display: block;
+	padding: 1em;
+	border-bottom: solid 1px @gray-lighter;
+	color: @text-color;
+	&:hover, &:focus {
+		background: @gray-lighter;
+		text-decoration: none;
+	}
+
+
 }

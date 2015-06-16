@@ -14,19 +14,17 @@ $parent = new WP_Query( $args );
 
 if ( $parent->have_posts() ) : ?>
 
+    <ul class="sommaire list-unstyled">
+
     <?php while ( $parent->have_posts() ) : $parent->the_post(); ?>
 
-        <div id="parent-<?php the_ID(); ?>" class="parent-page">
-
-            <h2 class="h3"><?php the_title(); ?></a></h2>
-
-            <?php the_content(); ?>
-
-            <p><span class="fa fa-hand-o-right"></span> <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Lire la suite</a></p>
-
-        </div>
+        <li id="parent-<?php the_ID(); ?>">
+            <a href="<?php the_permalink(); ?>"><span class="fa fa-hand-o-right"></span> <?php the_title(); ?></a>
+        </li>
 
     <?php endwhile; ?>
+
+    </ul>
 
 <?php endif; wp_reset_query(); ?>
 

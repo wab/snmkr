@@ -16,12 +16,11 @@ if ( $parent->have_posts() ) : ?>
 
     <?php while ( $parent->have_posts() ) : $parent->the_post(); ?>
 
-        <div id="parent-<?php the_ID(); ?>" class="parent-page">
+        <div id="parent-<?php the_ID(); ?>" class="subpage">
 
             <h2 class="h3"><?php the_title(); ?></a></h2>
 
             <p><?php the_excerpt(); ?></p>
-
             <p><span class="fa fa-hand-o-right"></span> <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Lire la suite</a></p>
 
         </div>

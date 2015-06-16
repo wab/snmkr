@@ -1,29 +1,14 @@
 <?php 
 	$categories = array(
-		'show_option_all'    => '',
 		'orderby'            => 'name',
 		'order'              => 'ASC',
 		'style'              => 'list',
 		'show_count'         => 1,
 		'hide_empty'         => 1,
 		'use_desc_for_title' => 1,
-		'child_of'           => 0,
-		'feed'               => '',
-		'feed_type'          => '',
-		'feed_image'         => '',
-		'exclude'            => '',
-		'exclude_tree'       => '',
-		'include'            => '',
-		'hierarchical'       => 1,
 		'title_li'           => '',
-		'show_option_none'   => __( '' ),
-		'number'             => null,
-		'echo'               => 1,
 		'depth'              => 1,
-		'current_category'   => 1,
-		'pad_counts'         => 0,
-		'taxonomy'           => 'category',
-		'walker'             => null
+		'taxonomy'           => 'category'
     );
     
     $regions = array(

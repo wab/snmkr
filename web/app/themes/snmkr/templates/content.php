@@ -6,7 +6,7 @@
 	
 	<?php if ( has_post_thumbnail() ) : ?>
 		<a class="media-left media-top" href="<?php the_permalink(); ?>">
-			<?php the_post_thumbnail('media', array( 'class' => 'img-thumbnail' )); ?>
+			<?php the_post_thumbnail('media'); ?>
 		</a>
 	<?php endif; ?>
 

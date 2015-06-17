@@ -6,7 +6,12 @@
     <div class="entry-content">
       <?php if ( has_post_thumbnail() ) : ?>
         <p><?php the_post_thumbnail('full', array( 'class' => 'img-responsive' )); ?></p>
-      <?php endif; ?>    
+      <?php endif; ?>
+      <?php if (in_category('editos')) : 
+        $imgedito = wp_get_attachment_image_src( 392, 'media' );
+      ?>
+        <img src="<?php echo $imgedito[0]; ?>" alt="Stéphane Michel" class="img-thumbnail alignright">
+      <?php endif; ?>
       <?php the_content(); ?>
     </div>
     <footer>

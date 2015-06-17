@@ -1,7 +1,7 @@
 <aside class="secondary section" role="complementary">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-3 col-md-offset-3">
+        <div class="col-md-4 col-md-offset-2">
           <h2 class="h3">suivre le snmkr</h2>
           <hr>
           <ul class="reseaux list-inline">
@@ -21,12 +21,25 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6 col-lg-4">
           <h2 class="h3">les sections du syndicat</h2>
           <hr>
           <div id="map"></div>
-          <p><span class="fa fa-plus"></span> <a href="<?php bloginfo('url') ?>/regions">voir toutes les sections</a></p>
+          <!-- <p><span class="fa fa-plus"></span> <a href="<?php bloginfo('url') ?>/regions">voir toutes les sections</a></p> -->
         </div>
       </div>
     </div>
+</aside>
+<aside class="partenaires section">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-offset-2 col-lg-8 col-md-10 text-right">
+        <ul class="list-inline">
+          <li><a href="#"><img src="#" alt="Adoha"></a></li>
+          <li><a href="#"><img src="#" alt="CIC"></a></li>
+          <li><a href="#"><img src="#" alt="OK"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </aside>

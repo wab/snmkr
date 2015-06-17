@@ -1,1 +1,1 @@
-<time class="updated" datetime="<?= get_the_time('c'); ?>"><?= get_the_date(); ?></time>
+<small class="text-muted">Publié le <time class="updated" datetime="<?= get_the_time('c'); ?>"><?=  get_the_date(); ?></time> dans <?php the_category('&bull;'); ?></small>

@@ -58,23 +58,5 @@ function widgets_init() {
     'before_title'  => '<h1 class="h3">',
     'after_title'   => '</h1>'
   ]);
-
-  register_sidebar([
-    'name'          => 'zone 2',
-    'id'            => 'zone-2',
-    'before_widget' => '<aside class="widget %1$s %2$s">',
-    'after_widget'  => '</aside>',
-    'before_title'  => '<h1 class="h3">',
-    'after_title'   => '</h1>'
-  ]);
-
-  register_sidebar([
-    'name'          => 'zone 3',
-    'id'            => 'zone-3',
-    'before_widget' => '<aside class="widget %1$s %2$s">',
-    'after_widget'  => '</aside>',
-    'before_title'  => '<h1 class="h3">',
-    'after_title'   => '</h1>'
-  ]);
 }
 add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');

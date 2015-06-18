@@ -30,16 +30,3 @@
       </div>
     </div>
 </aside>
-<aside class="partenaires section">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-offset-2 col-lg-8 col-md-10 text-right">
-        <ul class="list-inline">
-          <li><a href="#"><img src="#" alt="Adoha"></a></li>
-          <li><a href="#"><img src="#" alt="CIC"></a></li>
-          <li><a href="#"><img src="#" alt="OK"></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</aside>

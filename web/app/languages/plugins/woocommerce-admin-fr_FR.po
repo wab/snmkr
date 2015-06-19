@@ -6,28 +6,31 @@
 # FxB <fxb@wp-translations.org>, 2013
 # FxB <fxb@wp-translations.org>, 2013,2015
 # Kaikina <girou.tom@gmail.com>, 2015
+# Kaikina <girou.tom@gmail.com>, 2015
 # Mickael Goasdoué <mick.goasdoue@gmail.com>, 2014
+# Networe <toitespasmoi@gmail.com>, 2014
 # nicolasleon <nicolas@omnitic.com>, 2014
 # Nicolas Maillard <woocommerce@absoluteweb.net>, 2014-2015
 # nicolasleon <nicolas@omnitic.com>, 2014
 # Pierre SAIKALI <pierre+social@saika.li>, 2015
 # corsonr <remicorson@gmail.com>, 2014
 # royho <roy@woothemes.com>, 2015
+# royho <roy@woothemes.com>, 2015
 # Networe <toitespasmoi@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce\n"
 "Report-Msgid-Bugs-To: https://github.com/woothemes/woocommerce/issues\n"
-"POT-Creation-Date: 2015-04-17 15:06:22+00:00\n"
-"PO-Revision-Date: 2015-04-03 11:00+0000\n"
-"Last-Translator: Kaikina <girou.tom@gmail.com>\n"
+"POT-Creation-Date: 2015-06-10 17:29:07+00:00\n"
+"PO-Revision-Date: 2015-06-10 17:19+0000\n"
+"Last-Translator: Claudio Sanches <contato@claudiosmweb.com>\n"
 "Language-Team: French (France) (http://www.transifex.com/projects/p/woocommerce/language/fr_FR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fr_FR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: grunt-wp-i18n 0.4.9\n"
+"X-Generator: grunt-wp-i18n 0.5.2\n"
 
 #. Plugin Name of the plugin/theme
 msgid "WooCommerce"
@@ -41,7 +44,7 @@ msgstr "Veuillez saisir en format décimal (%s) sans séparateur de milliers."
 msgid ""
 "Please enter in monetary decimal (%s) format without thousand separators and"
 " currency symbols."
-msgstr "Merci d'entrer en format monétaire, avec décimal, (%s) sans séparateur de milliers et sans symbole monétaire."
+msgstr "Veuillez saisir en format monétaire, avec décimal, (%s) sans séparateur de milliers et sans symbole monétaire."
 
 #: includes/admin/class-wc-admin-assets.php:139
 msgid "Please enter in country code with two capital letters."
@@ -64,19 +67,19 @@ msgstr "Saisissez une valeur"
 
 #: includes/admin/class-wc-admin-assets.php:182
 msgid "Enter a value (fixed or %)"
-msgstr "Saisissez une valeur (fixe ou %)"
+msgstr "Saisissez une valeur (fixe ou en %)"
 
 #: includes/admin/class-wc-admin-assets.php:183
 msgid "Are you sure you want to delete all variations? This cannot be undone."
-msgstr "Êtes-vous certain de vouloir supprimer tous les attributs ? Cela ne peut être annulé."
+msgstr "Êtes-vous sur de vouloir supprimer tous les attributs ? Cela ne peut être annulé."
 
 #: includes/admin/class-wc-admin-assets.php:184
 msgid "Last warning, are you sure?"
 msgstr "Dernier avertissement, êtes-vous certain(e) ?"
 
 #: includes/admin/class-wc-admin-assets.php:185
-#: includes/admin/class-wc-admin-taxonomies.php:127
-#: includes/admin/class-wc-admin-taxonomies.php:213
+#: includes/admin/class-wc-admin-taxonomies.php:126
+#: includes/admin/class-wc-admin-taxonomies.php:217
 msgid "Choose an image"
 msgstr "Choisir une image"
 
@@ -98,15 +101,15 @@ msgstr "Aucune variation ajoutée"
 
 #: includes/admin/class-wc-admin-assets.php:190
 msgid "Are you sure you want to remove this variation?"
-msgstr "Êtes-vous certain de vouloir supprimer cette variation ?"
+msgstr "Êtes-vous sur de vouloir supprimer cette variation ?"
 
 #: includes/admin/class-wc-admin-assets.php:191
 msgid "Sale start date (YYYY-MM-DD format or leave blank)"
-msgstr "Date de début de promotion (format AAAA-MM-JJ ou laisser vide)"
+msgstr "Date de début de la promotion (format AAAA-MM-JJ ou laisser vide)"
 
 #: includes/admin/class-wc-admin-assets.php:192
 msgid "Sale end date  (YYYY-MM-DD format or leave blank)"
-msgstr "Date de fin de promotion (format AAAA-MM-JJ ou laisser vide)"
+msgstr "Date de fin de la promotion (format AAAA-MM-JJ ou laisser vide)"
 
 #: includes/admin/class-wc-admin-assets.php:203
 #: includes/admin/class-wc-admin-assets.php:313
@@ -119,7 +122,7 @@ msgid ""
 "Are you sure you want to remove the selected items? If you have previously "
 "reduced this item's stock, or this order was submitted by a customer, you "
 "will need to manually restore the item's stock."
-msgstr "Etes-vous certain de vouloir supprimer ces articles ? Si vous avez précédemment réduit le stock de cet article, ou bien si cette commande a été envoyée par un client, vous devrez manuellement restaurer le stock de cet article."
+msgstr "Êtes-vous sur de vouloir supprimer ces articles ? Si vous avez précédemment réduit le stock de cet article, ou bien si cette commande a été envoyée par un client, vous devrez manuellement restaurer le stock de cet article."
 
 #: includes/admin/class-wc-admin-assets.php:214
 msgid "Please select some items."
@@ -139,7 +142,7 @@ msgstr "Êtes-vous sûr de vouloir supprimer ce remboursement ? Cette action est
 msgid ""
 "Are you sure you wish to delete this tax column? This action cannot be "
 "undone."
-msgstr "Êtes-vous certain de vouloir supprimer cette colonne de TVA ? Cette action ne peut être annulée."
+msgstr "Êtes-vous sur de vouloir supprimer cette colonne de TVA ? Cette action ne peut être annulée."
 
 #: includes/admin/class-wc-admin-assets.php:218
 msgid "Remove this item meta?"
@@ -150,12 +153,12 @@ msgid "Remove this attribute?"
 msgstr "Supprimer cet attribut ?"
 
 #: includes/admin/class-wc-admin-assets.php:220
-#: includes/admin/class-wc-admin-attributes.php:272
-#: includes/admin/class-wc-admin-attributes.php:317
-#: includes/admin/class-wc-admin-attributes.php:350
-#: includes/admin/class-wc-admin-attributes.php:373
-#: includes/admin/class-wc-admin-attributes.php:429
-#: includes/admin/class-wc-admin-attributes.php:460
+#: includes/admin/class-wc-admin-attributes.php:271
+#: includes/admin/class-wc-admin-attributes.php:316
+#: includes/admin/class-wc-admin-attributes.php:349
+#: includes/admin/class-wc-admin-attributes.php:372
+#: includes/admin/class-wc-admin-attributes.php:428
+#: includes/admin/class-wc-admin-attributes.php:459
 #: includes/admin/class-wc-admin-post-types.php:109
 #: includes/admin/class-wc-admin-webhooks-table-list.php:40
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:192
@@ -163,7 +166,7 @@ msgstr "Supprimer cet attribut ?"
 #: includes/admin/meta-boxes/views/html-variation-admin.php:196
 #: includes/admin/settings/class-wc-settings-shipping.php:204
 #: includes/admin/settings/views/html-webhooks-edit.php:15
-#: includes/admin/views/html-admin-page-status-report.php:568
+#: includes/admin/views/html-admin-page-status-report.php:566
 msgid "Name"
 msgstr "Nom"
 
@@ -187,7 +190,7 @@ msgstr "Valeur(s)"
 
 #: includes/admin/class-wc-admin-assets.php:224
 msgid "Enter some text, or some attributes by pipe (|) separating values."
-msgstr "Entrer du texte, ou des attributs en les séparant avec un pipe (|)"
+msgstr "Saisissez du texte, ou des attributs en les séparant avec un pipe (|)"
 
 #: includes/admin/class-wc-admin-assets.php:225
 #: includes/admin/meta-boxes/views/html-product-attribute.php:66
@@ -233,7 +236,7 @@ msgstr "Charger les informations de livraison du client ? Ceci supprimera toutes
 
 #: includes/admin/class-wc-admin-assets.php:233
 #: includes/admin/class-wc-admin-post-types.php:122
-#: includes/admin/class-wc-admin-post-types.php:1964
+#: includes/admin/class-wc-admin-post-types.php:1968
 #: includes/admin/views/html-bulk-edit-product.php:197
 #: includes/admin/views/html-quick-edit-product.php:155
 msgid "Featured"
@@ -283,62 +286,62 @@ msgstr "Veuillez renseigner un attribut nom et identifiant."
 msgid "Slug \"%s\" is already in use. Change it, please."
 msgstr "L'identifiant \"%s\" est déjà utilisé. Veuillez le changer."
 
-#: includes/admin/class-wc-admin-attributes.php:207
+#: includes/admin/class-wc-admin-attributes.php:206
 msgid "Attribute updated successfully"
 msgstr "Attribut mis à jour avec succès"
 
-#: includes/admin/class-wc-admin-attributes.php:266
+#: includes/admin/class-wc-admin-attributes.php:265
 msgid "Edit Attribute"
 msgstr "Modifier l'attribut"
 
-#: includes/admin/class-wc-admin-attributes.php:276
-#: includes/admin/class-wc-admin-attributes.php:431
+#: includes/admin/class-wc-admin-attributes.php:275
+#: includes/admin/class-wc-admin-attributes.php:430
 msgid "Name for the attribute (shown on the front-end)."
 msgstr "Nom pour l'attribut (affiché dans la partie publique)."
 
-#: includes/admin/class-wc-admin-attributes.php:281
-#: includes/admin/class-wc-admin-attributes.php:351
-#: includes/admin/class-wc-admin-attributes.php:435
+#: includes/admin/class-wc-admin-attributes.php:280
+#: includes/admin/class-wc-admin-attributes.php:350
+#: includes/admin/class-wc-admin-attributes.php:434
 msgid "Slug"
 msgstr "Identifiant"
 
-#: includes/admin/class-wc-admin-attributes.php:285
-#: includes/admin/class-wc-admin-attributes.php:437
+#: includes/admin/class-wc-admin-attributes.php:284
+#: includes/admin/class-wc-admin-attributes.php:436
 msgid ""
 "Unique slug/reference for the attribute; must be shorter than 28 characters."
 msgstr "Identifiant/Référence unique pour l'attribut, doit avoir moins de 28 caractères."
 
-#: includes/admin/class-wc-admin-attributes.php:290
-#: includes/admin/class-wc-admin-attributes.php:441
+#: includes/admin/class-wc-admin-attributes.php:289
+#: includes/admin/class-wc-admin-attributes.php:440
 msgid "Enable Archives?"
 msgstr "Activer les archives ?"
 
-#: includes/admin/class-wc-admin-attributes.php:294
-#: includes/admin/class-wc-admin-attributes.php:443
+#: includes/admin/class-wc-admin-attributes.php:293
+#: includes/admin/class-wc-admin-attributes.php:442
 msgid ""
 "Enable this if you want this attribute to have product archives in your "
 "store."
 msgstr "Activer si vous souhaitez que cet attribut dispose d'archives dans votre boutique."
 
-#: includes/admin/class-wc-admin-attributes.php:299
-#: includes/admin/class-wc-admin-attributes.php:352
-#: includes/admin/class-wc-admin-attributes.php:447
+#: includes/admin/class-wc-admin-attributes.php:298
+#: includes/admin/class-wc-admin-attributes.php:351
+#: includes/admin/class-wc-admin-attributes.php:446
 #: includes/admin/class-wc-admin-post-types.php:123
 msgid "Type"
 msgstr "Type"
 
-#: includes/admin/class-wc-admin-attributes.php:303
-#: includes/admin/class-wc-admin-attributes.php:449
+#: includes/admin/class-wc-admin-attributes.php:302
+#: includes/admin/class-wc-admin-attributes.php:448
 msgid "Select"
 msgstr "Choix"
 
-#: includes/admin/class-wc-admin-attributes.php:304
-#: includes/admin/class-wc-admin-attributes.php:450
+#: includes/admin/class-wc-admin-attributes.php:303
+#: includes/admin/class-wc-admin-attributes.php:449
 msgid "Text"
 msgstr "Texte"
 
-#: includes/admin/class-wc-admin-attributes.php:307
-#: includes/admin/class-wc-admin-attributes.php:453
+#: includes/admin/class-wc-admin-attributes.php:306
+#: includes/admin/class-wc-admin-attributes.php:452
 msgid ""
 "Determines how you select attributes for products. Under admin panel -> "
 "products -> product data -> attributes -> values, <strong>Text</strong> "
@@ -346,67 +349,68 @@ msgid ""
 "terms in a drop-down list."
 msgstr "Détermines la manière de sélectionner les attributs des produits. Dans administration -> produits -> détails du produits -> attributs -> valeurs, <strong>Texte</strong> permet d'entrer des valeurs manuellement tandis que <strong>liste</strong> permet l'utilisation de termes pré-configurés."
 
-#: includes/admin/class-wc-admin-attributes.php:312
-#: includes/admin/class-wc-admin-attributes.php:457
+#: includes/admin/class-wc-admin-attributes.php:311
+#: includes/admin/class-wc-admin-attributes.php:456
 msgid "Default sort order"
 msgstr "Tri par défaut"
 
-#: includes/admin/class-wc-admin-attributes.php:316
-#: includes/admin/class-wc-admin-attributes.php:382
-#: includes/admin/class-wc-admin-attributes.php:459
+#: includes/admin/class-wc-admin-attributes.php:315
+#: includes/admin/class-wc-admin-attributes.php:381
+#: includes/admin/class-wc-admin-attributes.php:458
 msgid "Custom ordering"
 msgstr "Tri personnalisé"
 
-#: includes/admin/class-wc-admin-attributes.php:318
-#: includes/admin/class-wc-admin-attributes.php:376
+#: includes/admin/class-wc-admin-attributes.php:317
+#: includes/admin/class-wc-admin-attributes.php:375
+#: includes/admin/class-wc-admin-attributes.php:460
 msgid "Name (numeric)"
 msgstr "Nom (numérique)"
 
-#: includes/admin/class-wc-admin-attributes.php:319
-#: includes/admin/class-wc-admin-attributes.php:379
+#: includes/admin/class-wc-admin-attributes.php:318
+#: includes/admin/class-wc-admin-attributes.php:378
 #: includes/admin/class-wc-admin-attributes.php:461
 msgid "Term ID"
 msgstr "ID terme"
 
-#: includes/admin/class-wc-admin-attributes.php:321
+#: includes/admin/class-wc-admin-attributes.php:320
 #: includes/admin/class-wc-admin-attributes.php:463
 msgid ""
 "Determines the sort order of the terms on the frontend shop product pages. "
 "If using custom ordering, you can drag and drop the terms in this attribute."
 msgstr "Détermine l'ordre de tri des termes sur les pages produits de la boutique. Si vous utilisez un tri personnalisé, vous pouvez glisser/déposer les termes dans cet attribut."
 
-#: includes/admin/class-wc-admin-attributes.php:326
+#: includes/admin/class-wc-admin-attributes.php:325
 msgid "Update"
 msgstr "Mettre à jour"
 
-#: includes/admin/class-wc-admin-attributes.php:342
+#: includes/admin/class-wc-admin-attributes.php:341
 #: includes/admin/class-wc-admin-menus.php:59
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:109
 msgid "Attributes"
 msgstr "Attributs"
 
-#: includes/admin/class-wc-admin-attributes.php:353
+#: includes/admin/class-wc-admin-attributes.php:352
 msgid "Order by"
 msgstr "Trié par"
 
-#: includes/admin/class-wc-admin-attributes.php:354
+#: includes/admin/class-wc-admin-attributes.php:353
 msgid "Terms"
 msgstr "Termes"
 
-#: includes/admin/class-wc-admin-attributes.php:366
+#: includes/admin/class-wc-admin-attributes.php:365
 #: includes/admin/class-wc-admin-post-types.php:212
 #: includes/admin/class-wc-admin-post-types.php:368
-#: includes/admin/class-wc-admin-post-types.php:1968
+#: includes/admin/class-wc-admin-post-types.php:1972
 #: includes/admin/class-wc-admin-webhooks-table-list.php:99
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:232
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:312
 #: includes/admin/meta-boxes/views/html-order-items.php:205
 #: includes/admin/reports/class-wc-report-customer-list.php:169
-#: includes/admin/reports/class-wc-report-stock.php:124
+#: includes/admin/reports/class-wc-report-stock.php:126
 msgid "Edit"
 msgstr "Modifier"
 
-#: includes/admin/class-wc-admin-attributes.php:366
+#: includes/admin/class-wc-admin-attributes.php:365
 #: includes/admin/meta-boxes/class-wc-meta-box-product-images.php:46
 #: includes/admin/meta-boxes/class-wc-meta-box-product-images.php:58
 #: includes/admin/meta-boxes/views/html-product-download.php:6
@@ -414,23 +418,23 @@ msgstr "Modifier"
 msgid "Delete"
 msgstr "Supprimer"
 
-#: includes/admin/class-wc-admin-attributes.php:369
+#: includes/admin/class-wc-admin-attributes.php:368
 msgid "Public"
 msgstr "Public"
 
-#: includes/admin/class-wc-admin-attributes.php:411
+#: includes/admin/class-wc-admin-attributes.php:410
 msgid "Configure terms"
 msgstr "Configurer les termes"
 
-#: includes/admin/class-wc-admin-attributes.php:415
+#: includes/admin/class-wc-admin-attributes.php:414
 msgid "No attributes currently exist."
 msgstr "Aucun attribut pour le moment."
 
-#: includes/admin/class-wc-admin-attributes.php:425
+#: includes/admin/class-wc-admin-attributes.php:424
 msgid "Add New Attribute"
 msgstr "Ajouter un nouvel attribut"
 
-#: includes/admin/class-wc-admin-attributes.php:426
+#: includes/admin/class-wc-admin-attributes.php:425
 msgid ""
 "Attributes let you define extra product data, such as size or colour. You "
 "can use these attributes in the shop sidebar using the \"layered nav\" "
@@ -546,10 +550,10 @@ msgstr "Support"
 
 #: includes/admin/class-wc-admin-help.php:55
 msgid ""
-"After %sreading the documentation%s, for further assistance you can use our "
-"%scommunity forum%s if you get stuck. For help with premium add-ons from "
+"After %sreading the documentation%s, for further assistance you can use the "
+"%sWordPress.org support forum%s. For help with premium add-ons from "
 "WooThemes, or if you are a WooThemes customer, you can %suse our helpdesk%s."
-msgstr "Après %slecture de la documentation%s, pour plus d'assistance vous pouvez utilisez notre %sforum communautaire%s si vous êtes bloqués. Pour de l'aide sur une extension premium de WooThemes ou si vous êtes client WooThemes, vous pouvez %sutiliser notre centre d'aide%s."
+msgstr ""
 
 #: includes/admin/class-wc-admin-help.php:57
 msgid ""
@@ -566,8 +570,8 @@ msgid "System Status"
 msgstr "État du système"
 
 #: includes/admin/class-wc-admin-help.php:59
-msgid "WooThemes Community Support"
-msgstr "Support communautaire WooThemes"
+msgid "WordPress.org Support Forum"
+msgstr ""
 
 #: includes/admin/class-wc-admin-help.php:59
 msgid "WooThemes Customer Support"
@@ -643,7 +647,7 @@ msgstr "Paramètres WooCommerce"
 #: includes/admin/class-wc-admin-welcome.php:218
 #: includes/admin/settings/class-wc-settings-checkout.php:287
 #: includes/admin/settings/class-wc-settings-shipping.php:236
-#: includes/admin/views/html-admin-page-status-report.php:383
+#: includes/admin/views/html-admin-page-status-report.php:382
 msgid "Settings"
 msgstr "Paramètres"
 
@@ -708,18 +712,28 @@ msgstr "Note : Les permissions pour les articles de la commande seront automatiq
 msgid "%s Actions"
 msgstr "%s actions"
 
-#: includes/admin/class-wc-admin-meta-boxes.php:120
+#: includes/admin/class-wc-admin-meta-boxes.php:121
 msgid "Coupon Data"
 msgstr "Données Code Promo"
 
-#: includes/admin/class-wc-admin-meta-boxes.php:125
+#: includes/admin/class-wc-admin-meta-boxes.php:126
 msgid "Rating"
 msgstr "Votes"
 
-#: includes/admin/class-wc-admin-meta-boxes.php:161
+#: includes/admin/class-wc-admin-meta-boxes.php:162
 #: includes/admin/settings/class-wc-settings-products.php:461
 msgid "Reviews"
 msgstr "Avis"
+
+#: includes/admin/class-wc-admin-notices.php:101
+#: includes/admin/class-wc-admin-settings.php:58
+#: includes/admin/class-wc-admin-webhooks.php:123
+msgid "Action failed. Please refresh the page and retry."
+msgstr "L'action a échoué. Rafraîchissez la page et essayez à nouveau, svp."
+
+#: includes/admin/class-wc-admin-notices.php:105
+msgid "Cheatin&#8217; huh?"
+msgstr "Alors on triche ?"
 
 #: includes/admin/class-wc-admin-permalink-settings.php:36
 msgid "Product permalink base"
@@ -744,15 +758,15 @@ msgid ""
 msgstr "Ces paramètres controlent les permaliens utilisés pour les produits. Ces paramètres s'appliquent uniquement lorsque <strong>les permaliens par défaut ne sont pas utilisés</strong>."
 
 #: includes/admin/class-wc-admin-permalink-settings.php:116
-#: includes/admin/class-wc-admin-taxonomies.php:91
-#: includes/admin/class-wc-admin-taxonomies.php:180
+#: includes/admin/class-wc-admin-taxonomies.php:90
+#: includes/admin/class-wc-admin-taxonomies.php:179
 #: includes/admin/settings/class-wc-settings-checkout.php:230
 #: includes/admin/settings/class-wc-settings-shipping.php:203
 msgid "Default"
 msgstr "Valeur par défaut"
 
 #: includes/admin/class-wc-admin-permalink-settings.php:120
-#: includes/admin/reports/class-wc-report-stock.php:153
+#: includes/admin/reports/class-wc-report-stock.php:155
 msgid "Product"
 msgstr "Produit"
 
@@ -775,7 +789,7 @@ msgid ""
 msgstr "Entrez une base personnalisé à utiliser. Une base <strong>doit</strong> être paramétrée ou WordPress utilisera la valeur par défault."
 
 #: includes/admin/class-wc-admin-post-types.php:108
-#: includes/admin/class-wc-admin-taxonomies.php:284
+#: includes/admin/class-wc-admin-taxonomies.php:288
 msgid "Image"
 msgstr "Image"
 
@@ -789,8 +803,8 @@ msgstr "UGS"
 #: includes/admin/class-wc-admin-post-types.php:116
 #: includes/admin/class-wc-admin-reports.php:91
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:689
-#: includes/admin/reports/class-wc-report-stock.php:27
-#: includes/admin/reports/class-wc-report-stock.php:28
+#: includes/admin/reports/class-wc-report-stock.php:29
+#: includes/admin/reports/class-wc-report-stock.php:30
 msgid "Stock"
 msgstr "Stock"
 
@@ -814,7 +828,7 @@ msgstr "Mots-Clés"
 #: includes/admin/reports/class-wc-report-coupon-usage.php:334
 #: includes/admin/reports/class-wc-report-customers.php:210
 #: includes/admin/reports/class-wc-report-sales-by-category.php:235
-#: includes/admin/reports/class-wc-report-sales-by-date.php:375
+#: includes/admin/reports/class-wc-report-sales-by-date.php:376
 #: includes/admin/reports/class-wc-report-sales-by-product.php:365
 #: includes/admin/settings/views/html-webhook-logs.php:17
 #: includes/admin/settings/views/html-webhook-logs.php:25
@@ -831,7 +845,7 @@ msgstr "Type de Code Promo"
 
 #: includes/admin/class-wc-admin-post-types.php:140
 #: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:68
-#: includes/admin/reports/class-wc-report-sales-by-date.php:471
+#: includes/admin/reports/class-wc-report-sales-by-date.php:472
 msgid "Coupon amount"
 msgstr "Montant du code"
 
@@ -891,7 +905,7 @@ msgstr "Total"
 #: includes/admin/meta-boxes/class-wc-meta-box-order-actions.php:41
 #: includes/admin/meta-boxes/views/html-order-items.php:203
 #: includes/admin/reports/class-wc-report-customer-list.php:235
-#: includes/admin/reports/class-wc-report-stock.php:157
+#: includes/admin/reports/class-wc-report-stock.php:159
 msgid "Actions"
 msgstr "Actions"
 
@@ -961,7 +975,7 @@ msgstr "Voir &#8220;%s&#8221;"
 
 #: includes/admin/class-wc-admin-post-types.php:231
 #: includes/admin/class-wc-admin-post-types.php:645
-#: includes/admin/reports/class-wc-report-stock.php:131
+#: includes/admin/reports/class-wc-report-stock.php:133
 #: includes/admin/views/html-admin-page-status-logs.php:24
 msgid "View"
 msgstr "Voir"
@@ -975,14 +989,14 @@ msgid "External/Affiliate"
 msgstr "Externe/Affiliation"
 
 #: includes/admin/class-wc-admin-post-types.php:288
-#: includes/admin/class-wc-admin-post-types.php:1476
+#: includes/admin/class-wc-admin-post-types.php:1480
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:57
 #: includes/admin/meta-boxes/views/html-variation-admin.php:78
 msgid "Virtual"
 msgstr "Virtuel"
 
 #: includes/admin/class-wc-admin-post-types.php:290
-#: includes/admin/class-wc-admin-post-types.php:1468
+#: includes/admin/class-wc-admin-post-types.php:1472
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:64
 #: includes/admin/meta-boxes/views/html-variation-admin.php:76
 msgid "Downloadable"
@@ -1003,6 +1017,7 @@ msgstr "Basculer en mise en avant"
 #: includes/admin/class-wc-admin-post-types.php:322
 #: includes/admin/class-wc-admin-post-types.php:481
 #: includes/admin/class-wc-admin-post-types.php:549
+#: includes/admin/class-wc-admin-post-types.php:551
 #: includes/admin/class-wc-admin-post-types.php:553
 #: includes/admin/views/html-bulk-edit-product.php:203
 #: includes/admin/views/html-bulk-edit-product.php:240
@@ -1020,7 +1035,7 @@ msgstr "Non"
 #: includes/admin/class-wc-admin-post-types.php:331
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:327
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:651
-#: includes/admin/reports/class-wc-report-stock.php:106
+#: includes/admin/reports/class-wc-report-stock.php:108
 #: includes/admin/views/html-bulk-edit-product.php:221
 #: includes/admin/views/html-quick-edit-product.php:164
 msgid "In stock"
@@ -1030,7 +1045,7 @@ msgstr "En stock"
 #: includes/admin/class-wc-admin-reports.php:100
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:328
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:652
-#: includes/admin/reports/class-wc-report-stock.php:108
+#: includes/admin/reports/class-wc-report-stock.php:110
 #: includes/admin/views/html-bulk-edit-product.php:222
 #: includes/admin/views/html-quick-edit-product.php:165
 msgid "Out of stock"
@@ -1073,7 +1088,7 @@ msgid_plural "plus %d other notes"
 msgstr[0] "plus %d autre note"
 msgstr[1] "plus %d autres notes"
 
-#: includes/admin/class-wc-admin-post-types.php:551
+#: includes/admin/class-wc-admin-post-types.php:553
 msgid "%d note"
 msgid_plural "%d notes"
 msgstr[0] "%d note"
@@ -1119,93 +1134,93 @@ msgstr "Marquer en attente"
 msgid "Mark complete"
 msgstr "Marquer terminée"
 
-#: includes/admin/class-wc-admin-post-types.php:1254
+#: includes/admin/class-wc-admin-post-types.php:1253
 msgid "Order status changed by bulk edit:"
 msgstr "État de commandes modifiées en lot : "
 
-#: includes/admin/class-wc-admin-post-types.php:1282
+#: includes/admin/class-wc-admin-post-types.php:1286
 msgid "Order status changed."
 msgid_plural "%s order statuses changed."
 msgstr[0] "État de la commande modifié."
 msgstr[1] "%s états de commandes modifiés."
 
-#: includes/admin/class-wc-admin-post-types.php:1428
+#: includes/admin/class-wc-admin-post-types.php:1432
 msgid "Show all product types"
 msgstr "Afficher tous les types de produits"
 
-#: includes/admin/class-wc-admin-post-types.php:1441
+#: includes/admin/class-wc-admin-post-types.php:1445
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:40
 msgid "Grouped product"
 msgstr "Produits groupés"
 
-#: includes/admin/class-wc-admin-post-types.php:1444
+#: includes/admin/class-wc-admin-post-types.php:1448
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:41
 msgid "External/Affiliate product"
 msgstr "Produit externe/affiliation"
 
-#: includes/admin/class-wc-admin-post-types.php:1447
+#: includes/admin/class-wc-admin-post-types.php:1451
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:42
 msgid "Variable product"
 msgstr "Produit variable"
 
-#: includes/admin/class-wc-admin-post-types.php:1450
+#: includes/admin/class-wc-admin-post-types.php:1454
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:39
 msgid "Simple product"
 msgstr "Produit simple"
 
-#: includes/admin/class-wc-admin-post-types.php:1491
+#: includes/admin/class-wc-admin-post-types.php:1495
 msgid "Show all types"
 msgstr "Afficher tous les types"
 
-#: includes/admin/class-wc-admin-post-types.php:1520
+#: includes/admin/class-wc-admin-post-types.php:1524
 msgid "Search for a customer&hellip;"
 msgstr "Chercher un client&hellip;"
 
-#: includes/admin/class-wc-admin-post-types.php:1683
+#: includes/admin/class-wc-admin-post-types.php:1687
 msgid "Product updated. <a href=\"%s\">View Product</a>"
 msgstr "Produit mise à jour. <a href=\"%s\">Voir le produit</a>"
 
-#: includes/admin/class-wc-admin-post-types.php:1684
-#: includes/admin/class-wc-admin-post-types.php:1699
-#: includes/admin/class-wc-admin-post-types.php:1715
+#: includes/admin/class-wc-admin-post-types.php:1688
+#: includes/admin/class-wc-admin-post-types.php:1703
+#: includes/admin/class-wc-admin-post-types.php:1719
 msgid "Custom field updated."
 msgstr "Champ personnalisé mis à jour."
 
-#: includes/admin/class-wc-admin-post-types.php:1685
-#: includes/admin/class-wc-admin-post-types.php:1700
-#: includes/admin/class-wc-admin-post-types.php:1716
+#: includes/admin/class-wc-admin-post-types.php:1689
+#: includes/admin/class-wc-admin-post-types.php:1704
+#: includes/admin/class-wc-admin-post-types.php:1720
 msgid "Custom field deleted."
 msgstr "Champ personnalisé supprimé."
 
-#: includes/admin/class-wc-admin-post-types.php:1686
+#: includes/admin/class-wc-admin-post-types.php:1690
 msgid "Product updated."
 msgstr "Produit mis à jour."
 
-#: includes/admin/class-wc-admin-post-types.php:1687
+#: includes/admin/class-wc-admin-post-types.php:1691
 msgid "Product restored to revision from %s"
 msgstr "Produit restoré à la révision de %s"
 
-#: includes/admin/class-wc-admin-post-types.php:1688
+#: includes/admin/class-wc-admin-post-types.php:1692
 msgid "Product published. <a href=\"%s\">View Product</a>"
 msgstr "Produit publié. <a href=\"%s\">Voir le produit</a>"
 
-#: includes/admin/class-wc-admin-post-types.php:1689
+#: includes/admin/class-wc-admin-post-types.php:1693
 msgid "Product saved."
 msgstr "Produit sauvegardé."
 
-#: includes/admin/class-wc-admin-post-types.php:1690
+#: includes/admin/class-wc-admin-post-types.php:1694
 msgid "Product submitted. <a target=\"_blank\" href=\"%s\">Preview Product</a>"
 msgstr "Produit soumis. <a target=\"_blank\" href=\"%s\">Prévisualiser le produit</a>"
 
-#: includes/admin/class-wc-admin-post-types.php:1691
+#: includes/admin/class-wc-admin-post-types.php:1695
 msgid ""
 "Product scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" "
 "href=\"%2$s\">Preview Product</a>"
 msgstr "Produit programmé pour : <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Prévisualiser le produit</a>"
 
-#: includes/admin/class-wc-admin-post-types.php:1692
-#: includes/admin/class-wc-admin-post-types.php:1707
-#: includes/admin/class-wc-admin-post-types.php:1723
+#: includes/admin/class-wc-admin-post-types.php:1696
+#: includes/admin/class-wc-admin-post-types.php:1711
+#: includes/admin/class-wc-admin-post-types.php:1727
 #: includes/admin/settings/views/html-webhook-log.php:10
 #: includes/admin/settings/views/html-webhooks-edit.php:126
 #: includes/admin/settings/views/html-webhooks-edit.php:135
@@ -1213,131 +1228,131 @@ msgstr "Produit programmé pour : <strong>%1$s</strong>. <a target=\"_blank\" hr
 msgid "M j, Y @ G:i"
 msgstr "j M Y @ G:i"
 
-#: includes/admin/class-wc-admin-post-types.php:1693
+#: includes/admin/class-wc-admin-post-types.php:1697
 msgid "Product draft updated. <a target=\"_blank\" href=\"%s\">Preview Product</a>"
 msgstr "Produits en brouillon mis à jour. <a target=\"_blank\" href=\"%s\">Prévisualiser le produit</a>"
 
-#: includes/admin/class-wc-admin-post-types.php:1698
-#: includes/admin/class-wc-admin-post-types.php:1701
-#: includes/admin/class-wc-admin-post-types.php:1703
+#: includes/admin/class-wc-admin-post-types.php:1702
+#: includes/admin/class-wc-admin-post-types.php:1705
+#: includes/admin/class-wc-admin-post-types.php:1707
 msgid "Order updated."
 msgstr "Commande mise à jour."
 
-#: includes/admin/class-wc-admin-post-types.php:1702
+#: includes/admin/class-wc-admin-post-types.php:1706
 msgid "Order restored to revision from %s"
 msgstr "Commande restorée à la révision de %s"
 
-#: includes/admin/class-wc-admin-post-types.php:1704
+#: includes/admin/class-wc-admin-post-types.php:1708
 msgid "Order saved."
 msgstr "Commande sauvegardée."
 
-#: includes/admin/class-wc-admin-post-types.php:1705
+#: includes/admin/class-wc-admin-post-types.php:1709
 msgid "Order submitted."
 msgstr "Commande soumise."
 
-#: includes/admin/class-wc-admin-post-types.php:1706
+#: includes/admin/class-wc-admin-post-types.php:1710
 msgid "Order scheduled for: <strong>%1$s</strong>."
 msgstr "Commande programmée pour : <strong>%1$s</strong>."
 
-#: includes/admin/class-wc-admin-post-types.php:1708
+#: includes/admin/class-wc-admin-post-types.php:1712
 msgid "Order draft updated."
 msgstr "Commande en brouillon mise à jour."
 
-#: includes/admin/class-wc-admin-post-types.php:1709
+#: includes/admin/class-wc-admin-post-types.php:1713
 msgid "Order updated and email sent."
 msgstr "Commande actualisée et email envoyé."
 
-#: includes/admin/class-wc-admin-post-types.php:1714
-#: includes/admin/class-wc-admin-post-types.php:1717
-#: includes/admin/class-wc-admin-post-types.php:1719
+#: includes/admin/class-wc-admin-post-types.php:1718
+#: includes/admin/class-wc-admin-post-types.php:1721
+#: includes/admin/class-wc-admin-post-types.php:1723
 msgid "Coupon updated."
 msgstr "Code promo mis à jour."
 
-#: includes/admin/class-wc-admin-post-types.php:1718
+#: includes/admin/class-wc-admin-post-types.php:1722
 msgid "Coupon restored to revision from %s"
 msgstr "Code Promo restoré à la révision de %s"
 
-#: includes/admin/class-wc-admin-post-types.php:1720
+#: includes/admin/class-wc-admin-post-types.php:1724
 msgid "Coupon saved."
 msgstr "Code Promo sauvegardé."
 
-#: includes/admin/class-wc-admin-post-types.php:1721
+#: includes/admin/class-wc-admin-post-types.php:1725
 msgid "Coupon submitted."
 msgstr "Code Promo soumis."
 
-#: includes/admin/class-wc-admin-post-types.php:1722
+#: includes/admin/class-wc-admin-post-types.php:1726
 msgid "Coupon scheduled for: <strong>%1$s</strong>."
 msgstr "Code Promo programmé pour : <strong>%1$s</strong>."
 
-#: includes/admin/class-wc-admin-post-types.php:1724
+#: includes/admin/class-wc-admin-post-types.php:1728
 msgid "Coupon draft updated."
 msgstr "Code Promo en brouillon mis à jour."
 
-#: includes/admin/class-wc-admin-post-types.php:1897
+#: includes/admin/class-wc-admin-post-types.php:1901
 msgid "Product name"
 msgstr "Nom du produit"
 
-#: includes/admin/class-wc-admin-post-types.php:1900
+#: includes/admin/class-wc-admin-post-types.php:1904
 msgid "Coupon code"
 msgstr "Code Promo"
 
-#: includes/admin/class-wc-admin-post-types.php:1915
+#: includes/admin/class-wc-admin-post-types.php:1919
 msgid "Description (optional)"
 msgstr "Description (optionnelle)"
 
-#: includes/admin/class-wc-admin-post-types.php:1932
+#: includes/admin/class-wc-admin-post-types.php:1936
 msgid "Insert into %s"
 msgstr "Insérer dans %s"
 
-#: includes/admin/class-wc-admin-post-types.php:1933
+#: includes/admin/class-wc-admin-post-types.php:1937
 msgid "Uploaded to this %s"
 msgstr "Uploader à ce %s"
 
-#: includes/admin/class-wc-admin-post-types.php:1953
+#: includes/admin/class-wc-admin-post-types.php:1957
 msgid "Catalog/search"
 msgstr "Catalogue/recherche"
 
-#: includes/admin/class-wc-admin-post-types.php:1954
+#: includes/admin/class-wc-admin-post-types.php:1958
 #: includes/admin/views/html-bulk-edit-product.php:185
 #: includes/admin/views/html-quick-edit-product.php:142
 msgid "Catalog"
 msgstr "Catalogue"
 
-#: includes/admin/class-wc-admin-post-types.php:1955
+#: includes/admin/class-wc-admin-post-types.php:1959
 #: includes/admin/views/html-bulk-edit-product.php:186
 #: includes/admin/views/html-quick-edit-product.php:143
 msgid "Search"
 msgstr "Recherche"
 
-#: includes/admin/class-wc-admin-post-types.php:1956
+#: includes/admin/class-wc-admin-post-types.php:1960
 #: includes/admin/views/html-bulk-edit-product.php:187
 #: includes/admin/views/html-quick-edit-product.php:144
 msgid "Hidden"
 msgstr "Caché"
 
-#: includes/admin/class-wc-admin-post-types.php:1960
+#: includes/admin/class-wc-admin-post-types.php:1964
 msgid "Catalog visibility:"
 msgstr "Visibilité du catalogue : "
 
-#: includes/admin/class-wc-admin-post-types.php:1976
+#: includes/admin/class-wc-admin-post-types.php:1980
 msgid ""
 "Define the loops this product should be visible in. The product will still "
 "be accessible directly."
 msgstr "Définir les boucles dans lequelles ce produit doit être visible. Il sera toujours accessible directement."
 
-#: includes/admin/class-wc-admin-post-types.php:1982
+#: includes/admin/class-wc-admin-post-types.php:1986
 msgid "Enable this option to feature this product."
 msgstr "Activer cette option pour mettre en avant ce produit."
 
-#: includes/admin/class-wc-admin-post-types.php:1984
+#: includes/admin/class-wc-admin-post-types.php:1988
 msgid "Featured Product"
 msgstr "Produits Mis en Avant"
 
-#: includes/admin/class-wc-admin-post-types.php:1987
+#: includes/admin/class-wc-admin-post-types.php:1991
 msgid "OK"
 msgstr "OK"
 
-#: includes/admin/class-wc-admin-post-types.php:1988
+#: includes/admin/class-wc-admin-post-types.php:1992
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:175
 #: includes/admin/meta-boxes/views/html-order-items.php:243
 #: includes/admin/meta-boxes/views/html-order-items.php:289
@@ -1527,11 +1542,6 @@ msgstr "TVA par code"
 msgid "Taxes by date"
 msgstr "TVA par date"
 
-#: includes/admin/class-wc-admin-settings.php:58
-#: includes/admin/class-wc-admin-webhooks.php:123
-msgid "Action failed. Please refresh the page and retry."
-msgstr "L'action a échoué. Rafraîchissez la page et essayez à nouveau, svp."
-
 #: includes/admin/class-wc-admin-settings.php:69
 msgid "Your settings have been saved."
 msgstr "Vos paramètres ont été enregistrés."
@@ -1576,238 +1586,238 @@ msgstr "Ne rien sélectionner"
 msgid "Product Transients Cleared"
 msgstr "Données temporaires effacées"
 
-#: includes/admin/class-wc-admin-status.php:91
+#: includes/admin/class-wc-admin-status.php:75
 msgid "%d Transients Rows Cleared"
 msgstr "%d lignes de données temporaires effacés"
 
-#: includes/admin/class-wc-admin-status.php:99
+#: includes/admin/class-wc-admin-status.php:83
 msgid "Roles successfully reset"
 msgstr "Rôles réinitialisés avec succès"
 
-#: includes/admin/class-wc-admin-status.php:111
+#: includes/admin/class-wc-admin-status.php:95
 msgid "Terms successfully recounted"
 msgstr "Termes recomptés avec succès"
 
-#: includes/admin/class-wc-admin-status.php:122
+#: includes/admin/class-wc-admin-status.php:106
 msgid "Sessions successfully cleared"
 msgstr "Les sessions ont été vidées avec succès"
 
-#: includes/admin/class-wc-admin-status.php:126
+#: includes/admin/class-wc-admin-status.php:110
 msgid "All missing WooCommerce pages was installed successfully."
 msgstr "Toutes les pages WooCommerce ont été installées avec succès."
 
-#: includes/admin/class-wc-admin-status.php:134
+#: includes/admin/class-wc-admin-status.php:118
 msgid "Tax rates successfully deleted"
 msgstr "Taux de TVA supprimés avec succès "
 
-#: includes/admin/class-wc-admin-status.php:140
+#: includes/admin/class-wc-admin-status.php:124
 msgid "Usage tracking settings successfully reset."
 msgstr "Réglages de suivi d'utilisation réinitialisés avec succès."
 
-#: includes/admin/class-wc-admin-status.php:149
+#: includes/admin/class-wc-admin-status.php:133
 msgid "There was an error calling %s::%s"
 msgstr "Il y a une erreur en appelant %s::%s "
 
-#: includes/admin/class-wc-admin-status.php:152
+#: includes/admin/class-wc-admin-status.php:136
 msgid "There was an error calling %s"
 msgstr "Il y a une erreur en appelant %s"
 
-#: includes/admin/class-wc-admin-status.php:164
-#: includes/admin/class-wc-admin-status.php:167
-#: includes/admin/class-wc-admin-status.php:170
+#: includes/admin/class-wc-admin-status.php:148
+#: includes/admin/class-wc-admin-status.php:151
+#: includes/admin/class-wc-admin-status.php:154
 msgid "Failed to install/update the translation:"
 msgstr "Échec de l'installation/mise à jour de la traduction :"
 
-#: includes/admin/class-wc-admin-status.php:164
+#: includes/admin/class-wc-admin-status.php:148
 msgid "Seems you don't have permission to do this!"
 msgstr "Il semblerait que vous n'ayez pas l'autorisation de faire cela !"
 
-#: includes/admin/class-wc-admin-status.php:167
+#: includes/admin/class-wc-admin-status.php:151
 msgid ""
 "An authentication error occurred while updating the translation. Please try "
 "again or configure your %sUpgrade Constants%s."
 msgstr "Une erreur d'authentification est apparue lors de la mise à jour de la traduction. Veillez essayer de nouveau ou configurer vos %sparamètres de mise à jour%s."
 
-#: includes/admin/class-wc-admin-status.php:170
+#: includes/admin/class-wc-admin-status.php:154
 msgid "Sorry but there is no translation available for your language =/"
 msgstr "Désolé mais il n'y a pas de traduction disponible pour votre langue =/"
 
-#: includes/admin/class-wc-admin-status.php:177
+#: includes/admin/class-wc-admin-status.php:161
 msgid "Translations installed/updated successfully!"
 msgstr "Traductions installées/mises à jour avec succès !"
 
-#: includes/admin/class-wc-admin-status.php:184
+#: includes/admin/class-wc-admin-status.php:168
 msgid "Your changes have been saved."
 msgstr "Vos modifications ont été sauvegardées."
 
-#: includes/admin/class-wc-admin-status.php:197
+#: includes/admin/class-wc-admin-status.php:181
 msgid "WC Transients"
 msgstr "Données temporaires WC"
 
-#: includes/admin/class-wc-admin-status.php:198
+#: includes/admin/class-wc-admin-status.php:182
 msgid "Clear transients"
 msgstr "Effacer les données temporaires"
 
-#: includes/admin/class-wc-admin-status.php:199
+#: includes/admin/class-wc-admin-status.php:183
 msgid "This tool will clear the product/shop transients cache."
 msgstr "Cet outil effacera le cache des fichiers temporaires produit/boutique."
 
-#: includes/admin/class-wc-admin-status.php:202
+#: includes/admin/class-wc-admin-status.php:186
 msgid "Expired Transients"
 msgstr "Données temporaires expirées"
 
-#: includes/admin/class-wc-admin-status.php:203
+#: includes/admin/class-wc-admin-status.php:187
 msgid "Clear expired transients"
 msgstr "Effacer les données temporaires expirées"
 
-#: includes/admin/class-wc-admin-status.php:204
+#: includes/admin/class-wc-admin-status.php:188
 msgid "This tool will clear ALL expired transients from WordPress."
 msgstr "Cet outil va nettoyer TOUS les transients expirés de WordPress."
 
-#: includes/admin/class-wc-admin-status.php:207
+#: includes/admin/class-wc-admin-status.php:191
 msgid "Term counts"
 msgstr "Comptes des termes"
 
-#: includes/admin/class-wc-admin-status.php:208
+#: includes/admin/class-wc-admin-status.php:192
 msgid "Recount terms"
 msgstr "Recompter les termes"
 
-#: includes/admin/class-wc-admin-status.php:209
+#: includes/admin/class-wc-admin-status.php:193
 msgid ""
 "This tool will recount product terms - useful when changing your settings in"
 " a way which hides products from the catalog."
 msgstr "Cet outil recomptera les termes produit - utile lorsque vous changez vos paramètres d'une manière qui cache les produits du catalogue."
 
-#: includes/admin/class-wc-admin-status.php:212
+#: includes/admin/class-wc-admin-status.php:196
 msgid "Capabilities"
 msgstr "Permissions"
 
-#: includes/admin/class-wc-admin-status.php:213
+#: includes/admin/class-wc-admin-status.php:197
 msgid "Reset capabilities"
 msgstr "Réinitialiser les permissions"
 
-#: includes/admin/class-wc-admin-status.php:214
+#: includes/admin/class-wc-admin-status.php:198
 msgid ""
 "This tool will reset the admin, customer and shop_manager roles to default. "
 "Use this if your users cannot access all of the WooCommerce admin pages."
 msgstr "Cet outil réinitialise les rôles de l'administrateur, du client et du gestionnaire aux valeurs par défaut. A utiliser si vos utilisateurs ne peuvent plus accéder aux pages d'administration de WooCommerce."
 
-#: includes/admin/class-wc-admin-status.php:217
+#: includes/admin/class-wc-admin-status.php:201
 msgid "Customer Sessions"
 msgstr "Sessions Client"
 
-#: includes/admin/class-wc-admin-status.php:218
+#: includes/admin/class-wc-admin-status.php:202
 msgid "Clear all sessions"
 msgstr "Vider toutes les sessions"
 
-#: includes/admin/class-wc-admin-status.php:219
+#: includes/admin/class-wc-admin-status.php:203
 msgid ""
 "<strong class=\"red\">Warning:</strong> This tool will delete all customer "
 "session data from the database, including any current live carts."
 msgstr "<strong class=\"red\">Attention :</strong> Cet outil détruira toutes les données de session client de la base de données, incluant les paniers en cours."
 
-#: includes/admin/class-wc-admin-status.php:222
+#: includes/admin/class-wc-admin-status.php:206
 #: includes/admin/views/html-notice-install.php:14
 msgid "Install WooCommerce Pages"
 msgstr "Installer les pages WooCommerce"
 
-#: includes/admin/class-wc-admin-status.php:223
+#: includes/admin/class-wc-admin-status.php:207
 msgid "Install pages"
 msgstr "Installer les pages"
 
-#: includes/admin/class-wc-admin-status.php:224
+#: includes/admin/class-wc-admin-status.php:208
 msgid ""
 "<strong class=\"red\">Note:</strong> This tool will install all the missing "
 "WooCommerce pages. Pages already defined and set up will not be replaced."
 msgstr "<strong class=\"red\">Note :</strong>Cet outil installera toutes les pages WooCommerce manquantes. Les pages déjà définies et paramétrées ne seront pas remplacées."
 
-#: includes/admin/class-wc-admin-status.php:227
+#: includes/admin/class-wc-admin-status.php:211
 msgid "Delete all WooCommerce tax rates"
 msgstr "Supprimer tous les taux de TVA WooCommerce"
 
-#: includes/admin/class-wc-admin-status.php:228
+#: includes/admin/class-wc-admin-status.php:212
 msgid "Delete ALL tax rates"
 msgstr "Supprimer TOUS les taux de TVA"
 
-#: includes/admin/class-wc-admin-status.php:229
+#: includes/admin/class-wc-admin-status.php:213
 msgid ""
 "<strong class=\"red\">Note:</strong> This option will delete ALL of your tax"
 " rates, use with caution."
 msgstr "<strong class=\"red\">Note :</strong>Cette option détruira TOUS vos taux de TVA, à utiliser avec précaution."
 
-#: includes/admin/class-wc-admin-status.php:232
+#: includes/admin/class-wc-admin-status.php:216
 msgid "Reset Usage Tracking Settings"
 msgstr "Réinitialiser les réglages de suivi d'utilisation"
 
-#: includes/admin/class-wc-admin-status.php:233
+#: includes/admin/class-wc-admin-status.php:217
 msgid "Reset usage tracking settings"
 msgstr "Réinitialiser les réglages de suivi d'utilisation"
 
-#: includes/admin/class-wc-admin-status.php:234
+#: includes/admin/class-wc-admin-status.php:218
 msgid ""
 "This will reset your usage tracking settings, causing it to show the opt-in "
 "banner again and not sending any data."
 msgstr "Cela réinitialise vos réglages de suivi d'utilisation, avec pour conséquence d'afficher de nouveau la bannière opt-in et de ne plus envoyer aucune donnée."
 
-#: includes/admin/class-wc-admin-status.php:240
+#: includes/admin/class-wc-admin-status.php:224
 msgid "Translation Upgrade"
 msgstr "Traduction mise à jour"
 
-#: includes/admin/class-wc-admin-status.php:241
+#: includes/admin/class-wc-admin-status.php:225
 msgid "Force Translation Upgrade"
 msgstr "Forcer la mise à niveau de la traduction"
 
-#: includes/admin/class-wc-admin-status.php:242
+#: includes/admin/class-wc-admin-status.php:226
 msgid ""
 "<strong class=\"red\">Note:</strong> This option will force the translation "
 "upgrade for your language if a translation is available."
 msgstr "<strong class=\"red\">Note :</strong> cette option forcera la mise à niveau de la traduction pour votre langue si une traduction est disponible."
 
-#: includes/admin/class-wc-admin-taxonomies.php:89
-#: includes/admin/class-wc-admin-taxonomies.php:177
+#: includes/admin/class-wc-admin-taxonomies.php:88
+#: includes/admin/class-wc-admin-taxonomies.php:176
 msgid "Display type"
 msgstr "Type d'affichage"
 
-#: includes/admin/class-wc-admin-taxonomies.php:92
-#: includes/admin/class-wc-admin-taxonomies.php:181
+#: includes/admin/class-wc-admin-taxonomies.php:91
+#: includes/admin/class-wc-admin-taxonomies.php:180
 #: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:99
 #: includes/admin/settings/class-wc-settings-products.php:28
 #: includes/admin/views/html-admin-page-addons.php:31
 msgid "Products"
 msgstr "Produits"
 
-#: includes/admin/class-wc-admin-taxonomies.php:93
-#: includes/admin/class-wc-admin-taxonomies.php:182
+#: includes/admin/class-wc-admin-taxonomies.php:92
+#: includes/admin/class-wc-admin-taxonomies.php:181
 msgid "Subcategories"
 msgstr "Sous-catégories"
 
-#: includes/admin/class-wc-admin-taxonomies.php:94
-#: includes/admin/class-wc-admin-taxonomies.php:183
+#: includes/admin/class-wc-admin-taxonomies.php:93
+#: includes/admin/class-wc-admin-taxonomies.php:182
 msgid "Both"
 msgstr "Ensemble"
 
-#: includes/admin/class-wc-admin-taxonomies.php:98
-#: includes/admin/class-wc-admin-taxonomies.php:188
-#: includes/admin/class-wc-admin-taxonomies.php:315
+#: includes/admin/class-wc-admin-taxonomies.php:97
+#: includes/admin/class-wc-admin-taxonomies.php:187
+#: includes/admin/class-wc-admin-taxonomies.php:319
 msgid "Thumbnail"
 msgstr "Vignette"
 
-#: includes/admin/class-wc-admin-taxonomies.php:102
-#: includes/admin/class-wc-admin-taxonomies.php:193
+#: includes/admin/class-wc-admin-taxonomies.php:101
+#: includes/admin/class-wc-admin-taxonomies.php:192
 msgid "Upload/Add image"
 msgstr "Transférer/Ajouter image"
 
-#: includes/admin/class-wc-admin-taxonomies.php:103
-#: includes/admin/class-wc-admin-taxonomies.php:194
+#: includes/admin/class-wc-admin-taxonomies.php:102
+#: includes/admin/class-wc-admin-taxonomies.php:193
 msgid "Remove image"
 msgstr "Supprimer image"
 
-#: includes/admin/class-wc-admin-taxonomies.php:129
-#: includes/admin/class-wc-admin-taxonomies.php:215
+#: includes/admin/class-wc-admin-taxonomies.php:128
+#: includes/admin/class-wc-admin-taxonomies.php:219
 msgid "Use image"
 msgstr "Utiliser l’image"
 
-#: includes/admin/class-wc-admin-taxonomies.php:265
+#: includes/admin/class-wc-admin-taxonomies.php:269
 msgid ""
 "Product categories for your store can be managed here. To change the order "
 "of categories on the front-end you can drag and drop to sort them. To see "
@@ -1815,7 +1825,7 @@ msgid ""
 "page."
 msgstr "Les catégories de produit pour votre boutique peuvent être gérées ici. Pour changer l'ordre des catégories sur le site vous pouvez les cliquer/déplacer pour les ordonner. Pour voir plus de catégories listées cliquer le lien \"Options de l'écran\" en haut de la page."
 
-#: includes/admin/class-wc-admin-taxonomies.php:272
+#: includes/admin/class-wc-admin-taxonomies.php:276
 msgid ""
 "Shipping classes can be used to group products of similar type. These groups"
 " can then be used by certain shipping methods to provide different rates to "
@@ -2065,18 +2075,18 @@ msgstr "Voir %s"
 msgid "HTML Email Template"
 msgstr "Template Email HTML"
 
-#: includes/admin/class-wc-admin.php:168
+#: includes/admin/class-wc-admin.php:177
 msgid ""
 "If you like <strong>WooCommerce</strong> please leave us a "
 "%s&#9733;&#9733;&#9733;&#9733;&#9733;%s rating. A huge thank you from "
 "WooThemes in advance!"
 msgstr "Si vous aimez <strong>WooCommerce</strong> merci de nous noter %s&#9733;&#9733;&#9733;&#9733;&#9733;%s. Par avance un immense merci de WooThemes !"
 
-#: includes/admin/class-wc-admin.php:168
+#: includes/admin/class-wc-admin.php:177
 msgid "Thanks :)"
 msgstr "Merci :-)"
 
-#: includes/admin/class-wc-admin.php:176
+#: includes/admin/class-wc-admin.php:185
 msgid "Thank you for selling with WooCommerce."
 msgstr "Merci de vendre avec WooCommerce."
 
@@ -2436,7 +2446,7 @@ msgstr "Méthode de paiement :"
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:280
 #: includes/admin/meta-boxes/views/html-order-shipping.php:26
 #: includes/admin/settings/views/settings-tax.php:103
-#: includes/admin/views/html-admin-page-status-report.php:303
+#: includes/admin/views/html-admin-page-status-report.php:302
 msgid "N/A"
 msgstr "N/A"
 
@@ -2795,7 +2805,7 @@ msgstr "En cas de gestion de stock, cela défini si les ruptures de stock sont a
 
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:326
 #: includes/admin/meta-boxes/views/html-variation-admin.php:130
-#: includes/admin/reports/class-wc-report-stock.php:156
+#: includes/admin/reports/class-wc-report-stock.php:158
 msgid "Stock status"
 msgstr "État du stock"
 
@@ -3045,11 +3055,24 @@ msgstr "Pas de valeur par défaut"
 msgid "Product SKU must be unique."
 msgstr "L'UGS du produit doit être unique."
 
-#: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:1336
+#: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:1259
+#: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:1531
+msgid ""
+"The downloadable file %s cannot be used as it does not have an allowed file "
+"type. Allowed types include: %s"
+msgstr "Le fichier téléchargeable %s ne peut pas être utilisé car il ne dispose pas d'un type de fichier autorisé. Les types autorisés incluent : %s"
+
+#: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:1266
+#: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:1538
+msgid ""
+"The downloadable file %s cannot be used as it does not exist on the server."
+msgstr "Le fichier téléchargeable %s ne peut pas être utilisé car il n'existe pas sur le serveur."
+
+#: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:1367
 msgid "Variation #%s of %s"
 msgstr "Variation n&deg;%s sur %s"
 
-#: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:1380
+#: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:1411
 msgid "Variation SKU must be unique."
 msgstr "L'UGS de la variation doit être unique."
 
@@ -3248,7 +3271,7 @@ msgid "Total available to refund"
 msgstr "Total disponible pour le remboursement"
 
 #: includes/admin/meta-boxes/views/html-order-items.php:266
-#: includes/admin/reports/class-wc-report-sales-by-date.php:481
+#: includes/admin/reports/class-wc-report-sales-by-date.php:482
 msgid "Refund amount"
 msgstr "Montant du remboursement"
 
@@ -3472,7 +3495,7 @@ msgstr "%s codes promo utilisés au total"
 #: includes/admin/reports/class-wc-report-coupon-usage.php:111
 #: includes/admin/reports/class-wc-report-customers.php:146
 #: includes/admin/reports/class-wc-report-sales-by-category.php:85
-#: includes/admin/reports/class-wc-report-sales-by-date.php:336
+#: includes/admin/reports/class-wc-report-sales-by-date.php:337
 #: includes/admin/reports/class-wc-report-sales-by-product.php:105
 #: includes/admin/reports/class-wc-report-taxes-by-code.php:44
 #: includes/admin/reports/class-wc-report-taxes-by-date.php:44
@@ -3482,7 +3505,7 @@ msgstr "Année"
 #: includes/admin/reports/class-wc-report-coupon-usage.php:112
 #: includes/admin/reports/class-wc-report-customers.php:147
 #: includes/admin/reports/class-wc-report-sales-by-category.php:86
-#: includes/admin/reports/class-wc-report-sales-by-date.php:337
+#: includes/admin/reports/class-wc-report-sales-by-date.php:338
 #: includes/admin/reports/class-wc-report-sales-by-product.php:106
 #: includes/admin/reports/class-wc-report-taxes-by-code.php:45
 #: includes/admin/reports/class-wc-report-taxes-by-date.php:45
@@ -3492,7 +3515,7 @@ msgstr "Mois dernier"
 #: includes/admin/reports/class-wc-report-coupon-usage.php:113
 #: includes/admin/reports/class-wc-report-customers.php:148
 #: includes/admin/reports/class-wc-report-sales-by-category.php:87
-#: includes/admin/reports/class-wc-report-sales-by-date.php:338
+#: includes/admin/reports/class-wc-report-sales-by-date.php:339
 #: includes/admin/reports/class-wc-report-sales-by-product.php:107
 #: includes/admin/reports/class-wc-report-taxes-by-code.php:46
 #: includes/admin/reports/class-wc-report-taxes-by-date.php:46
@@ -3502,7 +3525,7 @@ msgstr "Ce mois"
 #: includes/admin/reports/class-wc-report-coupon-usage.php:114
 #: includes/admin/reports/class-wc-report-customers.php:149
 #: includes/admin/reports/class-wc-report-sales-by-category.php:88
-#: includes/admin/reports/class-wc-report-sales-by-date.php:339
+#: includes/admin/reports/class-wc-report-sales-by-date.php:340
 #: includes/admin/reports/class-wc-report-sales-by-product.php:108
 msgid "Last 7 Days"
 msgstr "7 derniers jours"
@@ -3545,7 +3568,7 @@ msgstr "Plus forte remise"
 #: includes/admin/reports/class-wc-report-coupon-usage.php:337
 #: includes/admin/reports/class-wc-report-customers.php:213
 #: includes/admin/reports/class-wc-report-sales-by-category.php:238
-#: includes/admin/reports/class-wc-report-sales-by-date.php:379
+#: includes/admin/reports/class-wc-report-sales-by-date.php:380
 #: includes/admin/reports/class-wc-report-sales-by-product.php:368
 #: includes/admin/reports/class-wc-report-taxes-by-code.php:33
 #: includes/admin/reports/class-wc-report-taxes-by-date.php:33
@@ -3685,76 +3708,76 @@ msgstr "Tout"
 msgid "&larr; Choose a category to view stats"
 msgstr "&larr; Choisissez une catégorie pour voir les statistiques"
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:275
+#: includes/admin/reports/class-wc-report-sales-by-date.php:276
 msgid "%s average daily sales"
 msgstr "%s de ventes journalières moyennes"
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:279
+#: includes/admin/reports/class-wc-report-sales-by-date.php:280
 msgid "%s average monthly sales"
 msgstr "%s de ventes mensuelles moyennes"
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:284
+#: includes/admin/reports/class-wc-report-sales-by-date.php:285
 msgid "%s gross sales in this period"
 msgstr "%s ventes brut pour cette période"
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:285
+#: includes/admin/reports/class-wc-report-sales-by-date.php:286
 msgid ""
 "This is the sum of the order totals after any refunds and including shipping"
 " and taxes."
 msgstr "Il s'agit de la somme des totaux de commande après remboursement et comprenant livraison et TVA."
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:290
+#: includes/admin/reports/class-wc-report-sales-by-date.php:291
 msgid "%s net sales in this period"
 msgstr "%s de ventes net pour cette période"
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:291
+#: includes/admin/reports/class-wc-report-sales-by-date.php:292
 msgid ""
 "This is the sum of the order totals after any refunds and excluding shipping"
 " and taxes."
 msgstr "Il s'agit de la somme des totaux de commande après remboursement et ne comprenant pas livraison et TVA."
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:301
+#: includes/admin/reports/class-wc-report-sales-by-date.php:302
 msgid "%s orders placed"
 msgstr "%s commandes passées"
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:307
+#: includes/admin/reports/class-wc-report-sales-by-date.php:308
 msgid "%s items purchased"
 msgstr "%s articles achetés"
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:313
+#: includes/admin/reports/class-wc-report-sales-by-date.php:314
 msgid "%s charged for shipping"
 msgstr "%s facturés pour la livraison"
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:318
+#: includes/admin/reports/class-wc-report-sales-by-date.php:319
 msgid "%s in refunds"
 msgstr "%s de remboursements"
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:323
+#: includes/admin/reports/class-wc-report-sales-by-date.php:324
 msgid "%s worth of coupons used"
 msgstr "%s de codes promo utilisés"
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:445
+#: includes/admin/reports/class-wc-report-sales-by-date.php:446
 #: includes/admin/reports/class-wc-report-sales-by-product.php:482
 msgid "Number of items sold"
 msgstr "Nombre d'articles vendus"
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:453
+#: includes/admin/reports/class-wc-report-sales-by-date.php:454
 msgid "Number of orders"
 msgstr "Nombre de commandes"
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:461
+#: includes/admin/reports/class-wc-report-sales-by-date.php:462
 msgid "Average sales amount"
 msgstr "Montant moyen des ventes"
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:491
+#: includes/admin/reports/class-wc-report-sales-by-date.php:492
 msgid "Shipping amount"
 msgstr "Montant de livraison"
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:501
+#: includes/admin/reports/class-wc-report-sales-by-date.php:502
 msgid "Gross Sales amount"
 msgstr "Montant brut des ventes"
 
-#: includes/admin/reports/class-wc-report-sales-by-date.php:511
+#: includes/admin/reports/class-wc-report-sales-by-date.php:512
 msgid "Net Sales amount"
 msgstr "Montant net des ventes"
 
@@ -3804,19 +3827,19 @@ msgstr "&larr; Choisir un produit pour voir les statistiques"
 msgid "Sales amount"
 msgstr "Montant des ventes"
 
-#: includes/admin/reports/class-wc-report-stock.php:37
+#: includes/admin/reports/class-wc-report-stock.php:39
 msgid "No products found."
 msgstr "Aucun produit trouvé."
 
-#: includes/admin/reports/class-wc-report-stock.php:139
+#: includes/admin/reports/class-wc-report-stock.php:141
 msgid "product"
 msgstr "produit"
 
-#: includes/admin/reports/class-wc-report-stock.php:154
+#: includes/admin/reports/class-wc-report-stock.php:156
 msgid "Parent"
 msgstr "Parent"
 
-#: includes/admin/reports/class-wc-report-stock.php:155
+#: includes/admin/reports/class-wc-report-stock.php:157
 msgid "Units in stock"
 msgstr "Quantités en stock"
 
@@ -4322,7 +4345,7 @@ msgid "The following options affect how prices are displayed on the frontend."
 msgstr "Les options suivantes déterminent la manière dont les prix sont affichés sur le site."
 
 #: includes/admin/settings/class-wc-settings-general.php:132
-#: includes/admin/views/html-admin-page-status-report.php:408
+#: includes/admin/views/html-admin-page-status-report.php:407
 msgid "Currency"
 msgstr "Devise"
 
@@ -4333,7 +4356,7 @@ msgid ""
 msgstr "Ceci détermine quelle devise est listée dans le catalogue et quelle devise de passerelle sera utilisée pour le paiement."
 
 #: includes/admin/settings/class-wc-settings-general.php:144
-#: includes/admin/views/html-admin-page-status-report.php:413
+#: includes/admin/views/html-admin-page-status-report.php:412
 msgid "Currency Position"
 msgstr "Position devise"
 
@@ -4358,7 +4381,7 @@ msgid "Right with space"
 msgstr "Droite avec espace"
 
 #: includes/admin/settings/class-wc-settings-general.php:161
-#: includes/admin/views/html-admin-page-status-report.php:418
+#: includes/admin/views/html-admin-page-status-report.php:417
 msgid "Thousand Separator"
 msgstr "Séparateur de milliers"
 
@@ -4367,7 +4390,7 @@ msgid "This sets the thousand separator of displayed prices."
 msgstr "Cela détermine le séparateur de milliers pour les prix affichés."
 
 #: includes/admin/settings/class-wc-settings-general.php:171
-#: includes/admin/views/html-admin-page-status-report.php:423
+#: includes/admin/views/html-admin-page-status-report.php:422
 msgid "Decimal Separator"
 msgstr "Séparateur décimal"
 
@@ -4376,7 +4399,7 @@ msgid "This sets the decimal separator of displayed prices."
 msgstr "Cela détermine le séparateur de décimales pour les prix affichés."
 
 #: includes/admin/settings/class-wc-settings-general.php:181
-#: includes/admin/views/html-admin-page-status-report.php:428
+#: includes/admin/views/html-admin-page-status-report.php:427
 msgid "Number of Decimals"
 msgstr "Nombre de décimales"
 
@@ -5654,275 +5677,275 @@ msgid ""
 "information."
 msgstr "PayPal utilise cette méthode de communication lors de l'envoi des informations de transaction en retour de paiement."
 
-#: includes/admin/views/html-admin-page-status-report.php:238
+#: includes/admin/views/html-admin-page-status-report.php:237
 msgid ""
 "wp_remote_post() failed. PayPal IPN won't work with your server. Contact "
 "your hosting provider."
 msgstr "wp_remote_post() en échec. L'IPN PayPal ne fonctionne pas sur votre serveur. Contactez votre hébergeur."
 
-#: includes/admin/views/html-admin-page-status-report.php:240
-#: includes/admin/views/html-admin-page-status-report.php:258
+#: includes/admin/views/html-admin-page-status-report.php:239
+#: includes/admin/views/html-admin-page-status-report.php:257
 msgid "Error: %s"
 msgstr "Erreur : %s"
 
-#: includes/admin/views/html-admin-page-status-report.php:242
-#: includes/admin/views/html-admin-page-status-report.php:260
+#: includes/admin/views/html-admin-page-status-report.php:241
+#: includes/admin/views/html-admin-page-status-report.php:259
 msgid "Status code: %s"
 msgstr "Code statut : %s"
 
-#: includes/admin/views/html-admin-page-status-report.php:248
+#: includes/admin/views/html-admin-page-status-report.php:247
 msgid "Remote Get"
 msgstr "Remote Get"
 
-#: includes/admin/views/html-admin-page-status-report.php:249
+#: includes/admin/views/html-admin-page-status-report.php:248
 msgid ""
 "WooCommerce plugins may use this method of communication when checking for "
 "plugin updates."
 msgstr "Les extensions WooCommerce peuvent utiliser cette méthode de communication lors de la vérification de mises à jour."
 
-#: includes/admin/views/html-admin-page-status-report.php:256
+#: includes/admin/views/html-admin-page-status-report.php:255
 msgid ""
 "wp_remote_get() failed. The WooCommerce plugin updater won't work with your "
 "server. Contact your hosting provider."
 msgstr "wp_remote_get() en échec. La mise à jour des extensions WooCommerce ne doit pas fonctionner avec votre serveur. Contactez votre hébergeur."
 
-#: includes/admin/views/html-admin-page-status-report.php:288
+#: includes/admin/views/html-admin-page-status-report.php:287
 msgid "Server Locale"
 msgstr "Serveur local"
 
-#: includes/admin/views/html-admin-page-status-report.php:295
+#: includes/admin/views/html-admin-page-status-report.php:294
 msgid "The character used for decimal points."
 msgstr "Le caractère utilisé pour le point décimal."
 
-#: includes/admin/views/html-admin-page-status-report.php:296
+#: includes/admin/views/html-admin-page-status-report.php:295
 msgid "The character used for a thousands separator."
 msgstr "Le caractère utilisé pour le séparateur des milliers."
 
-#: includes/admin/views/html-admin-page-status-report.php:297
+#: includes/admin/views/html-admin-page-status-report.php:296
 msgid "The character used for decimal points in monetary values."
 msgstr "Le caractère utilisé pour les points décimaux en valeurs monétaires."
 
-#: includes/admin/views/html-admin-page-status-report.php:298
+#: includes/admin/views/html-admin-page-status-report.php:297
 msgid "The character used for a thousands separator in monetary values."
 msgstr "Le caractère utilisé comme séparateur de milliers dans les valeurs monétaires."
 
-#: includes/admin/views/html-admin-page-status-report.php:312
+#: includes/admin/views/html-admin-page-status-report.php:311
 msgid "Active Plugins"
 msgstr "Extensions actives"
 
-#: includes/admin/views/html-admin-page-status-report.php:336
+#: includes/admin/views/html-admin-page-status-report.php:335
 msgid "Visit plugin homepage"
 msgstr "Visiter la page de l'extension"
 
-#: includes/admin/views/html-admin-page-status-report.php:364
+#: includes/admin/views/html-admin-page-status-report.php:363
 msgid "Network enabled"
 msgstr "Réseau activé"
 
-#: includes/admin/views/html-admin-page-status-report.php:388
+#: includes/admin/views/html-admin-page-status-report.php:387
 msgid "API Enabled"
 msgstr "API activé"
 
-#: includes/admin/views/html-admin-page-status-report.php:389
+#: includes/admin/views/html-admin-page-status-report.php:388
 msgid "Does your site have REST API enabled?"
 msgstr "Est-ce que votre site a REST API activé ?"
 
-#: includes/admin/views/html-admin-page-status-report.php:393
+#: includes/admin/views/html-admin-page-status-report.php:392
 msgid "Taxes Enabled"
 msgstr "TVA activées"
 
-#: includes/admin/views/html-admin-page-status-report.php:394
+#: includes/admin/views/html-admin-page-status-report.php:393
 msgid "Does your site have taxes enabled?"
 msgstr "Est-ce que votre site a la TVA activées ?"
 
-#: includes/admin/views/html-admin-page-status-report.php:398
+#: includes/admin/views/html-admin-page-status-report.php:397
 msgid "Shipping Enabled"
 msgstr "Livraison activée"
 
-#: includes/admin/views/html-admin-page-status-report.php:399
+#: includes/admin/views/html-admin-page-status-report.php:398
 msgid "Does your site have shipping enabled?"
 msgstr "Est-ce que votre site a la livraison activée ?"
 
-#: includes/admin/views/html-admin-page-status-report.php:403
+#: includes/admin/views/html-admin-page-status-report.php:402
 msgid "Force SSL"
 msgstr "Forcer le SSL"
 
-#: includes/admin/views/html-admin-page-status-report.php:404
+#: includes/admin/views/html-admin-page-status-report.php:403
 msgid "Does your site force a SSL Certificate for transactions?"
 msgstr "Est-ce que votre site force un certificat SSL pour les transactions ?"
 
-#: includes/admin/views/html-admin-page-status-report.php:409
+#: includes/admin/views/html-admin-page-status-report.php:408
 msgid ""
 "What currency prices are listed at in the catalog and which currency "
 "gateways will take payments in."
 msgstr "Ceci détermine quelle devise est listée dans le catalogue et quelle devise de passerelle sera utilisée pour le paiement."
 
-#: includes/admin/views/html-admin-page-status-report.php:414
+#: includes/admin/views/html-admin-page-status-report.php:413
 msgid "The position of the currency symbol."
 msgstr "La position du symbole monétaire."
 
-#: includes/admin/views/html-admin-page-status-report.php:419
+#: includes/admin/views/html-admin-page-status-report.php:418
 msgid "The thousand separator of displayed prices."
 msgstr "Le séparateur des milliers des tarifs affichés."
 
-#: includes/admin/views/html-admin-page-status-report.php:424
+#: includes/admin/views/html-admin-page-status-report.php:423
 msgid "The decimal separator of displayed prices."
 msgstr "Le séparateur des décimales des tarifs affichés."
 
-#: includes/admin/views/html-admin-page-status-report.php:429
+#: includes/admin/views/html-admin-page-status-report.php:428
 msgid "The number of decimal points shown in displayed prices."
 msgstr "Le nombre de décimales indiquées dans les prix affichés."
 
-#: includes/admin/views/html-admin-page-status-report.php:437
+#: includes/admin/views/html-admin-page-status-report.php:436
 msgid "WC Pages"
 msgstr "Pages WC"
 
-#: includes/admin/views/html-admin-page-status-report.php:446
+#: includes/admin/views/html-admin-page-status-report.php:445
 msgid "The URL of your WooCommerce shop's homepage (along with the Page ID)."
 msgstr "L'URL de la page d'accueil de la boutique (ainsi que l'identifiant de page)"
 
-#: includes/admin/views/html-admin-page-status-report.php:451
+#: includes/admin/views/html-admin-page-status-report.php:450
 msgid "The URL of your WooCommerce shop's cart (along with the page ID)."
 msgstr "L'URL de la page panier de la boutique (ainsi que l'identifiant de page)"
 
-#: includes/admin/views/html-admin-page-status-report.php:456
+#: includes/admin/views/html-admin-page-status-report.php:455
 msgid "The URL of your WooCommerce shop's checkout (along with the page ID)."
 msgstr "L'URL de la page commande de la boutique (ainsi que l'identifiant de page)"
 
-#: includes/admin/views/html-admin-page-status-report.php:461
+#: includes/admin/views/html-admin-page-status-report.php:460
 msgid ""
 "The URL of your WooCommerce shop's “My Account” Page (along with the page "
 "ID)."
 msgstr "L'URL de la page \"Mon compte\" de la boutique (ainsi que l'identifiant de page)"
 
-#: includes/admin/views/html-admin-page-status-report.php:482
+#: includes/admin/views/html-admin-page-status-report.php:481
 msgid "Page not set"
 msgstr "Page non définie"
 
-#: includes/admin/views/html-admin-page-status-report.php:492
+#: includes/admin/views/html-admin-page-status-report.php:491
 msgid "Page does not exist"
 msgstr "Page inexistante"
 
-#: includes/admin/views/html-admin-page-status-report.php:497
+#: includes/admin/views/html-admin-page-status-report.php:496
 msgid "Page does not contain the shortcode: %s"
 msgstr "La page ne contient pas le shortcode : %s"
 
-#: includes/admin/views/html-admin-page-status-report.php:515
+#: includes/admin/views/html-admin-page-status-report.php:514
 msgid "Taxonomies"
 msgstr "Taxonomies"
 
-#: includes/admin/views/html-admin-page-status-report.php:515
+#: includes/admin/views/html-admin-page-status-report.php:514
 msgid ""
 "A list of taxonomy terms that can be used in regard to order/product "
 "statuses."
 msgstr "Une liste de termes de taxonomie qui peuvent être utilisés en ce qui concerne les statuts commande/produit."
 
-#: includes/admin/views/html-admin-page-status-report.php:520
+#: includes/admin/views/html-admin-page-status-report.php:519
 msgid "Product Types"
 msgstr "Types de produit"
 
-#: includes/admin/views/html-admin-page-status-report.php:536
+#: includes/admin/views/html-admin-page-status-report.php:535
 msgid "Theme"
 msgstr "Thème"
 
-#: includes/admin/views/html-admin-page-status-report.php:569
+#: includes/admin/views/html-admin-page-status-report.php:567
 msgid "The name of the current active theme."
 msgstr "Le nom du thème actuellement actif."
 
-#: includes/admin/views/html-admin-page-status-report.php:573
+#: includes/admin/views/html-admin-page-status-report.php:571
 msgid "Version"
 msgstr "Version"
 
-#: includes/admin/views/html-admin-page-status-report.php:574
+#: includes/admin/views/html-admin-page-status-report.php:572
 msgid "The installed version of the current active theme."
 msgstr "La version installée de l'actuel thème actif."
 
-#: includes/admin/views/html-admin-page-status-report.php:579
+#: includes/admin/views/html-admin-page-status-report.php:577
 msgid "is available"
 msgstr "est disponible"
 
-#: includes/admin/views/html-admin-page-status-report.php:584
+#: includes/admin/views/html-admin-page-status-report.php:582
 msgid "Author URL"
 msgstr "URL de l'auteur"
 
-#: includes/admin/views/html-admin-page-status-report.php:585
+#: includes/admin/views/html-admin-page-status-report.php:583
 msgid "The theme developers URL."
 msgstr "URL des développeurs du thème."
 
-#: includes/admin/views/html-admin-page-status-report.php:589
+#: includes/admin/views/html-admin-page-status-report.php:587
 msgid "Child Theme"
 msgstr "Thème enfant"
 
-#: includes/admin/views/html-admin-page-status-report.php:590
+#: includes/admin/views/html-admin-page-status-report.php:588
 msgid "Displays whether or not the current theme is a child theme."
 msgstr "Affiche si oui ou non le thème actuel est un thème enfant."
 
-#: includes/admin/views/html-admin-page-status-report.php:592
+#: includes/admin/views/html-admin-page-status-report.php:590
 msgid ""
 "If you're modifying WooCommerce or a parent theme you didn't build "
 "personally we recommend using a child theme. See: <a href=\"%s\" "
 "target=\"_blank\">How to create a child theme</a>"
 msgstr "Si vous modifiez WooCommerce ou un thème parent que vous n'avez pas développé vous même, nous vous recommandons d'utiliser un thème enfant. Voir : <a href=\"%s\" target=\"_blank\">Comment créer un thème enfant</a>"
 
-#: includes/admin/views/html-admin-page-status-report.php:600
+#: includes/admin/views/html-admin-page-status-report.php:598
 msgid "Parent Theme Name"
 msgstr "Nom du thème parent"
 
-#: includes/admin/views/html-admin-page-status-report.php:601
+#: includes/admin/views/html-admin-page-status-report.php:599
 msgid "The name of the parent theme."
 msgstr "Le nom du thème parent."
 
-#: includes/admin/views/html-admin-page-status-report.php:605
+#: includes/admin/views/html-admin-page-status-report.php:603
 msgid "Parent Theme Version"
 msgstr "Version du thème parent"
 
-#: includes/admin/views/html-admin-page-status-report.php:606
+#: includes/admin/views/html-admin-page-status-report.php:604
 msgid "The installed version of the parent theme."
 msgstr "La version installée du thème parent."
 
-#: includes/admin/views/html-admin-page-status-report.php:610
+#: includes/admin/views/html-admin-page-status-report.php:608
 msgid "Parent Theme Author URL"
 msgstr "URL de l'auteur du thème parent"
 
-#: includes/admin/views/html-admin-page-status-report.php:611
+#: includes/admin/views/html-admin-page-status-report.php:609
 msgid "The parent theme developers URL."
 msgstr "URL des développeurs du thème parent."
 
-#: includes/admin/views/html-admin-page-status-report.php:616
+#: includes/admin/views/html-admin-page-status-report.php:614
 msgid "WooCommerce Support"
 msgstr "Support WooCommerce"
 
-#: includes/admin/views/html-admin-page-status-report.php:617
+#: includes/admin/views/html-admin-page-status-report.php:615
 msgid ""
 "Displays whether or not the current active theme declares WooCommerce "
 "support."
 msgstr "Indique si le thème actuellement actif gère le support de WooCommerce."
 
-#: includes/admin/views/html-admin-page-status-report.php:620
+#: includes/admin/views/html-admin-page-status-report.php:618
 msgid "Not Declared"
 msgstr "Non déclaré"
 
-#: includes/admin/views/html-admin-page-status-report.php:631
+#: includes/admin/views/html-admin-page-status-report.php:629
 msgid "Templates"
 msgstr "Modèles HTML"
 
-#: includes/admin/views/html-admin-page-status-report.php:631
+#: includes/admin/views/html-admin-page-status-report.php:629
 msgid ""
 "This section shows any files that are overriding the default WooCommerce "
 "template pages."
 msgstr "Cette section montre tous les fichiers qui outrepassent les modèles de pages WooCommerce par défaut."
 
-#: includes/admin/views/html-admin-page-status-report.php:668
+#: includes/admin/views/html-admin-page-status-report.php:666
 msgid ""
 "<code>%s</code> version <strong style=\"color:red\">%s</strong> is out of "
 "date. The core version is %s"
 msgstr "<code>%s</code> version <strong style=\"color:red\">%s</strong> est obsolète. La version du core est %s"
 
-#: includes/admin/views/html-admin-page-status-report.php:680
-#: includes/admin/views/html-admin-page-status-report.php:689
+#: includes/admin/views/html-admin-page-status-report.php:678
+#: includes/admin/views/html-admin-page-status-report.php:687
 msgid "Overrides"
 msgstr "Remplacements"
 
-#: includes/admin/views/html-admin-page-status-report.php:701
+#: includes/admin/views/html-admin-page-status-report.php:699
 msgid "Learn how to update outdated templates"
 msgstr "Apprendre comment actualiser les modèles remplacés"
 
@@ -6075,11 +6098,11 @@ msgid ""
 "install the replacement WooCommerce Colors plugin from WordPress.org."
 msgstr "<strong>Les options de styles de la boutique sont dépréciées</strong> &#8211; Si vous souhaitez continuer à éditer les couleurs de votre boutique, il est recommandé d'installer l'extension de remplacement WooCommerce Colors depuis WordPress.org."
 
-#: includes/admin/views/html-notice-frontend-colors.php:22
+#: includes/admin/views/html-notice-frontend-colors.php:21
 msgid "Install the new WooCommerce Colors plugin"
 msgstr "Installer la nouvelle extension WooCommerce Colors"
 
-#: includes/admin/views/html-notice-frontend-colors.php:22
+#: includes/admin/views/html-notice-frontend-colors.php:21
 #: includes/admin/views/html-notice-template-check.php:14
 #: includes/admin/views/html-notice-theme-support.php:17
 msgid "Hide this notice"
@@ -6375,37 +6398,37 @@ msgctxt "Settings group label"
 msgid "Checkout"
 msgstr "Commande"
 
-#: includes/admin/views/html-admin-page-status-report.php:360
+#: includes/admin/views/html-admin-page-status-report.php:359
 msgctxt "Version info"
 msgid "%s is available"
 msgstr "%s est disponible"
 
-#: includes/admin/views/html-admin-page-status-report.php:372
+#: includes/admin/views/html-admin-page-status-report.php:371
 msgctxt "by author"
 msgid "by %s"
 msgstr "par %s"
 
-#: includes/admin/views/html-admin-page-status-report.php:443
+#: includes/admin/views/html-admin-page-status-report.php:442
 msgctxt "Page setting"
 msgid "Shop Base"
 msgstr "Base Boutique"
 
-#: includes/admin/views/html-admin-page-status-report.php:448
+#: includes/admin/views/html-admin-page-status-report.php:447
 msgctxt "Page setting"
 msgid "Cart"
 msgstr "Panier"
 
-#: includes/admin/views/html-admin-page-status-report.php:453
+#: includes/admin/views/html-admin-page-status-report.php:452
 msgctxt "Page setting"
 msgid "Checkout"
 msgstr "Commande"
 
-#: includes/admin/views/html-admin-page-status-report.php:458
+#: includes/admin/views/html-admin-page-status-report.php:457
 msgctxt "Page setting"
 msgid "My Account"
 msgstr "Mon Compte"
 
-#: includes/admin/views/html-admin-page-status-report.php:472
+#: includes/admin/views/html-admin-page-status-report.php:471
 msgctxt "WC Pages links in the System Status"
 msgid "Edit %s page"
 msgstr "Modifier la page %s"

@@ -48,6 +48,12 @@
           return false;
         });
 
+        $("a[href='#anchor']").click(function() {
+          var speed = 750;
+          $("html, body").animate({ scrollTop: $('#anchor').offset().top }, speed);
+          return false;
+        });
+
         $( '.submenu .active' ).parents('.panel').find('.submenu-link').removeClass( 'collapsed');
         $( '.submenu .active' ).parents('.submenu').addClass( 'in');
 

@@ -40,6 +40,9 @@ use Roots\Sage\Nav;
                 </div>
               </div>
             </div>
+
+            <div class="chevron"><a href="#anchor" class="smoothscroll"><span class="fa fa-angle-down"></span></a></div>
+
          </div>
        </div>
 
@@ -55,7 +58,7 @@ use Roots\Sage\Nav;
       </div>
     </nav>
 
-    <div class="callactions section">
+    <div class="callactions section" id="anchor">
 
       <div class="container-fluid">
         <div class="row">
@@ -89,10 +92,14 @@ use Roots\Sage\Nav;
 
             </div>
           </div>        
-            
       </div><!-- .container-fluid -->
+
     </section><!-- /.wrap -->
-    
+
+    <section class="video">
+
+    <?php get_template_part('templates/videos'); ?>
+
     <?php get_template_part('templates/bannieres'); ?>
 
     <?php get_template_part('templates/aside'); ?>

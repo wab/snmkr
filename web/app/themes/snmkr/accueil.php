@@ -7,16 +7,8 @@
 	$sticky = get_option( 'sticky_posts' );
 
 	$actus_args = array(
-		'posts_per_page' => '2',
-		'post__not_in' => $sticky,
-		'tax_query' => array(
-	        array(
-			    'taxonomy' => 'post_format',
-			    'field' => 'slug',
-			    'terms' => array('post-format-quote'),
-			    'operator' => 'NOT IN'
-			)
-    	)	
+		'posts_per_page' => '3',
+		'category__not_in' => array( 3 )	
 	);
 	
 ?>

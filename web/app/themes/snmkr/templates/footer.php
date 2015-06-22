@@ -1,4 +1,4 @@
-<a href="#top" class="backtop scroll"><span class="fa fa-caret-up"></span></a>
+<a href="#top" class="backtop smoothscroll"><span class="fa fa-caret-up"></span></a>
 <aside class="partenaires section">
   <div class="container-fluid">
     <div class="row">

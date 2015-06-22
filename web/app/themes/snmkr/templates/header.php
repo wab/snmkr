@@ -5,7 +5,7 @@
 			<span class="text-primary">S</span>yndicat <span class="text-primary">N</span>ational des<br><span class="text-primary">M</span>asseurs <span class="text-primary">K</span>inésithérapeutes <br><span class="text-primary">R</span>ééducateurs
 		</h1>
 	  	<hr>
-	  	<h2>Proposer, informer, défendre &hellip;</h2>
+	  	<h2>Proposer, informer,<br> défendre &hellip;</h2>
 	  	<hr>
     </div>
 </header><!-- .mainheader -->

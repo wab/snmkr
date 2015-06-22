@@ -96,8 +96,6 @@ use Roots\Sage\Nav;
 
     </section><!-- /.wrap -->
 
-    <section class="video">
-
     <?php get_template_part('templates/videos'); ?>
 
     <?php get_template_part('templates/bannieres'); ?>

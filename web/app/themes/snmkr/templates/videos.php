@@ -25,8 +25,9 @@ $query_videos = new WP_Query( 'post_type=video&posts_per_page=1'); ?>
             <!-- end of the loop -->
     
             <!-- pagination here -->
-    </ul>
+    </div>
   </div>
+
   
 </aside>
 

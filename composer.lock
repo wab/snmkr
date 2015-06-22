@@ -767,15 +767,15 @@
         },
         {
             "name": "wpackagist-plugin/groups",
-            "version": "1.5.4",
+            "version": "1.5.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/groups/",
-                "reference": "tags/1.5.4"
+                "reference": "tags/1.5.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/groups.1.5.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/groups.1.5.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -807,15 +807,15 @@
         },
         {
             "name": "wpackagist-plugin/relevanssi",
-            "version": "3.4.1",
+            "version": "3.4.2",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/relevanssi/",
-                "reference": "tags/3.4.1"
+                "reference": "tags/3.4.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/relevanssi.3.4.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/relevanssi.3.4.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -847,15 +847,15 @@
         },
         {
             "name": "wpackagist-plugin/types",
-            "version": "1.7",
+            "version": "1.7.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/types/",
-                "reference": "tags/1.7"
+                "reference": "tags/1.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/types.1.7.zip",
+                "url": "https://downloads.wordpress.org/plugin/types.1.7.1.zip",
                 "reference": null,
                 "shasum": null
             },

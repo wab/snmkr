@@ -4,8 +4,6 @@
  	* Template Name: Accueil
  	*/
 
-	$sticky = get_option( 'sticky_posts' );
-
 	$actus_args = array(
 		'posts_per_page' => '3',
 		'category__not_in' => array( 3 )	

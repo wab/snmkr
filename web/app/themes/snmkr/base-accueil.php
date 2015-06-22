@@ -65,14 +65,14 @@ use Roots\Sage\Nav;
           <div class="col-md-3 col-md-offset-3">
             <div class="text-center">
              <p>
-               <a href="#" class="btn btn-lg btn-primary"><span class="fa fa-pencil-square-o "></span> adhérer au SNMKR</a>
+               <a href="<?php echo get_permalink( 1052 ); ?>" class="btn btn-lg btn-primary"><span class="fa fa-pencil-square-o "></span> adhérer au SNMKR</a>
              </p>
             </div>
           </div>
           <div class="col-md-3">
             <div class="text-center">
               <p>
-                <a href="#" class="btn btn-lg btn-info"><span class="fa fa-paper-plane"></span> s'inscrire à la newsletter</a>
+                <a href="http://eepurl.com/bq9K0f" class="btn btn-lg btn-info"><span class="fa fa-paper-plane"></span> s'inscrire à la newsletter</a>
               </p>
            </div>
           </div>

@@ -8,6 +8,7 @@ use Roots\Sage\Nav;
 
 <?php get_template_part('templates/head'); ?>
   <body <?php body_class("top"); ?>>
+    
     <!--[if lt IE 9]>
       <div class="alert alert-warning">
         <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
@@ -50,18 +51,20 @@ use Roots\Sage\Nav;
 
     <nav class="navigation">
       <div class="container-fluid">
-             <?php
-              if (has_nav_menu('primary_navigation')) :
-                wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'navigation-principale list-unstyled list-inline', 'link_before' => '<span class="fa-icon"></span><span class="intitule">', 'link_after' => '</span>', 'walker' => new Nav\SageNavWalker()] );
-              endif;
-              ?>
+        <?php
+        if (has_nav_menu('primary_navigation')) :
+          wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'navigation-principale list-unstyled list-inline', 'link_before' => '<span class="fa-icon"></span><span class="intitule">', 'link_after' => '</span>', 'walker' => new Nav\SageNavWalker()] );
+        endif;
+        ?>
       </div>
     </nav>
 
     <div class="callactions section" id="anchor">
 
       <div class="container-fluid">
+
         <div class="row">
+          
           <div class="col-md-3 col-md-offset-3">
             <div class="text-center">
              <p>
@@ -69,6 +72,7 @@ use Roots\Sage\Nav;
              </p>
             </div>
           </div>
+         
           <div class="col-md-3">
             <div class="text-center">
               <p>
@@ -76,10 +80,12 @@ use Roots\Sage\Nav;
               </p>
            </div>
           </div>
-        </div>
-      </div>
 
-    </div>
+        </div><!-- /.row -->
+
+      </div><!-- /.container-fluid -->
+
+    </div><!-- /.callactions -->
 
     <section class="actualites section">
       
@@ -91,10 +97,11 @@ use Roots\Sage\Nav;
                 <?php include Wrapper\template_path(); ?>
 
             </div>
+            
           </div>        
       </div><!-- .container-fluid -->
 
-    </section><!-- /.wrap -->
+    </section><!-- /.actualites -->
 
     <?php get_template_part('templates/videos'); ?>
 

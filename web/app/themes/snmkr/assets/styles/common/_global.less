@@ -1,9 +1,14 @@
 body {
 	position: relative;
-	background: url('../images/background.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	border-top: solid 5px @brand-primary;
+	&.bg-1 {
+		background-image: url('../images/background.jpg');
+	}
+	&.bg-2 {
+		background-image: url('../images/background-2.jpg');
+	}
 }
 
 .wrap {

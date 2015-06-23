@@ -53,3 +53,10 @@ function sage_sidebar_on_special_page($sidebar) {
 
 add_filter('sage/display_sidebar', __NAMESPACE__ . '\\sage_sidebar_on_special_page');
 
+function bgclass($classes) {
+  // add 'class-name' to the $classes array
+  $classes[] = 'bg-'.rand(1,2);
+  // return the $classes array
+  return $classes;
+}
+add_filter('body_class', __NAMESPACE__ . '\\bgclass');

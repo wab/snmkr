@@ -15,7 +15,7 @@ $query_bannieres = new WP_Query( 'post_type=bannieres'); ?>
             <?php while ( $query_bannieres->have_posts() ) : $query_bannieres->the_post(); ?>
             
     
-            <li class="col-lg-3">
+            <li class="col-md-3 col-sm-6">
     
               <?php 
     

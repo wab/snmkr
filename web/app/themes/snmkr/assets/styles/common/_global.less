@@ -37,6 +37,16 @@ hr {
 	padding: @grid-gutter-width / 2;
 }
 
+.contenu a {
+	border-bottom: .08em dotted rgba(0,0,0,.1);
+  	padding-bottom: .08em;
+
+  	&:hover, &:focus {
+  		text-decoration: none;
+		border-color: @brand-primary;
+  	}
+}
+
 .well {
 	background: rgba(255,255,255,0.8);
 

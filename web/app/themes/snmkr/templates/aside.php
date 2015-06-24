@@ -5,10 +5,9 @@
           <h2 class="h3">suivre le snmkr</h2>
           <hr>
           <ul class="reseaux list-inline">
-            <li><a href="http://www.twitter.com/snmkr1"><span class="fa fa-twitter-square"></span></a></li>
-            <li><a href="#"><span class="fa fa-facebook-square"></span></a></li>
-            <li><a href="#"><span class="fa fa-linkedin-square"></span></a></li>
-            <li><a href="#"><span class="fa fa-rss-square"></span></a></li>
+            <li><a href="<?php echo get_permalink(1255); ?>"><span class="fa fa-twitter-square"></span></a></li>
+            <li><a href="<?php echo get_permalink(1255); ?>"><span class="fa fa-facebook-square"></span></a></li>
+            <li><a href="<?php bloginfo('rss2_url'); ?>"><span class="fa fa-rss-square"></span></a></li>
           </ul>
           <div class="acces">
             <h2 class="h3">accèder</h2>

@@ -1,3 +1,4 @@
+SetEnv PHP_VER 5_4
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>

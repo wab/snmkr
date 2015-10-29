@@ -3,12 +3,13 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 	border-top: solid 5px @brand-primary;
-	&.bg-1 {
-		background-image: url('../images/background.jpg');
-	}
-	&.bg-2 {
-		background-image: url('../images/background-2.jpg');
-	}
+	background-image: url('../images/background.jpg');
+	// &.bg-1 {
+	// 	background-image: url('../images/background.jpg');
+	// }
+	// &.bg-2 {
+	// 	background-image: url('../images/background-2.jpg');
+	// }
 }
 
 .wrap {
@@ -33,9 +34,14 @@ hr {
 	padding: @grid-gutter-width / 2;
 }
 
+.contenu {
+	text-align: justify;
+}
+
 .contenu a {
 	border-bottom: .08em dotted rgba(0,0,0,.1);
   	padding-bottom: .08em;
+  	
 
   	&:hover, &:focus {
   		text-decoration: none;

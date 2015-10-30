@@ -2,15 +2,17 @@
 # This file is distributed under the same license as the Twenty Fourteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-04-21 06:27:27+0000\n"
+"PO-Revision-Date: 2015-08-04 18:21:05+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/1.0-alpha-1000\n"
+"X-Generator: GlotPress/1.0-alpha-1100\n"
 "Project-Id-Version: Twenty Fourteen\n"
 
+#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 1.5)  #-#-#-#-#
 #. Author URI of the plugin/theme
+#: footer.php:21
 msgid "https://wordpress.org/"
 msgstr "https://wordpress.org/"
 
@@ -172,10 +174,6 @@ msgstr[1] "Tässä galleriassa on <a href=\"%1$s\" rel=\"bookmark\">%2$s kuvaa</
 msgid "Number of posts to show:"
 msgstr "Kuinka monta artikkelia näytetään:"
 
-#: inc/widgets.php:261
-msgid "Post format to show:"
-msgstr "Näytettävät artikkelimuodot:"
-
 #. Template Name of the plugin/theme
 msgid "Contributor Page"
 msgstr "Kirjoittajat-sivu"
@@ -237,6 +235,10 @@ msgstr "Paranna sivustosi ulkoasua käyttämällä <a href=\"%s\">artikkelikuvia
 msgid "Twenty Fourteen requires at least WordPress version 3.6. You are running version %s. Please upgrade and try again."
 msgstr "Twenty Fourteen vaatii vähintään WordPress-version 3.6. Sinulla on käytössäsi versio %s. Päivitä ja yritä uudestaan."
 
+#: inc/widgets.php:261
+msgid "Post format to show:"
+msgstr "Näytettävä artikkelimuoto:"
+
 #: footer.php:21
 msgid "Proudly powered by %s"
 msgstr "Voimanlähteenä %s"
@@ -248,10 +250,6 @@ msgstr "Arkistot kuukauden mukaan: %s"
 #: archive.php:37
 msgid "Yearly Archives: %s"
 msgstr "Arkistot vuoden mukaan: %s"
-
-#: footer.php:21
-msgid "http://wordpress.org/"
-msgstr "http://wordpress.org/"
 
 #. Author of the plugin/theme
 msgid "the WordPress team"
@@ -421,7 +419,7 @@ msgctxt "Lato font: on or off"
 msgid "on"
 msgstr "on"
 
-#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 1.4)  #-#-#-#-#
+#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 1.5)  #-#-#-#-#
 #. Theme Name of the plugin/theme
 #: inc/customizer.php:105
 msgid "Twenty Fourteen"

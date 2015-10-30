@@ -65,6 +65,26 @@
 		}
 	}
 
+	.widget_rss {
+		ul {
+			margin: 0;
+			padding: 1em;
+			list-style: none;
+			background: #fff;
+			border-radius: @border-radius-base;
+			li {
+				padding-bottom: 1em;
+				margin-bottom: 1em;
+				border-bottom: solid 1px @gray-lighter;
+				&:last-child {
+					border: none;
+					margin-bottom: 0;
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+
 
 	.navigation {
 		font-size: @font-size-large;

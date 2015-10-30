@@ -16,7 +16,7 @@
 		<article class="edito text-left">			
 			<div>
 				<h2>Édito du président <small><?php the_date('F Y');?></small></h2>
-				<hr>
+				<p><strong><?php the_title(); ?></strong></p>
 				<?php the_excerpt(); ?>
 				<p><span class="fa fa-hand-o-right"></span> <a href="<?php the_permalink(); ?>">Lire la suite</a></p>
 			</div>

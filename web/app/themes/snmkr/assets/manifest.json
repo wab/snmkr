@@ -28,6 +28,6 @@
     }
   },
   "config": {
-    "devUrl": "http://dev.snmkr.fr"
+    "devUrl": "http://dev.snmkr.fr:8888"
   }
 }

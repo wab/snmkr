@@ -17,6 +17,7 @@
               <li><a href="http://snblog.free.fr/blog/KiosqueAPEK"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-apek.jpg" alt="apek"><span>apek</span></a></li>
               <li><a href="<?php echo get_permalink(32); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-ujmk.jpg" alt="ujmk"><span>ujmk</span></a></li>
               <li><a href="<?php echo get_permalink(833); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-umko.jpg" alt="umko"><span>umko</span></a></li>
+              <li><a href="<?php echo get_permalink(1582); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo-umkf.jpg" alt="umko"><span>umkf</span></a></li>
             </ul>
           </div>
         </div>

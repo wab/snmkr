@@ -151,3 +151,32 @@
 
 }
 
+.price, .gform_wrapper span.ginput_total {
+  color: @brand-primary!important;
+}
+.woocommerce div.product form.cart .button {
+  float: right;
+  background-color: #fff;
+  border: solid 1px @gray-light;
+  &:hover, &:focus {
+    border-color: @brand-primary;
+    color: @brand-primary;
+  }
+  &.single_add_to_cart_button {
+    border: none;
+    background-color: @brand-primary;
+    color: #fff;
+    &:hover, &:focus {
+      background-color: darken(@brand-primary, 15%);
+    }
+  }
+}
+.woocommerce a.button.alt, .woocommerce input.button.alt{
+    border: none;
+    background-color: @brand-primary;
+    color: #fff;
+    &:hover, &:focus {
+      background-color: darken(@brand-primary, 15%);
+    }
+  }
+

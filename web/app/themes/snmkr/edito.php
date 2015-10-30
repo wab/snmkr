@@ -17,6 +17,8 @@
 	<?php while ( $sticky_query->have_posts() ) : $sticky_query->the_post(); ?>
 		<article class="edito">			
 			<h2>Édito du président <small><?php the_date('F Y');?></small></h2>
+			<h3><?php the_title(); ?></h3>
+			<p>test</p>
 			<?php the_excerpt(); ?>
 			<a href="<?php the_permalink(); ?>" class="btn btn-primary"><span class="fa fa-hand-o-right"></span> Lire la suite</a>
 		</article>

@@ -112,9 +112,19 @@
       }
     },
     // About us page, note the change from about-us to about_us.
-    'about_us': {
+    'adhesion': {
       init: function() {
         // JavaScript to be fired on the about us page
+      },
+      finalize: function() {
+        // JavaScript to be fired on the home page, after the init JS
+
+        $('#input_2_19').val('');
+        $('.product_totals').hide();
+        $('.gform_next_button_2_17').show();
+        $('#input_2_19').change(function() {
+          $('.product_totals').show();
+        });
       }
     }
   };

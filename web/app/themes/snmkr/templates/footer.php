@@ -4,8 +4,8 @@
     <h1 class="h4">Nos partenaires :</h1>
     <ul class="list-inline">
       <li><a href="http://www.adoha.fr"><img src="<?= get_template_directory_uri(); ?>/dist/images/logo-adoha.png" alt="Adoha"></a></li>
-      <li><a href="https://www.cic.fr"><img src="<?= get_template_directory_uri(); ?>/dist/images/logo-cic.png" alt="CIC"></a></li>
-      <li><a href="http://www.objectifkine.com/"><img src="<?= get_template_directory_uri(); ?>/dist/images/logo-objectif-kine.png" alt="Objectif Kiné"></a></li>
+<!--       <li><a href="https://www.cic.fr"><img src="<?= get_template_directory_uri(); ?>/dist/images/logo-cic.png" alt="CIC"></a></li>
+ -->      <li><a href="http://www.objectifkine.com/"><img src="<?= get_template_directory_uri(); ?>/dist/images/logo-objectif-kine.png" alt="Objectif Kiné"></a></li>
     </ul>
   </div>
 </aside>

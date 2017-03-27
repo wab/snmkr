@@ -15,7 +15,8 @@ while (have_posts()) : the_post(); ?>
 
         $args_subpages = array(
           'post_parent' => $post->ID,
-          'post_type' => 'regions'
+          'post_type' => 'regions',
+          'posts_per_page'=> 20
         );
 
         $query_subpages = new WP_Query($args_subpages);
@@ -40,8 +41,6 @@ while (have_posts()) : the_post(); ?>
     <?php endif; ?>
 
     </div>
-    <footer>
-      <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
-    </footer>
+
   </article>
 <?php endwhile; ?>
